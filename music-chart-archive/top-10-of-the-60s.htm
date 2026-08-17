@@ -1,0 +1,986 @@
+﻿<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+
+<a href="index.html" style="
+display:inline-block;
+padding:10px 15px;
+background:#D59BA7;
+color:D7CDAD;
+text-decoration:none;
+border-radius:5px;">Home </a>
+
+
+<style>
+:root{
+  --bg:#120715;
+  --bg2:#2a1030;
+  --paper:#fff9ea;
+  --paper2:#fff2c8;
+  --ink:#24121c;
+  --muted:#6d5061;
+  --plum:#4b1f52;
+  --pink:#d85aa3;
+  --gold:#e6c15a;
+  --line:rgba(36,18,28,.12);
+  --highlight:rgba(230,193,90,.18);
+}
+html,body{margin:0;padding:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#38163f 0%,#18091d 42%,#080408 100%);color:var(--ink)}
+body.modern-sheet{padding:18px 18px 30px;}
+body.modern-sheet::before{content:'';position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at top,rgba(255,255,255,.06),transparent 45%);}
+body.modern-sheet > table{position:relative;z-index:1;width:min(1280px,calc(100vw - 36px)) !important;table-layout:auto !important;margin:0 auto;background:var(--paper);border-collapse:separate !important;border-spacing:0;overflow:hidden;display:block;padding:0 20px 24px;border:1px solid rgba(255,255,255,.08);box-shadow:0 22px 60px rgba(0,0,0,.38)}
+body.modern-sheet col{width:auto !important;}
+body.modern-sheet tr{height:auto !important;}
+body.modern-sheet td{white-space:normal !important;padding:11px 14px !important;border-bottom:1px solid var(--line);font-size:15px;line-height:1.35;background:transparent;vertical-align:top;display:table-cell !important;}
+body.modern-sheet tr:hover td{background:rgba(216,90,163,.045);}
+body.modern-sheet tr:first-child td{border-bottom:none;background:transparent;padding:0 !important;height:0 !important;line-height:0 !important;font-size:0 !important;}
+body.modern-sheet td:first-child{display:none !important;}
+body.modern-sheet td:nth-child(2){width:84px;text-align:center;font-weight:800;color:#8a3d68;}
+body.modern-sheet td:nth-child(3){width:36%;font-weight:700;color:var(--ink);}
+body.modern-sheet td:nth-child(4){color:var(--muted);}
+body.modern-sheet tr.month-header td:first-child{display:none !important;}
+body.modern-sheet tr.month-header td[colspan]{display:block !important;width:calc(100% + 40px) !important;margin:28px -20px 0 !important;padding:18px 24px 16px !important;border:none !important;border-top:1px solid rgba(255,255,255,.08) !important;border-bottom:4px solid var(--gold) !important;border-radius:0 !important;background:linear-gradient(90deg,rgba(75,31,82,.96) 0%,rgba(59,19,64,.98) 55%,rgba(43,16,48,.98) 100%) !important;color:#f9eed2 !important;font-size:clamp(24px,3vw,38px) !important;line-height:1.08;font-weight:900;letter-spacing:.04em;text-transform:uppercase;text-align:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.12);}
+body.modern-sheet tr.month-header + tr td{background:linear-gradient(180deg,var(--paper2),#f9eab8) !important;font-size:13px !important;text-transform:uppercase;letter-spacing:.12em;color:#5a3b46 !important;font-weight:800;position:sticky;top:76px;z-index:2;border-bottom:2px solid rgba(36,18,28,.16);padding-top:9px !important;padding-bottom:9px !important;display:table-cell !important;white-space:nowrap !important;}
+body.modern-sheet tr.month-header + tr td:nth-child(2){text-align:center !important;color:#5a3b46 !important;width:84px;}
+body.modern-sheet tr.month-header + tr td:nth-child(3){text-align:left !important;width:36%;}
+body.modern-sheet tr.month-header + tr td:nth-child(4){text-align:left !important;width:auto;}
+body.modern-sheet tr.top-track td{background:linear-gradient(90deg,var(--highlight),rgba(230,193,90,.05));}
+body.modern-sheet tr.top-track td:nth-child(2){color:#9a6a11;font-weight:900;}
+body.modern-sheet .sheet-toolbar{position:sticky;top:0;z-index:9;width:min(1280px,calc(100vw - 36px));margin:0 auto 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:rgba(33,11,37,.96);border:1px solid rgba(255,255,255,.10);box-shadow:0 14px 40px rgba(0,0,0,.35);padding:10px 16px;border-radius:14px;backdrop-filter:blur(8px);}
+body.modern-sheet .sheet-year{font-size:16px;font-weight:800;color:#f7e8b7;letter-spacing:.04em;text-transform:uppercase;}
+body.modern-sheet .month-links{display:flex;gap:8px;flex-wrap:wrap;}
+body.modern-sheet .month-links a{color:#f7e8b7;text-decoration:none;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;transition:.15s ease;}
+body.modern-sheet .month-links a:hover{background:rgba(216,90,163,.12);border-color:rgba(216,90,163,.35);transform:translateY(-1px);}
+@media (max-width: 760px){
+  body.modern-sheet{padding:10px 10px 24px;}
+  body.modern-sheet > table,.sheet-toolbar{width:calc(100vw - 20px) !important;}
+  body.modern-sheet > table{padding:0 10px 18px;}
+  body.modern-sheet td{font-size:13px;padding:9px 8px !important;}
+  body.modern-sheet td:nth-child(2){width:54px;}
+  body.modern-sheet .sheet-year{font-size:14px;}
+  body.modern-sheet tr.month-header + tr td{top:104px;font-size:11px !important;letter-spacing:.08em;}
+  body.modern-sheet tr.month-header td[colspan]{width:calc(100% + 20px) !important;margin:22px -10px 0 !important;padding:14px 14px 12px !important;font-size:clamp(20px,7vw,30px) !important;}
+}
+</style>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const rows = Array.from(document.querySelectorAll('body.modern-sheet table tr'));
+  const monthLinks = [];
+  let currentSection = null;
+  rows.forEach((row) => {
+    const titleCell = row.querySelector('.xl66,.xl67');
+    if (titleCell && /Top 40 Hits of/i.test(titleCell.textContent)) {
+      row.classList.add('month-header');
+      const slug = titleCell.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+      row.id = slug;
+      const monthMatch = titleCell.textContent.match(/Top 40 Hits of (.+)$/i);
+      const label = monthMatch ? monthMatch[1] : titleCell.textContent.trim();
+      monthLinks.push({href:'#'+slug,label});
+      currentSection = row;
+      return;
+    }
+    if (!currentSection) return;
+    const cells = row.querySelectorAll('td');
+    if (cells.length >= 4) {
+      const pos = (cells[1].textContent || '').trim();
+      const artist = (cells[2].textContent || '').trim();
+      const title = (cells[3].textContent || '').trim();
+      if (/^1$/.test(pos) && artist && title) row.classList.add('top-track');
+    }
+  });
+  const toolbar = document.createElement('div');
+  toolbar.className = 'sheet-toolbar';
+  toolbar.innerHTML = '<div class="sheet-year">UK Music Charts - Top 10 of the 60s</div><div class="month-links"></div>';
+  const linksWrap = toolbar.querySelector('.month-links');
+  monthLinks.forEach(item => {
+    const a = document.createElement('a');
+    a.href = item.href;
+    a.textContent = item.label;
+    linksWrap.appendChild(a);
+  });
+  document.body.prepend(toolbar);
+});
+</script>
+
+<title>Top 10 of the 60s</title>
+</head>
+
+<body class="xl65 modern-sheet">
+
+<div style="position:sticky;top:0;background:#111;padding:12px;z-index:999;border-bottom:2px solid #444;">
+  <input
+    type="text"
+    id="chartSearch"
+    placeholder="Search artist or song title..."
+    onkeyup="searchChart()"
+    style="width:320px;padding:8px;font-size:16px;"
+  >
+
+  <button onclick="clearSearch()" style="padding:8px 12px;font-size:16px;">
+    Clear
+  </button>
+
+  <span id="searchCount" style="margin-left:12px;color:white;font-family:Arial;">
+  </span>
+</div>
+
+<script>
+function searchChart() {
+  const searchText = document.getElementById("chartSearch").value.toLowerCase().trim();
+  const words = searchText.split(/\s+/).filter(Boolean);
+  const rows = document.querySelectorAll("tr");
+  let visibleCount = 0;
+
+  rows.forEach(row => {
+    const cells = row.querySelectorAll("td");
+
+    if (cells.length < 4) {
+      return;
+    }
+
+    const artist = cells[2].innerText.toLowerCase();
+    const title = cells[3].innerText.toLowerCase();
+    const rowText = artist + " " + title;
+
+    const match = words.every(word => rowText.includes(word));
+
+    if (searchText === "" || match) {
+      row.style.display = "";
+      visibleCount++;
+    } else {
+      row.style.display = "none";
+    }
+  });
+
+  document.getElementById("searchCount").innerText =
+    searchText === "" ? "" : visibleCount + " matching row(s)";
+}
+
+function clearSearch() {
+  document.getElementById("chartSearch").value = "";
+  searchChart();
+}
+</script>
+
+<table border=0 cellpadding=0 cellspacing=0 width=744 style='border-collapse:
+ collapse;table-layout:fixed;width:558pt'>
+
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of The Decade: 1960s</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>The Beatles</td>
+          <td>She Loves You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>The Beatles</td>
+          <td>I Want To Hold Your Hand</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Ken Dodd</td>
+          <td>Tears</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>The Beatles</td>
+          <td>Can&#39;t Buy Me Love</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>The Beatles</td>
+          <td>I Feel Fine</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Seekers</td>
+          <td>The Carnival Is Over</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>The Beatles</td>
+          <td>Day Tripper / We Can Work It Out</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Englebert Humperdinck</td>
+          <td>Release Me</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Elvis Presley</td>
+          <td>It&#39;s Now Or Never</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>Tom Jones</td>
+          <td>Green Green Grass Of Home</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1960</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>The Everly Brothers</td>
+          <td>Cathy&#39;s Clown</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Cliff Richard</td>
+          <td>Please Don&#39;t Tease</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Elvis Presley</td>
+          <td>The Girl Of My Best Friend / A Mess Of Blues</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>Jimmy Jones</td>
+          <td>Handy Man</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>Elvis Presley</td>
+          <td>It&#39;s Now Or Never</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>The Shadows</td>
+          <td>Apache</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>The Drifters</td>
+          <td>Save The Last Dance For Me</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Anthony Newley</td>
+          <td>Why?</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Duane Eddy</td>
+          <td>Because They&#39;re Young</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>Johnny Kidd</td>
+          <td>Shakin&#39; All Over</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1961</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Del Shannon</td>
+          <td>Runaway</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Elvis Presley</td>
+          <td>Wooden Heart</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Helen Shapiro</td>
+          <td>You Don&#39;t Know</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>Billy Fury</td>
+          <td>Halfway To Paradise</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>Eden Kane</td>
+          <td>Well I Ask You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>The Allisons</td>
+          <td>Are You Sure?</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>Helen Shapiro</td>
+          <td>Walkin&#39; Back To Hapiness</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>The Everly Brothers</td>
+          <td>Walk Right Back / Ebony Eyes</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Elvis Presley</td>
+          <td>His Latest Flame</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>John Leyton</td>
+          <td>Johnny Remember Me</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1962</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Acker Bilk</td>
+          <td>Stranger On The Shore</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Frank Ifield</td>
+          <td>I Remember You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Elvis Presley</td>
+          <td>Rock-A-Hula Baby / Can&#39;t Help Falling In Love</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>The Shadows</td>
+          <td>Wonderful Land</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>Chubby Checker</td>
+          <td>Let&#39;s Twist Again</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Cliff Richard</td>
+          <td>The Young Ones</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>Joe Brown</td>
+          <td>A Picture Of You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Elvis Presley</td>
+          <td>Good Luck Charm</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Mike Sarne</td>
+          <td>Come Outside</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>The Tornados</td>
+          <td>Telstar</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1963</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>The Beatles</td>
+          <td>From Me To You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>The Beatles</td>
+          <td>She Loves You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Roy Orbison</td>
+          <td>In Dreams</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>The Springfields</td>
+          <td>Island Of Dreams</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>Gerry &amp; The Pacemakers</td>
+          <td>How Do You Do It?</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Ned Miller</td>
+          <td>From A Jack To A King</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>Wink Martindale</td>
+          <td>Deck Of Cards</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Cliff Richard &amp; The Shadows</td>
+          <td>Summer Holiday</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Frank Ifield</td>
+          <td>Confessin&#39;</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>Andy Williams</td>
+          <td>Can&#39;t Get Used To Losing You</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1964</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Jim Reeves</td>
+          <td>I Love You Because</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Jim Reeves</td>
+          <td>I Won&#39;t Forget You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Roy Orbison</td>
+          <td>It&#39;s Over</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>Julie Rogers</td>
+          <td>The Wedding</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>Brian Poole</td>
+          <td>Someone, Someone</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>The Bachelors</td>
+          <td>I Believe</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>Millie</td>
+          <td>My Boy Lollipop</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>The Rolling Stones</td>
+          <td>It&#39;s All Over Now</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Roy Orbison</td>
+          <td>Oh Pretty Woman</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>The Bachelors</td>
+          <td>I Wouldn&#39;t Trade You For The World</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1965</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>The Seekers</td>
+          <td>I&#39;ll Never Find Another You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Ken Dodd</td>
+          <td>Tears</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Horst Jankowski</td>
+          <td>A Walk In The Black Forest</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>The Seekers</td>
+          <td>World Of Our Own</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>Elvis Presley</td>
+          <td>Crying In The Chapel</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>The Beatles</td>
+          <td>Help</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>The Hollies</td>
+          <td>I&#39;m Alive</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Marcello Minerbi</td>
+          <td>Zorba&#39;s Dance</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Roger Miller</td>
+          <td>King Of The Road</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>Cliff Richard</td>
+          <td>The Minute You&#39;re Gone</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1966</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Jim Reeves</td>
+          <td>Distant Drums</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Frank Sinatra</td>
+          <td>Strangers In The Night</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Herb Alpert</td>
+          <td>Spanish Flea</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>Dave Dee Dozy Beaky Mick &amp; Tich</td>
+          <td>Hold Tight</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>The Beach Boys</td>
+          <td>Sloop John B</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Nancy Sinatra</td>
+          <td>These Boots Are Made For Walkin&#39;</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>The Beach Boys</td>
+          <td>God Only Knows</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Dave Berry</td>
+          <td>Mama</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Thge Mindbenders</td>
+          <td>A Groovy Kind Of Love</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>The Kinks</td>
+          <td>Sunny Afternoon</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1967</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Engelbert Humperdinck</td>
+          <td>Release Me</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Engelbert Humperdinck</td>
+          <td>There Goes My Everything</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Engelbert Humperdinck</td>
+          <td>Last Waltz</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>Anita Harris</td>
+          <td>Just Loving You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>Scott McKenzie</td>
+          <td>San Francisco (Flowers In Your Hair)</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Sandie Shaw</td>
+          <td>Puppet On A String</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>Procol Harum</td>
+          <td>A Whiter Shade Of Pale</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>The Monkees</td>
+          <td>I&#39;m A Believer</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Tom Jones</td>
+          <td>I&#39;ll Never Fall In Love Again</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>Frankie Vaughan</td>
+          <td>There Must Be A Way</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1968</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Louis Armstrong</td>
+          <td>What A Wonderful World</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Des O&#39;Connor</td>
+          <td>I Pretend</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Mary Hopkin</td>
+          <td>Those Were The Days</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>Tom Jones</td>
+          <td>Help Yourself</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>The Union Gap</td>
+          <td>Young Girl</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Tom Jones</td>
+          <td>Delilah</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>Leapy Lee</td>
+          <td>Little Arrows</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>The Equals</td>
+          <td>Baby Come Back</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Hugo Montengro</td>
+          <td>The Good The Bad And The Ugly</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>The Beatles</td>
+          <td>Hey Jude</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1969</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Frank Sinatra</td>
+          <td>My Way</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Jane Birkin &amp; Serge Gainsbourg</td>
+          <td>Je T&#39;Aime Moi Non Plus</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Dean Martin</td>
+          <td>Gentle On My Mind</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>The Rolling Stones</td>
+          <td>Honky Tonk Women</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>Robin Gibb</td>
+          <td>Saved By The Bell</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Karen Young</td>
+          <td>Nobody&#39;s Child</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>The Beatles</td>
+          <td>Get Back</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Donald Peers</td>
+          <td>Please Don&#39;t Go</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Bobby Gentry</td>
+          <td>I&#39;ll Never Fall In Love Again</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>Tommy Roe</td>
+          <td>Dizzy</td>
+        </tr>
+</table>
+
+</body>
+
+</html>
+
+
+
+

@@ -1,0 +1,986 @@
+﻿<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+
+<a href="index.html" style="
+display:inline-block;
+padding:10px 15px;
+background:#D59BA7;
+color:D7CDAD;
+text-decoration:none;
+border-radius:5px;">Home </a>
+
+
+<style>
+:root{
+  --bg:#120715;
+  --bg2:#2a1030;
+  --paper:#fff9ea;
+  --paper2:#fff2c8;
+  --ink:#24121c;
+  --muted:#6d5061;
+  --plum:#4b1f52;
+  --pink:#d85aa3;
+  --gold:#e6c15a;
+  --line:rgba(36,18,28,.12);
+  --highlight:rgba(230,193,90,.18);
+}
+html,body{margin:0;padding:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#38163f 0%,#18091d 42%,#080408 100%);color:var(--ink)}
+body.modern-sheet{padding:18px 18px 30px;}
+body.modern-sheet::before{content:'';position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at top,rgba(255,255,255,.06),transparent 45%);}
+body.modern-sheet > table{position:relative;z-index:1;width:min(1280px,calc(100vw - 36px)) !important;table-layout:auto !important;margin:0 auto;background:var(--paper);border-collapse:separate !important;border-spacing:0;overflow:hidden;display:block;padding:0 20px 24px;border:1px solid rgba(255,255,255,.08);box-shadow:0 22px 60px rgba(0,0,0,.38)}
+body.modern-sheet col{width:auto !important;}
+body.modern-sheet tr{height:auto !important;}
+body.modern-sheet td{white-space:normal !important;padding:11px 14px !important;border-bottom:1px solid var(--line);font-size:15px;line-height:1.35;background:transparent;vertical-align:top;display:table-cell !important;}
+body.modern-sheet tr:hover td{background:rgba(216,90,163,.045);}
+body.modern-sheet tr:first-child td{border-bottom:none;background:transparent;padding:0 !important;height:0 !important;line-height:0 !important;font-size:0 !important;}
+body.modern-sheet td:first-child{display:none !important;}
+body.modern-sheet td:nth-child(2){width:84px;text-align:center;font-weight:800;color:#8a3d68;}
+body.modern-sheet td:nth-child(3){width:36%;font-weight:700;color:var(--ink);}
+body.modern-sheet td:nth-child(4){color:var(--muted);}
+body.modern-sheet tr.month-header td:first-child{display:none !important;}
+body.modern-sheet tr.month-header td[colspan]{display:block !important;width:calc(100% + 40px) !important;margin:28px -20px 0 !important;padding:18px 24px 16px !important;border:none !important;border-top:1px solid rgba(255,255,255,.08) !important;border-bottom:4px solid var(--gold) !important;border-radius:0 !important;background:linear-gradient(90deg,rgba(75,31,82,.96) 0%,rgba(59,19,64,.98) 55%,rgba(43,16,48,.98) 100%) !important;color:#f9eed2 !important;font-size:clamp(24px,3vw,38px) !important;line-height:1.08;font-weight:900;letter-spacing:.04em;text-transform:uppercase;text-align:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.12);}
+body.modern-sheet tr.month-header + tr td{background:linear-gradient(180deg,var(--paper2),#f9eab8) !important;font-size:13px !important;text-transform:uppercase;letter-spacing:.12em;color:#5a3b46 !important;font-weight:800;position:sticky;top:76px;z-index:2;border-bottom:2px solid rgba(36,18,28,.16);padding-top:9px !important;padding-bottom:9px !important;display:table-cell !important;white-space:nowrap !important;}
+body.modern-sheet tr.month-header + tr td:nth-child(2){text-align:center !important;color:#5a3b46 !important;width:84px;}
+body.modern-sheet tr.month-header + tr td:nth-child(3){text-align:left !important;width:36%;}
+body.modern-sheet tr.month-header + tr td:nth-child(4){text-align:left !important;width:auto;}
+body.modern-sheet tr.top-track td{background:linear-gradient(90deg,var(--highlight),rgba(230,193,90,.05));}
+body.modern-sheet tr.top-track td:nth-child(2){color:#9a6a11;font-weight:900;}
+body.modern-sheet .sheet-toolbar{position:sticky;top:0;z-index:9;width:min(1280px,calc(100vw - 36px));margin:0 auto 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:rgba(33,11,37,.96);border:1px solid rgba(255,255,255,.10);box-shadow:0 14px 40px rgba(0,0,0,.35);padding:10px 16px;border-radius:14px;backdrop-filter:blur(8px);}
+body.modern-sheet .sheet-year{font-size:16px;font-weight:800;color:#f7e8b7;letter-spacing:.04em;text-transform:uppercase;}
+body.modern-sheet .month-links{display:flex;gap:8px;flex-wrap:wrap;}
+body.modern-sheet .month-links a{color:#f7e8b7;text-decoration:none;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;transition:.15s ease;}
+body.modern-sheet .month-links a:hover{background:rgba(216,90,163,.12);border-color:rgba(216,90,163,.35);transform:translateY(-1px);}
+@media (max-width: 760px){
+  body.modern-sheet{padding:10px 10px 24px;}
+  body.modern-sheet > table,.sheet-toolbar{width:calc(100vw - 20px) !important;}
+  body.modern-sheet > table{padding:0 10px 18px;}
+  body.modern-sheet td{font-size:13px;padding:9px 8px !important;}
+  body.modern-sheet td:nth-child(2){width:54px;}
+  body.modern-sheet .sheet-year{font-size:14px;}
+  body.modern-sheet tr.month-header + tr td{top:104px;font-size:11px !important;letter-spacing:.08em;}
+  body.modern-sheet tr.month-header td[colspan]{width:calc(100% + 20px) !important;margin:22px -10px 0 !important;padding:14px 14px 12px !important;font-size:clamp(20px,7vw,30px) !important;}
+}
+</style>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const rows = Array.from(document.querySelectorAll('body.modern-sheet table tr'));
+  const monthLinks = [];
+  let currentSection = null;
+  rows.forEach((row) => {
+    const titleCell = row.querySelector('.xl66,.xl67');
+    if (titleCell && /Top 40 Hits of/i.test(titleCell.textContent)) {
+      row.classList.add('month-header');
+      const slug = titleCell.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+      row.id = slug;
+      const monthMatch = titleCell.textContent.match(/Top 40 Hits of (.+)$/i);
+      const label = monthMatch ? monthMatch[1] : titleCell.textContent.trim();
+      monthLinks.push({href:'#'+slug,label});
+      currentSection = row;
+      return;
+    }
+    if (!currentSection) return;
+    const cells = row.querySelectorAll('td');
+    if (cells.length >= 4) {
+      const pos = (cells[1].textContent || '').trim();
+      const artist = (cells[2].textContent || '').trim();
+      const title = (cells[3].textContent || '').trim();
+      if (/^1$/.test(pos) && artist && title) row.classList.add('top-track');
+    }
+  });
+  const toolbar = document.createElement('div');
+  toolbar.className = 'sheet-toolbar';
+  toolbar.innerHTML = '<div class="sheet-year">UK Music Charts - Top 10 of the 90s</div><div class="month-links"></div>';
+  const linksWrap = toolbar.querySelector('.month-links');
+  monthLinks.forEach(item => {
+    const a = document.createElement('a');
+    a.href = item.href;
+    a.textContent = item.label;
+    linksWrap.appendChild(a);
+  });
+  document.body.prepend(toolbar);
+});
+</script>
+
+<title>Top 10 of the 90s</title>
+</head>
+
+<body class="xl65 modern-sheet">
+
+<div style="position:sticky;top:0;background:#111;padding:12px;z-index:999;border-bottom:2px solid #444;">
+  <input
+    type="text"
+    id="chartSearch"
+    placeholder="Search artist or song title..."
+    onkeyup="searchChart()"
+    style="width:320px;padding:8px;font-size:16px;"
+  >
+
+  <button onclick="clearSearch()" style="padding:8px 12px;font-size:16px;">
+    Clear
+  </button>
+
+  <span id="searchCount" style="margin-left:12px;color:white;font-family:Arial;">
+  </span>
+</div>
+
+<script>
+function searchChart() {
+  const searchText = document.getElementById("chartSearch").value.toLowerCase().trim();
+  const words = searchText.split(/\s+/).filter(Boolean);
+  const rows = document.querySelectorAll("tr");
+  let visibleCount = 0;
+
+  rows.forEach(row => {
+    const cells = row.querySelectorAll("td");
+
+    if (cells.length < 4) {
+      return;
+    }
+
+    const artist = cells[2].innerText.toLowerCase();
+    const title = cells[3].innerText.toLowerCase();
+    const rowText = artist + " " + title;
+
+    const match = words.every(word => rowText.includes(word));
+
+    if (searchText === "" || match) {
+      row.style.display = "";
+      visibleCount++;
+    } else {
+      row.style.display = "none";
+    }
+  });
+
+  document.getElementById("searchCount").innerText =
+    searchText === "" ? "" : visibleCount + " matching row(s)";
+}
+
+function clearSearch() {
+  document.getElementById("chartSearch").value = "";
+  searchChart();
+}
+</script>
+
+<table border=0 cellpadding=0 cellspacing=0 width=744 style='border-collapse:
+ collapse;table-layout:fixed;width:558pt'>
+
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of The Decade: 1990s</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Elton John</td>
+          <td>Candle in the Wind 1997</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Robson &amp; Jerome</td>
+          <td>Unchained Melody</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Wet Wet Wet</td>
+          <td>Love Is All Around</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>Aqua</td>
+          <td>Barbie Girl</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>Cher</td>
+          <td>Believe</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Bryan Adams</td>
+          <td>(Everything I Do) I Do It For You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>Various Artists</td>
+          <td>Perfect Day</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Britney Spears</td>
+          <td>Baby One More Time</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Puff Daddy &amp; Faith Evans</td>
+          <td>I&#39;ll Be Missing You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>Whitney Houston</td>
+          <td>I Will Always Love You</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1990</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Righteous Brothers</td>
+          <td>Unchained Melody</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Sinead O&#39;Connor</td>
+          <td>Nothing Compares 2U</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Elton John</td>
+          <td>Sacrifice / Healing Hands</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>Adamski</td>
+          <td>Killer</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>Vanilla Ice</td>
+          <td>Ice Ice Baby</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Maria McKee</td>
+          <td>Show Me Heaven</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>Beats International</td>
+          <td>Dub Be Good To Me</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Madonna</td>
+          <td>Vogue</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Englandneworder</td>
+          <td>World In Motion</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>Snap</td>
+          <td>The Power</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1991</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Bryan Adams</td>
+          <td>(Everything I Do) I Do It For You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Queen</td>
+          <td>Bohemian Rhapsody / These Are The Days of Our Lives</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Cher</td>
+          <td>Shoop Shoop Song (It&#39;s In His Kiss)</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>Right Said Fred</td>
+          <td>I&#39;m Too Sexy</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>Jason Donovan</td>
+          <td>Any Dream Will Do</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Chesney Hawkes</td>
+          <td>The One And Only</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>The Simpsons</td>
+          <td>Do The Bartman</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Vic Reeves &amp; The Wonderstuff</td>
+          <td>Dizzy</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Oceanic</td>
+          <td>Insanity</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>2 Unlimited</td>
+          <td>Get Ready For This</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1992</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Whitney Houston</td>
+          <td>I Will Always Love You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Snap</td>
+          <td>Rhythm Is A Dancer</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Charles &amp; Eddie</td>
+          <td>Would I Lie To You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>Shakespear&#39;s Sister</td>
+          <td>Stay</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>KWS</td>
+          <td>Please Don&#39;t Go</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Erasure</td>
+          <td>Abba-esque (EP)</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>Jimmy Nail</td>
+          <td>Ain&#39;t No Doubt</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Michael Jackson</td>
+          <td>Heal The World</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Boyz II Men</td>
+          <td>End Of The Road</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>Wet Wet Wet</td>
+          <td>Goodnight Girl</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1993</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Meat Loaf</td>
+          <td>I&#39;d Do Anything For Love (But I Won&#39;t Do That)</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>UB40</td>
+          <td>(I Can&#39;t Help) Falling In Love With You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Ace of Base</td>
+          <td>All That She Wants</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>2 Unlimited</td>
+          <td>No Limit</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>Gabrielle</td>
+          <td>Dreams</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Mr Blobby</td>
+          <td>Mr Blobby</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>Shaggy</td>
+          <td>Oh Carolina</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Haddaway</td>
+          <td>What Is Love</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Whitney Houston</td>
+          <td>I Will Always Love You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>Culture Beat</td>
+          <td>Mr Vain</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1994</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Wet Wet Wet</td>
+          <td>Love Is All Around</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Whigfield</td>
+          <td>Saturday Night</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Pato Banton</td>
+          <td>Baby Come Back</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>East 17</td>
+          <td>Stay Another Day</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>All-4-One</td>
+          <td>I Swear</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Mariah Carey</td>
+          <td>Without You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>Bon Jovi</td>
+          <td>Always</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Let Loose</td>
+          <td>Crazy For You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>D-Ream</td>
+          <td>Things Can Only Get Better</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>Ace Of Bass</td>
+          <td>The Sign</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1995</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Robson &amp; Jerome</td>
+          <td>Unchained Melody / White Cliffs of Dover</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Coolio featuring LV</td>
+          <td>Gangsta&#39;s Paradise</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Robson &amp; Jerome</td>
+          <td>I Believe</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>Take That</td>
+          <td>Back For Good</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>Celine Dion</td>
+          <td>Think Twice</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Simply Red</td>
+          <td>Fairground</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>Michael Jackson</td>
+          <td>You Are Not Alone</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Michael Jackson</td>
+          <td>Earth Song</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Everything But The Girl</td>
+          <td>Missing</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>Blur</td>
+          <td>Country House</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1996</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Fugees</td>
+          <td>Killing Me Softly</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Spice Girls</td>
+          <td>Wannabe</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Babylon Zoo</td>
+          <td>Spaceman</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>Spice Girls</td>
+          <td>Say You&#39;ll Be There</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>Mark Morrison</td>
+          <td>Return of the Mack</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Gina G</td>
+          <td>Ooh Ah Just A Little Bit</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>Baddiel &amp; Skinner &amp; The Lightning Seeds</td>
+          <td>Three Lions</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Robert Miles</td>
+          <td>Children</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Spice Girls</td>
+          <td>2 Become 1</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>Oasis</td>
+          <td>Don&#39;t Look Back In Anger</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1997</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Elton John</td>
+          <td>Candle In The Wind 1997 / Something About The Way You Look Tonight</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Aqua</td>
+          <td>Barbie Girl</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Puff Daddy &amp; Faith Evans + 112</td>
+          <td>I&#39;ll Be Missing You</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>Various</td>
+          <td>Perfect Day</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>Teletubbies</td>
+          <td>Teletubbies Say Eh-Oh!</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Will Smith</td>
+          <td>Men In Black</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>No Doubt</td>
+          <td>Don&#39;t Speak</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Natalie Imbruglia</td>
+          <td>Torn</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Chumbawamba</td>
+          <td>Tubthumping</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>Hanson</td>
+          <td>Mmm Bop</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1998</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Cher</td>
+          <td>Believe</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Celine Dion</td>
+          <td>My Heart Will Go On</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Run DMC vs Jason Nevins</td>
+          <td>It&#39;s Like That</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>Boyzone</td>
+          <td>No Matter What</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>B*Witched</td>
+          <td>C&#39;est La Vie</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>LeAnn Rimes</td>
+          <td>How Do I Live</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>Spice Girls</td>
+          <td>Goodbye</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Pras Michel</td>
+          <td>Ghetto Supastar (That Is What You Are)</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Chef (Isaac Hayes)</td>
+          <td>Chocolate Salty Balls</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>Savage Garden</td>
+          <td>Truly Madly Deeply</td>
+        </tr>
+        <tr class="xl65"><td></td><td colspan="20">&nbsp;</td></tr>
+        <tr class="xl67"><td></td><td colspan="20">Top Hits of 1999</td></tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;1</td>
+          <td>Britney Spears</td>
+          <td>Baby One More Time</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;2</td>
+          <td>Eiffel 65</td>
+          <td>Blue (Da Ba Dee)</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;3</td>
+          <td>Cliff Richard</td>
+          <td>The Millennium Prayer</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;4</td>
+          <td>Lou Bega</td>
+          <td>Mambo no. 5 (A Little Bit Of...)</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;5</td>
+          <td>ATB</td>
+          <td>9PM (Till I Come)</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;6</td>
+          <td>Ricky Martin</td>
+          <td>Livin&#39; La Vida Loca</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;7</td>
+          <td>Shania Twain</td>
+          <td>That Don&#39;t Impress Me Much</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;8</td>
+          <td>Shanks &amp; Bigfoot</td>
+          <td>Sweet Like Chocolate</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;9</td>
+          <td>Boyzone</td>
+          <td>When The Going Gets Tough</td>
+        </tr>
+        <tr class="xl65">
+          <td></td>
+          <td>&nbsp;</td>
+          <td>&#160;&#160;&#160;10</td>
+          <td>S Club 7</td>
+          <td>Bring It All Back</td>
+        </tr>
+</table>
+
+</body>
+
+</html>
+
+
+
+

@@ -1,0 +1,699 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+
+<a href="index.html" style="
+display:inline-block;
+padding:10px 15px;
+background:#D59BA7;
+color:D7CDAD;
+text-decoration:none;
+border-radius:5px;">Home </a>
+
+
+<style>
+:root{
+  --bg:#120715;
+  --bg2:#2a1030;
+  --paper:#fff9ea;
+  --paper2:#fff2c8;
+  --ink:#24121c;
+  --muted:#6d5061;
+  --plum:#4b1f52;
+  --pink:#d85aa3;
+  --gold:#e6c15a;
+  --line:rgba(36,18,28,.12);
+  --highlight:rgba(230,193,90,.18);
+}
+html,body{margin:0;padding:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#38163f 0%,#18091d 42%,#080408 100%);color:var(--ink)}
+body.modern-sheet{padding:18px 18px 30px;}
+body.modern-sheet::before{content:'';position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at top,rgba(255,255,255,.06),transparent 45%);}
+body.modern-sheet > table{position:relative;z-index:1;width:min(1280px,calc(100vw - 36px)) !important;table-layout:auto !important;margin:0 auto;background:var(--paper);border-collapse:separate !important;border-spacing:0;overflow:hidden;display:block;padding:0 20px 24px;border:1px solid rgba(255,255,255,.08);box-shadow:0 22px 60px rgba(0,0,0,.38)}
+body.modern-sheet col{width:auto !important;}
+body.modern-sheet tr{height:auto !important;}
+body.modern-sheet td{white-space:normal !important;padding:11px 14px !important;border-bottom:1px solid var(--line);font-size:15px;line-height:1.35;background:transparent;vertical-align:top;display:table-cell !important;}
+body.modern-sheet tr:hover td{background:rgba(216,90,163,.045);}
+body.modern-sheet tr:first-child td{border-bottom:none;background:transparent;padding:0 !important;height:0 !important;line-height:0 !important;font-size:0 !important;}
+body.modern-sheet td:first-child{display:none !important;}
+body.modern-sheet td:nth-child(2){width:84px;text-align:center;font-weight:800;color:#8a3d68;}
+body.modern-sheet td:nth-child(3){width:36%;font-weight:700;color:var(--ink);}
+body.modern-sheet td:nth-child(4){color:var(--muted);}
+body.modern-sheet tr.month-header td:first-child{display:none !important;}
+body.modern-sheet tr.month-header td[colspan]{display:block !important;width:calc(100% + 40px) !important;margin:28px -20px 0 !important;padding:18px 24px 16px !important;border:none !important;border-top:1px solid rgba(255,255,255,.08) !important;border-bottom:4px solid var(--gold) !important;border-radius:0 !important;background:linear-gradient(90deg,rgba(75,31,82,.96) 0%,rgba(59,19,64,.98) 55%,rgba(43,16,48,.98) 100%) !important;color:#f9eed2 !important;font-size:clamp(24px,3vw,38px) !important;line-height:1.08;font-weight:900;letter-spacing:.04em;text-transform:uppercase;text-align:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.12);}
+body.modern-sheet tr.month-header + tr td{background:linear-gradient(180deg,var(--paper2),#f9eab8) !important;font-size:13px !important;text-transform:uppercase;letter-spacing:.12em;color:#5a3b46 !important;font-weight:800;position:sticky;top:76px;z-index:2;border-bottom:2px solid rgba(36,18,28,.16);padding-top:9px !important;padding-bottom:9px !important;display:table-cell !important;white-space:nowrap !important;}
+body.modern-sheet tr.month-header + tr td:nth-child(2){text-align:center !important;color:#5a3b46 !important;width:84px;}
+body.modern-sheet tr.month-header + tr td:nth-child(3){text-align:left !important;width:36%;}
+body.modern-sheet tr.month-header + tr td:nth-child(4){text-align:left !important;width:auto;}
+body.modern-sheet tr.top-track td{background:linear-gradient(90deg,var(--highlight),rgba(230,193,90,.05));}
+body.modern-sheet tr.top-track td:nth-child(2){color:#9a6a11;font-weight:900;}
+body.modern-sheet .sheet-toolbar{position:sticky;top:0;z-index:9;width:min(1280px,calc(100vw - 36px));margin:0 auto 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:rgba(33,11,37,.96);border:1px solid rgba(255,255,255,.10);box-shadow:0 14px 40px rgba(0,0,0,.35);padding:10px 16px;border-radius:14px;backdrop-filter:blur(8px);}
+body.modern-sheet .sheet-year{font-size:16px;font-weight:800;color:#f7e8b7;letter-spacing:.04em;text-transform:uppercase;}
+body.modern-sheet .month-links{display:flex;gap:8px;flex-wrap:wrap;}
+body.modern-sheet .month-links a{color:#f7e8b7;text-decoration:none;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;transition:.15s ease;}
+body.modern-sheet .month-links a:hover{background:rgba(216,90,163,.12);border-color:rgba(216,90,163,.35);transform:translateY(-1px);}
+@media (max-width: 760px){
+  body.modern-sheet{padding:10px 10px 24px;}
+  body.modern-sheet > table,.sheet-toolbar{width:calc(100vw - 20px) !important;}
+  body.modern-sheet > table{padding:0 10px 18px;}
+  body.modern-sheet td{font-size:13px;padding:9px 8px !important;}
+  body.modern-sheet td:nth-child(2){width:54px;}
+  body.modern-sheet .sheet-year{font-size:14px;}
+  body.modern-sheet tr.month-header + tr td{top:104px;font-size:11px !important;letter-spacing:.08em;}
+  body.modern-sheet tr.month-header td[colspan]{width:calc(100% + 20px) !important;margin:22px -10px 0 !important;padding:14px 14px 12px !important;font-size:clamp(20px,7vw,30px) !important;}
+}
+</style>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const rows = Array.from(document.querySelectorAll('body.modern-sheet table tr'));
+  const monthLinks = [];
+  let currentSection = null;
+  rows.forEach((row) => {
+    const titleCell = row.querySelector('.xl66,.xl67');
+    if (titleCell && /Top 40 Hits of/i.test(titleCell.textContent)) {
+      row.classList.add('month-header');
+      const slug = titleCell.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+      row.id = slug;
+      const monthMatch = titleCell.textContent.match(/Top 40 Hits of (.+)$/i);
+      const label = monthMatch ? monthMatch[1] : titleCell.textContent.trim();
+      monthLinks.push({href:'#'+slug,label});
+      currentSection = row;
+      return;
+    }
+    if (!currentSection) return;
+    const cells = row.querySelectorAll('td');
+    if (cells.length >= 4) {
+      const pos = (cells[1].textContent || '').trim();
+      const artist = (cells[2].textContent || '').trim();
+      const title = (cells[3].textContent || '').trim();
+      if (/^1$/.test(pos) && artist && title) row.classList.add('top-track');
+    }
+  });
+  const toolbar = document.createElement('div');
+  toolbar.className = 'sheet-toolbar';
+  toolbar.innerHTML = '<div class="sheet-year">UK Music Charts - 1963</div><div class="month-links"></div>';
+  const linksWrap = toolbar.querySelector('.month-links');
+  monthLinks.forEach(item => {
+    const a = document.createElement('a');
+    a.href = item.href;
+    a.textContent = item.label;
+    linksWrap.appendChild(a);
+  });
+  document.body.prepend(toolbar);
+});
+</script>
+
+<title>UK Music Charts 1963 - Retro Edition</title>
+</head>
+
+<body class="xl65 modern-sheet">
+
+<div style="position:sticky;top:0;background:#111;padding:12px;z-index:999;border-bottom:2px solid #444;">
+  <input
+    type="text"
+    id="chartSearch"
+    placeholder="Search artist or song title..."
+    onkeyup="searchChart()"
+    style="width:320px;padding:8px;font-size:16px;"
+  >
+
+  <button onclick="clearSearch()" style="padding:8px 12px;font-size:16px;">
+    Clear
+  </button>
+
+  <span id="searchCount" style="margin-left:12px;color:white;font-family:Arial;">
+  </span>
+</div>
+
+<script>
+function searchChart() {
+  const searchText = document.getElementById("chartSearch").value.toLowerCase().trim();
+  const words = searchText.split(/\s+/).filter(Boolean);
+  const rows = document.querySelectorAll("tr");
+  let visibleCount = 0;
+
+  rows.forEach(row => {
+    const cells = row.querySelectorAll("td");
+
+    if (cells.length < 4) {
+      return;
+    }
+
+    const artist = cells[2].innerText.toLowerCase();
+    const title = cells[3].innerText.toLowerCase();
+    const rowText = artist + " " + title;
+
+    const match = words.every(word => rowText.includes(word));
+
+    if (searchText === "" || match) {
+      row.style.display = "";
+      visibleCount++;
+    } else {
+      row.style.display = "none";
+    }
+  });
+
+  document.getElementById("searchCount").innerText =
+    searchText === "" ? "" : visibleCount + " matching row(s)";
+}
+
+function clearSearch() {
+  document.getElementById("chartSearch").value = "";
+  searchChart();
+}
+</script>
+
+<table border=0 cellpadding=0 cellspacing=0 width=744 style='border-collapse:
+ collapse;table-layout:fixed;width:558pt'>
+
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of January 1963</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Cliff Richard</td><td>The Next Time / Bachelor Boy</td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>The Shadows</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD2/215%20-%20The%20Shadows%20-%20Dance%20On.mp3">Dance On!</a></td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/23%20Return%20to%20Sender.mp3">Return To Sender</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Maureen Evans</td><td>Like I Do</td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Frank Ifield</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD3/309%20-%20Frank%20Ifield%20-%20Lovesick%20Blues.mp3">Lovesick Blues</a></td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Duane Eddy</td><td>Dance With The Guitar Man</td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Jet Harris &amp; Tony Meehan</td><td>Diamonds</td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>Mark Wynter</td><td>Go Away Little Girl</td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Rolf Harris</td><td>Sun Arise</td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>The Tornados</td><td>Globetrotter</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Kenny Lynch</td><td>Up On The Roof</td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Joe Brown</td><td>It Only Took A Minute</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Susan Maughan</td><td>Bobby&#39;s Girl</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Mike Berry &amp; The Outlaws</td><td>Don&#39;t You Think It&#39;s Time</td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>The Tornados</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD2/218%20-%20The%20Tornados%20-%20Telstar.mp3">Telstar</a></td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Chris Montez</td><td>Let&#39;s Dance</td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>The Springfields</td><td>Island Of Dreams</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Mel Torme</td><td>Coming Home Baby</td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Del Shannon</td><td>Swiss Maid</td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Ray Charles</td><td>Your Cheating Heart</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Stan Getz &amp; Charlie Byrd</td><td>Desafinado</td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>The Crystals</td><td>He&#39;s A Rebel</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Bobby Vee</td><td>A Forever Kind Of Love</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Del Shannon</td><td>Little Town Flirt</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>The Beatles</td><td><a href="Music/Beatles/1962%20-%201966/Beatles-1962%201966%20Cd1-Love%20Me%20Do.Mp3">Love Me Do</a></td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Tijuana Brass</td><td>The Lonely Bull (El Solo Torro)</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Chris Montez</td><td>Some Kinda Fun</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Pat Boone</td><td>The Main Attraction</td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Frank Sinatra &amp; Sammy Davis Jr</td><td>Me And My Shadow</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Mike Sarne</td><td>Just For Kicks</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Brenda Lee</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201962/026%20-%20All%20Alone%20Am%20I%20-%20Brenda%20Lee.mp3">All Alone Am I</a></td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>The Four Seasons</td><td>Big Girls Don&#39;t Cry</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Marty Robbins</td><td>Devil Woman</td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>The Routers</td><td>Let&#39;s Go</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>The Vernons Girls</td><td>Funny All Over</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>Joe Loss Orchestra</td><td>Must Be Madison</td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Little Eva</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201962/085%20-%20Keep%20Your%20Hands%20Of%20My%20Baby%20-%20Little%20Eva.mp3">Keep Your Hands Off My Baby</a></td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Hank Locklin</td><td>We&#39;re Gonna Go Fishin&#39;</td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Frank Ifield</td><td><a href="Music/Greatest%20Crooners/disc%203/Various%20-%20The%20Greatest%20Crooners%20CD3/13%20-%20Frank%20Ifield_%20The%20wayward%20wind.mp3">Wayward Wind</a></td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Kenny Ball &amp; His Jazzmen</td><td>Sukiyaki</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of February 1963</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Jet Harris &amp; Tony Meehan</td><td>Diamonds</td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Frank Ifield</td><td><a href="Music/Greatest%20Crooners/disc%203/Various%20-%20The%20Greatest%20Crooners%20CD3/13%20-%20Frank%20Ifield_%20The%20wayward%20wind.mp3">Wayward Wind</a></td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Cliff Richard</td><td>The Next Time / Bachelor Boy</td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>The Beatles</td><td><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/438%20-%20The%20Beatles%20-%20Please%20Please%20Me.Mp3">Please Please Me</a></td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Del Shannon</td><td>Little Town Flirt</td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Maureen Evans</td><td>Like I Do</td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Mike Berry &amp; The Outlaws</td><td>Don&#39;t You Think It&#39;s Time</td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>The Tornados</td><td>Globetrotter</td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>The Shadows</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD2/215%20-%20The%20Shadows%20-%20Dance%20On.mp3">Dance On!</a></td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Brenda Lee</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201962/026%20-%20All%20Alone%20Am%20I%20-%20Brenda%20Lee.mp3">All Alone Am I</a></td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Frankie Vaughan</td><td>Loop-De-Loop</td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>The Springfields</td><td>Island Of Dreams</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Kenny Ball &amp; His Jazzmen</td><td>Sukiyaki</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>The Four Seasons</td><td>Big Girls Don&#39;t Cry</td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Chris Montez</td><td>Some Kinda Fun</td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Bobby Vee</td><td><a href="Music/Bobby%20Vee/bobby%20vee%20-%20the%20night%20has%20a%20thousand%20eyes.wma">The Night Has A Thousand Eyes</a></td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Mr Acker Bilk</td><td>A Taste Of Honey</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/23%20Return%20to%20Sender.mp3">Return To Sender</a></td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>The Rooftop Singers</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/17%20-%20Walk%20Right%20In%20-%20Rooftop%20Singers.mp3">Walk Right In</a></td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>The Crickets</td><td>My Little Girl</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Kenny Lynch</td><td>Up On The Roof</td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Mark Wynter</td><td>Go Away Little Girl</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>The Spotnicks</td><td>Hava Nagila</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Rick Nelson</td><td>It&#39;s Up To You</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>The Bachelors</td><td>Charmaine</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Chucks</td><td>Loo-Be-Loo</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Mel Torme</td><td>Coming Home Baby</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>David Thorne</td><td>The Alley Cat Song</td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Duane Eddy</td><td>Dance With The Guitar Man</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Joe Brown</td><td>That&#39;s What Love Will Do</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Adam Faith</td><td><a href="Music/Now%20That%27s%20What%20I%20Call%20Music/now%2029/Now%2029%20%28CD%201%29/09_Various_True%20Faith%20%2784.mp3">What Now</a></td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Marty Robbins</td><td>Ruby Ann</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Eydie Gorme</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/054%20-%20Blame%20It%20On%20The%20Bossa%20Nova%20-%20Edie%20Gorme.mp3">Blame It On The Bossa Nova</a></td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Tijuana Brass</td><td>The Lonely Bull (El Solo Torro)</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Billie Davis</td><td>Tell Him</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>Frank Ifield</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD3/309%20-%20Frank%20Ifield%20-%20Lovesick%20Blues.mp3">Lovesick Blues</a></td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Mike Sarne</td><td>Just For Kicks</td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>The Vernons Girls</td><td>Funny All Over</td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>The Crystals</td><td>He&#39;s A Rebel</td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>The Tornados</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD2/218%20-%20The%20Tornados%20-%20Telstar.mp3">Telstar</a></td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of March 1963</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Cliff Richard</td><td>Summer Holiday</td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>The Beatles</td><td><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/438%20-%20The%20Beatles%20-%20Please%20Please%20Me.Mp3">Please Please Me</a></td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Frank Ifield</td><td><a href="Music/Greatest%20Crooners/disc%203/Various%20-%20The%20Greatest%20Crooners%20CD3/13%20-%20Frank%20Ifield_%20The%20wayward%20wind.mp3">Wayward Wind</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Joe Brown</td><td>That&#39;s What Love Will Do</td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>The Shadows</td><td>Foot Tapper</td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Billy Fury</td><td>Like I&#39;ve Never Been Gone</td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Bobby Vee</td><td><a href="Music/Bobby%20Vee/bobby%20vee%20-%20the%20night%20has%20a%20thousand%20eyes.wma">The Night Has A Thousand Eyes</a></td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>The Springfields</td><td>Island Of Dreams</td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>The Bachelors</td><td>Charmaine</td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Jet Harris &amp; Tony Meehan</td><td>Diamonds</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Frankie Vaughan</td><td>Loop-De-Loop</td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Paul &amp; Paula</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%203%20of%203/The%20Best%20Rock%20N%20Roll%20Love%20Songs%20In%20The%20World%20Ever/CD%202/16%20-%20Paul%20And%20Paula%20-%20Hey%20Paula.mp3">Hey Paula</a></td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Ned Miller</td><td>From A Jack To A King</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Billie Davis</td><td>Tell Him</td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>The Rooftop Singers</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/17%20-%20Walk%20Right%20In%20-%20Rooftop%20Singers.mp3">Walk Right In</a></td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/18%20of%2050%20-%20%5BDouble%20Feature%5D%20It%20Happened%20at%20the%20World%27s%20Fair%20-%20Fun%20In%20Acapulco/05%20-%20one%20broken%20heart%20for%20sale%20%5Bfilm%20version%5D.mp3">One Broken Heart For Sale</a></td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Del Shannon</td><td>Little Town Flirt</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Brenda Lee</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201962/026%20-%20All%20Alone%20Am%20I%20-%20Brenda%20Lee.mp3">All Alone Am I</a></td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Cascades</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20IV/CD%202/20%20-%20The%20Cascades%20-%20The%20Rhythm%20Of%20The%20Rain.mp3">Rhythm Of The Rain</a></td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Kenny Ball &amp; His Jazzmen</td><td>Sukiyaki</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>The Spotnicks</td><td>Hava Nagila</td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Ronnie Carroll</td><td>Say Wonderful Things</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Richard Chamberlain</td><td>Hi-Lili Hi-Lo</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>John Leyton</td><td>Cupboard Love</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Cliff Richard</td><td>The Next Time / Bachelor Boy</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Maureen Evans</td><td>Like I Do</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Roy Orbison</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20IV/CD%202/01%20-%20Roy%20Orbison%20-%20In%20Dreams.mp3">In Dreams</a></td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Little Eva</td><td>Let&#39;s Turkey Trot</td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Duane Eddy</td><td>Boss Guitar</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>The Tornados</td><td>Globetrotter</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Gerry &amp; The Pacemakers</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD1/101%20-%20Gerry%20%26%20The%20Pacemakers%20-%20How%20Do%20You%20Do%20It.mp3">How Do You Do It?</a></td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Steve Race</td><td>Pied Piper (The Beeje)</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Buddy Holly</td><td><a href="Music/Buddy%20Holly/The%20Rock%20%27n%27%20Roll%20Era%20-%20Buddy%20Holly/12%20%20brown%20eyed%20handsome%20man.wma">Brown-Eyed Handsome Man</a></td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Mike Berry &amp; The Outlaws</td><td>Don&#39;t You Think It&#39;s Time</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Mr Acker Bilk</td><td>A Taste Of Honey</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>The Cougars</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Air%20Guitar%20Album%20In%20The%20World%20Ever%20II/CD%202/14%20-%20The%20Cougars%20-%20Saturday%20Nite%20At%20The%20Duck-Pond.mp3">Saturday Night At The Duck Pond</a></td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>The Crickets</td><td>My Little Girl</td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>The Four Seasons</td><td>Big Girls Don&#39;t Cry</td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>The Shadows</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD2/215%20-%20The%20Shadows%20-%20Dance%20On.mp3">Dance On!</a></td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Frank Sinatra With Count Basie</td><td>My Kind Of Girl</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of April 1963</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Gerry &amp; The Pacemakers</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD1/101%20-%20Gerry%20%26%20The%20Pacemakers%20-%20How%20Do%20You%20Do%20It.mp3">How Do You Do It?</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Ned Miller</td><td>From A Jack To A King</td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Cliff Richard</td><td>Summer Holiday</td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>The Shadows</td><td>Foot Tapper</td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Buddy Holly</td><td><a href="Music/Buddy%20Holly/The%20Rock%20%27n%27%20Roll%20Era%20-%20Buddy%20Holly/12%20%20brown%20eyed%20handsome%20man.wma">Brown-Eyed Handsome Man</a></td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Cascades</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20IV/CD%202/20%20-%20The%20Cascades%20-%20The%20Rhythm%20Of%20The%20Rain.mp3">Rhythm Of The Rain</a></td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Tommy Roe</td><td>The Folk Singer</td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>The Springfields</td><td>Say I Won&#39;t Be There</td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>The Beatles</td><td><a href="Music/Beatles/1962%20-%201966/Beatles-1962%201966%20Cd1-From%20Me%20To%20You.Mp3">From Me To You</a></td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Ronnie Carroll</td><td>Say Wonderful Things</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Roy Orbison</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20IV/CD%202/01%20-%20Roy%20Orbison%20-%20In%20Dreams.mp3">In Dreams</a></td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Billy Fury</td><td>Like I&#39;ve Never Been Gone</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>The Bachelors</td><td>Charmaine</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Frank Ifield</td><td>Nobody&#39;s Darlin&#39; But Mine</td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Andy Williams</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever/CD%201/24%20-%20Andy%20Williams%20-%20%20Can%27t%20Get%20Used%20To%20Losing%20You.mp3">Can&#39;t Get Used To Losing You</a></td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>The Four Seasons</td><td>Walk Like A Man</td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Little Eva</td><td>Let&#39;s Turkey Trot</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>The Springfields</td><td>Island Of Dreams</td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Joe Brown</td><td>That&#39;s What Love Will Do</td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Skeeter Davis</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/020%20-%20The%20End%20Of%20The%20World%20-%20Skeeter%20Davis.mp3">End Of The World</a></td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>The Beatles</td><td><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/438%20-%20The%20Beatles%20-%20Please%20Please%20Me.Mp3">Please Please Me</a></td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Brenda Lee</td><td>Losing You</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>The Tornados</td><td>Robot</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Paul &amp; Paula</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%203%20of%203/The%20Best%20Rock%20N%20Roll%20Love%20Songs%20In%20The%20World%20Ever/CD%202/16%20-%20Paul%20And%20Paula%20-%20Hey%20Paula.mp3">Hey Paula</a></td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>The Everly Brothers</td><td>So It Will Always Be</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Johnny Cymbal</td><td>Mr Bass Man</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Julie Grant</td><td>Count On Me</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>John Leyton</td><td>Cupboard Love</td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Billie Davis</td><td>Tell Him</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Mike Sarne</td><td>Code Of Love</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>The Chiffons</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20IV/CD%201/25%20-%20The%20Chiffons%20-%20He%27s%20So%20Fine.mp3">He&#39;s So Fine</a></td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Bobby Vee</td><td><a href="Music/Bobby%20Vee/bobby%20vee%20-%20the%20night%20has%20a%20thousand%20eyes.wma">The Night Has A Thousand Eyes</a></td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/18%20of%2050%20-%20%5BDouble%20Feature%5D%20It%20Happened%20at%20the%20World%27s%20Fair%20-%20Fun%20In%20Acapulco/05%20-%20one%20broken%20heart%20for%20sale%20%5Bfilm%20version%5D.mp3">One Broken Heart For Sale</a></td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Don Spencer</td><td>Fireball</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Karl Denver</td><td>Can You Forgive Me</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>Brenda Lee</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201962/026%20-%20All%20Alone%20Am%20I%20-%20Brenda%20Lee.mp3">All Alone Am I</a></td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Ruby &amp; The Romantics</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/028%20-%20Our%20Day%20Will%20Come%20-%20Ruby%20%26%20The%20Romantics.mp3">Our Day Will Come</a></td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Frank Ifield</td><td><a href="Music/Greatest%20Crooners/disc%203/Various%20-%20The%20Greatest%20Crooners%20CD3/13%20-%20Frank%20Ifield_%20The%20wayward%20wind.mp3">Wayward Wind</a></td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Mike Berry &amp; The Outlaws</td><td>My Little Baby</td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>The Big Three</td><td>Some Other Guy</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of May 1963</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>The Beatles</td><td><a href="Music/Beatles/1962%20-%201966/Beatles-1962%201966%20Cd1-From%20Me%20To%20You.Mp3">From Me To You</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Gerry &amp; The Pacemakers</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD1/101%20-%20Gerry%20%26%20The%20Pacemakers%20-%20How%20Do%20You%20Do%20It.mp3">How Do You Do It?</a></td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Andy Williams</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever/CD%201/24%20-%20Andy%20Williams%20-%20%20Can%27t%20Get%20Used%20To%20Losing%20You.mp3">Can&#39;t Get Used To Losing You</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Jet Harris &amp; Tony Meehan</td><td>Scarlett O&#39;Hara</td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Ned Miller</td><td>From A Jack To A King</td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Billy J Kramer &amp; The Dakotas</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD2/209%20-%20Billy%20J%20Kramer%20%26%20The%20Dakotas%20-%20Do%20You%20Want%20To%20Know%20A%20Secret.mp3">Do You Want To Know A Secret?</a></td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Roy Orbison</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20IV/CD%202/01%20-%20Roy%20Orbison%20-%20In%20Dreams.mp3">In Dreams</a></td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>Frank Ifield</td><td>Nobody&#39;s Darlin&#39; But Mine</td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Del Shannon</td><td>Two Kinds Of Teardrops</td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>The Springfields</td><td>Say I Won&#39;t Be There</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Cliff Richard</td><td>Lucky Lips</td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Brenda Lee</td><td>Losing You</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Paul &amp; Paula</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/096%20-%20Young%20Lovers%20-%20Paul%20%26%20Paula.mp3">Young Lovers</a></td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Buddy Holly</td><td><a href="Music/Buddy%20Holly/The%20Rock%20%27n%27%20Roll%20Era%20-%20Buddy%20Holly/12%20%20brown%20eyed%20handsome%20man.wma">Brown-Eyed Handsome Man</a></td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Cascades</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20IV/CD%202/20%20-%20The%20Cascades%20-%20The%20Rhythm%20Of%20The%20Rain.mp3">Rhythm Of The Rain</a></td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Wink Martindale</td><td>Deck Of Cards</td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Tommy Roe</td><td>The Folk Singer</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>The Chiffons</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20IV/CD%201/25%20-%20The%20Chiffons%20-%20He%27s%20So%20Fine.mp3">He&#39;s So Fine</a></td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>The Four Seasons</td><td>Walk Like A Man</td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>The Shadows</td><td>Foot Tapper</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Cliff Richard</td><td>Summer Holiday</td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Ronnie Carroll</td><td>Say Wonderful Things</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Kenny Ball &amp; His Jazzmen</td><td>Casablanca</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>The Chantays</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/042%20-%20Pipeline%20-%20Chantays.mp3">Pipeline</a></td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Billy Fury</td><td>When Will You Say I Love You</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Skeeter Davis</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/020%20-%20The%20End%20Of%20The%20World%20-%20Skeeter%20Davis.mp3">End Of The World</a></td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Eddie Cochran</td><td>My Way</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>The Bachelors</td><td>Charmaine</td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>The Tornados</td><td>Robot</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Freddie &amp; The Dreamers</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD8/802%20-%20Freddie%20%26%20The%20Dreamers%20-%20If%20You%20Gotta%20Make%20A%20Fool%20Of%20Somebo.mp3">If You Gotta Make A Fool Of Somebody</a></td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Billy Fury</td><td>Like I&#39;ve Never Been Gone</td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>The Springfields</td><td>Island Of Dreams</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>The Everly Brothers</td><td>So It Will Always Be</td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Little Eva</td><td>Let&#39;s Turkey Trot</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Ray Charles</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/089%20-%20Take%20These%20Chains%20From%20My%20Heart%20-%20Ray%20Charles.mp3">Take These Chains From My Heart</a></td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>James Gilreath</td><td>Little Band Of Gold</td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>The Spotnicks</td><td>Just Listen To My Heart</td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Julie Grant</td><td>Count On Me</td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Helen Shapiro</td><td>Woe Is Me</td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Petula Clark</td><td>Casanova / Chariot</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of June 1963</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>The Beatles</td><td><a href="Music/Beatles/1962%20-%201966/Beatles-1962%201966%20Cd1-From%20Me%20To%20You.Mp3">From Me To You</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Gerry &amp; The Pacemakers</td><td>I Like It</td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Billy J Kramer &amp; The Dakotas</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD2/209%20-%20Billy%20J%20Kramer%20%26%20The%20Dakotas%20-%20Do%20You%20Want%20To%20Know%20A%20Secret.mp3">Do You Want To Know A Secret?</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Freddie &amp; The Dreamers</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD8/802%20-%20Freddie%20%26%20The%20Dreamers%20-%20If%20You%20Gotta%20Make%20A%20Fool%20Of%20Somebo.mp3">If You Gotta Make A Fool Of Somebody</a></td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Billy Fury</td><td>When Will You Say I Love You</td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Jet Harris &amp; Tony Meehan</td><td>Scarlett O&#39;Hara</td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Ray Charles</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/089%20-%20Take%20These%20Chains%20From%20My%20Heart%20-%20Ray%20Charles.mp3">Take These Chains From My Heart</a></td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>The Shadows</td><td>Atlantis</td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Wink Martindale</td><td>Deck Of Cards</td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Cliff Richard</td><td>Lucky Lips</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Del Shannon</td><td>Two Kinds Of Teardrops</td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Roy Orbison</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20IV/CD%202/01%20-%20Roy%20Orbison%20-%20In%20Dreams.mp3">In Dreams</a></td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Andy Williams</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever/CD%201/24%20-%20Andy%20Williams%20-%20%20Can%27t%20Get%20Used%20To%20Losing%20You.mp3">Can&#39;t Get Used To Losing You</a></td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Paul &amp; Paula</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/096%20-%20Young%20Lovers%20-%20Paul%20%26%20Paula.mp3">Young Lovers</a></td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Roy Orbison</td><td>Falling</td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Buddy Holly</td><td><a href="Music/Buddy%20Holly/The%20Rock%20%27n%27%20Roll%20Era%20-%20Buddy%20Holly/07%20%20bo%20diddley.wma">Bo Diddley</a></td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Frank Ifield</td><td>Nobody&#39;s Darlin&#39; But Mine</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Bobby Rydell</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201964/30%20-%20Forget%20Him%20-%20Bobby%20Rydell.mp3">Forget Him</a></td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Gerry &amp; The Pacemakers</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD1/101%20-%20Gerry%20%26%20The%20Pacemakers%20-%20How%20Do%20You%20Do%20It.mp3">How Do You Do It?</a></td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>The Chantays</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/042%20-%20Pipeline%20-%20Chantays.mp3">Pipeline</a></td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Brenda Lee</td><td>Losing You</td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Ned Miller</td><td>From A Jack To A King</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Benny Hill</td><td>Harvest Of Love</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>The Tornados</td><td>Ice Cream Man</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Sam Cooke</td><td><a href="Music/Sam%20Cooke/The%20Man%20And%20His%20Music/16%20Another%20Saturday%20Night.mp3">Another Saturday Night</a></td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Jim Reeves</td><td>Welcome To My World</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>The Chiffons</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20IV/CD%201/25%20-%20The%20Chiffons%20-%20He%27s%20So%20Fine.mp3">He&#39;s So Fine</a></td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>The Hollies</td><td>Just Like Me</td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Frank Ifield</td><td>Confessin&#39;</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>The Springfields</td><td>Say I Won&#39;t Be There</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Buddy Holly</td><td><a href="Music/Buddy%20Holly/The%20Rock%20%27n%27%20Roll%20Era%20-%20Buddy%20Holly/12%20%20brown%20eyed%20handsome%20man.wma">Brown-Eyed Handsome Man</a></td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Kenny Ball &amp; His Jazzmen</td><td>Casablanca</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>James Gilreath</td><td>Little Band Of Gold</td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Eddie Cochran</td><td>My Way</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Mark Wynter</td><td>Shy Girl</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>The Crystals</td><td><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/114%20-%20The%20Crystals%20-%20Da%20Doo%20Ron%20Ron%20%28When%20He%20Walked%20Me%20Home%29.mp3">Da Doo Ron Ron</a></td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Lesley Gore</td><td><a href="Music/Singles%20By%20Decade/80%27s%20Greatest%20Hits/Top%201000%20Pop%20Hits%20of%20the%2080s%20%284.32gb%29/Lesley%20Gore%20-%20It%27s%20My%20Party.mp3">It&#39;s My Party</a></td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>The Everly Brothers</td><td>It&#39;s Been Nice</td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Kenny Ball &amp; His Jazzmen</td><td>Rondo</td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Bobby Vee</td><td>Bobby Tomorrow</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of July 1963</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Frank Ifield</td><td>Confessin&#39;</td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Gerry &amp; The Pacemakers</td><td>I Like It</td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/24%20%28You%27re%20The%29%20Devil%20in%20Disguise.mp3">Devil In Disguise</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>The Shadows</td><td>Atlantis</td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Ray Charles</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/089%20-%20Take%20These%20Chains%20From%20My%20Heart%20-%20Ray%20Charles.mp3">Take These Chains From My Heart</a></td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>The Searchers</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20II/CD%201/11%20-%20The%20Searchers%20-%20Sweets%20For%20My%20Sweet.mp3">Sweets For My Sweet</a></td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>The Crystals</td><td><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/114%20-%20The%20Crystals%20-%20Da%20Doo%20Ron%20Ron%20%28When%20He%20Walked%20Me%20Home%29.mp3">Da Doo Ron Ron</a></td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>Buddy Holly</td><td><a href="Music/Buddy%20Holly/The%20Rock%20%27n%27%20Roll%20Era%20-%20Buddy%20Holly/07%20%20bo%20diddley.wma">Bo Diddley</a></td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Wink Martindale</td><td>Deck Of Cards</td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Jim Reeves</td><td>Welcome To My World</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Brian Poole &amp; The Tremeloes</td><td><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/244%20-%20The%20Beatles%20-%20Twist%20And%20Shout.Mp3">Twist And Shout</a></td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Lesley Gore</td><td><a href="Music/Singles%20By%20Decade/80%27s%20Greatest%20Hits/Top%201000%20Pop%20Hits%20of%20the%2080s%20%284.32gb%29/Lesley%20Gore%20-%20It%27s%20My%20Party.mp3">It&#39;s My Party</a></td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Freddie &amp; The Dreamers</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD8/802%20-%20Freddie%20%26%20The%20Dreamers%20-%20If%20You%20Gotta%20Make%20A%20Fool%20Of%20Somebo.mp3">If You Gotta Make A Fool Of Somebody</a></td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Roy Orbison</td><td>Falling</td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>The Beatles</td><td><a href="Music/Beatles/1962%20-%201966/Beatles-1962%201966%20Cd1-From%20Me%20To%20You.Mp3">From Me To You</a></td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Kyu Sakamoto</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/10%20-%20Sukiyaki%20-%20Kyu%20Sakamoto.mp3">Sukiyaki</a></td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Bobby Rydell</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201964/30%20-%20Forget%20Him%20-%20Bobby%20Rydell.mp3">Forget Him</a></td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Billy J Kramer &amp; The Dakotas</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD2/209%20-%20Billy%20J%20Kramer%20%26%20The%20Dakotas%20-%20Do%20You%20Want%20To%20Know%20A%20Secret.mp3">Do You Want To Know A Secret?</a></td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Kenny Lynch</td><td>You Can Never Stop Me Loving You</td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Billy Fury</td><td>When Will You Say I Love You</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Roy Orbison</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20IV/CD%202/01%20-%20Roy%20Orbison%20-%20In%20Dreams.mp3">In Dreams</a></td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Cliff Richard</td><td>Lucky Lips</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Frankie Vaughan</td><td>Hey Mama</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Bobby Vee</td><td>Bobby Tomorrow</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>The Tornados</td><td>Ice Cream Man</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Kenny Ball &amp; His Jazzmen</td><td>Rondo</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Joe Brown</td><td>Nature&#39;s Time For Love</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Brenda Lee</td><td>I Wonder</td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Adam Faith</td><td>Walkin&#39; Tall</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Sam Cooke</td><td><a href="Music/Sam%20Cooke/The%20Man%20And%20His%20Music/16%20Another%20Saturday%20Night.mp3">Another Saturday Night</a></td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>The Dakotas</td><td>The Cruel Sea</td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Jet Harris &amp; Tony Meehan</td><td>Scarlett O&#39;Hara</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Karl Denver</td><td>Indian Love Call</td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Ken Thorne</td><td>Theme From &#39;the Legions Last Patrol&#39;</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>The Hollies</td><td>Just Like Me</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>The Big Three</td><td><a href="Music/Singles%20By%20Decade/80%27s%20Greatest%20Hits/Top%201000%20Pop%20Hits%20of%20the%2080s%20%284.32gb%29/Big%20Mountain%20-%20Baby%2C%20I%20Love%20Your%20Way.mp3">By The Way</a></td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Frank Ifield</td><td>Nobody&#39;s Darlin&#39; But Mine</td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>The Swinging Blue Jeans</td><td>It&#39;s Too Late Now</td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Del Shannon</td><td>Two Kinds Of Teardrops</td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Paul &amp; Paula</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/096%20-%20Young%20Lovers%20-%20Paul%20%26%20Paula.mp3">Young Lovers</a></td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of August 1963</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>The Searchers</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20II/CD%201/11%20-%20The%20Searchers%20-%20Sweets%20For%20My%20Sweet.mp3">Sweets For My Sweet</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Frank Ifield</td><td>Confessin&#39;</td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Billy J Kramer &amp; The Dakotas</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD3/305%20-%20Billy%20J%20Kramer%20%26%20The%20Dakotas%20-%20Bad%20To%20Me.mp3">Bad To Me</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/24%20%28You%27re%20The%29%20Devil%20in%20Disguise.mp3">Devil In Disguise</a></td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Brian Poole &amp; The Tremeloes</td><td><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/244%20-%20The%20Beatles%20-%20Twist%20And%20Shout.Mp3">Twist And Shout</a></td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>The Crystals</td><td><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/114%20-%20The%20Crystals%20-%20Da%20Doo%20Ron%20Ron%20%28When%20He%20Walked%20Me%20Home%29.mp3">Da Doo Ron Ron</a></td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Ken Thorne</td><td>Theme From &#39;the Legions Last Patrol&#39;</td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>Billy Fury</td><td><a href="Music/Bily%20Fury/billy%20fury%20-%20in%20summer%20.wma">In Summer</a></td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Freddie &amp; The Dreamers</td><td>I&#39;m Telling You Now</td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Kyu Sakamoto</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/10%20-%20Sukiyaki%20-%20Kyu%20Sakamoto.mp3">Sukiyaki</a></td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>The Surfaris</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Air%20Guitar%20Album%20In%20The%20World%20Ever/CD%201/14%20-%20The%20Surfaris%20-%20Wipe%20Out.mp3">Wipe Out</a></td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>The Shadows</td><td>Atlantis</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Johnny Kidd &amp; The Pirates</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD3/312%20-%20Johnny%20Kidd%20%26%20The%20Pirates%20-%20I%27ll%20Never%20Get%20Over%20You.mp3">I&#39;ll Never Get Over You</a></td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Gerry &amp; The Pacemakers</td><td>I Like It</td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Jim Reeves</td><td>Welcome To My World</td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Kenny Lynch</td><td>You Can Never Stop Me Loving You</td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Lesley Gore</td><td><a href="Music/Singles%20By%20Decade/80%27s%20Greatest%20Hits/Top%201000%20Pop%20Hits%20of%20the%2080s%20%284.32gb%29/Lesley%20Gore%20-%20It%27s%20My%20Party.mp3">It&#39;s My Party</a></td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Brenda Lee</td><td>I Wonder</td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Ray Charles</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/089%20-%20Take%20These%20Chains%20From%20My%20Heart%20-%20Ray%20Charles.mp3">Take These Chains From My Heart</a></td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Caravelles</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/058%20-%20You%20Don%27t%20Have%20To%20Be%20A%20Baby%20-%20Caravelles.mp3">You Don&#39;t Have To Be A Baby To Cry</a></td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>The Dakotas</td><td>The Cruel Sea</td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Wink Martindale</td><td>Deck Of Cards</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>The Big Three</td><td><a href="Music/Singles%20By%20Decade/80%27s%20Greatest%20Hits/Top%201000%20Pop%20Hits%20of%20the%2080s%20%284.32gb%29/Big%20Mountain%20-%20Baby%2C%20I%20Love%20Your%20Way.mp3">By The Way</a></td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>The Tymes</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/026%20-%20So%20Much%20In%20Love%20-%20Tymes.mp3">So Much In Love</a></td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Heinz</td><td>Just Like Eddie</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>The Rolling Stones</td><td><a href="Music/The%20Rolling%20Stones%20Full%20Discography%20%281964-2005%29/The%20Rolling%20Stones%20%28xxxx%29%20-%20Singles/The%20Rolling%20Stones%20%281964%29%20-%20Singles/01%20-%20Come%20On.mp3">Come On</a></td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>The Beatles</td><td><a href="Music/Beatles/1962%20-%201966/Beatles-1962%201966%20Cd1-From%20Me%20To%20You.Mp3">From Me To You</a></td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Houston Wells</td><td>Only The Heartaches</td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Buddy Holly</td><td><a href="Music/Buddy%20Holly/The%20Rock%20%27n%27%20Roll%20Era%20-%20Buddy%20Holly/07%20%20bo%20diddley.wma">Bo Diddley</a></td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Tony Bennett</td><td>The Good Life</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>The Springfields</td><td>Come On Home</td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Bobby Rydell</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201964/30%20-%20Forget%20Him%20-%20Bobby%20Rydell.mp3">Forget Him</a></td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>The Beach Boys</td><td><a href="Music/Beach%20Boys/Singles/beach%20boys%20-%20surfin%27%20usa.wma">Surfin&#39; USA</a></td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Cliff Richard</td><td>It&#39;s All In The Game</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>The Chiffons</td><td>One Fine Day</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>The Bruisers</td><td>Blue Girl</td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Kathy Kirby</td><td>Dance On</td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Miss X</td><td>Christine</td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Richard Chamberlain</td><td>True Love</td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Frankie Vaughan</td><td>Hey Mama</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of September 1963</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>The Beatles</td><td><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/272%20-%20The%20Beatles%20-%20She%20Loves%20You.Mp3">She Loves You</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Cliff Richard</td><td>It&#39;s All In The Game</td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Billy J Kramer &amp; The Dakotas</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD3/305%20-%20Billy%20J%20Kramer%20%26%20The%20Dakotas%20-%20Bad%20To%20Me.mp3">Bad To Me</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Steve Lawrence &amp; Eydie Gorme</td><td>I Want To Stay Here</td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Johnny Kidd &amp; The Pirates</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD3/312%20-%20Johnny%20Kidd%20%26%20The%20Pirates%20-%20I%27ll%20Never%20Get%20Over%20You.mp3">I&#39;ll Never Get Over You</a></td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Freddie &amp; The Dreamers</td><td>I&#39;m Telling You Now</td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Heinz</td><td>Just Like Eddie</td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>Caravelles</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/058%20-%20You%20Don%27t%20Have%20To%20Be%20A%20Baby%20-%20Caravelles.mp3">You Don&#39;t Have To Be A Baby To Cry</a></td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Brian Poole &amp; The Tremeloes</td><td>Do You Love Me?</td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>The Surfaris</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Air%20Guitar%20Album%20In%20The%20World%20Ever/CD%201/14%20-%20The%20Surfaris%20-%20Wipe%20Out.mp3">Wipe Out</a></td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Jet Harris &amp; Tony Meehan</td><td>Applejack</td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Ken Thorne</td><td>Theme From &#39;the Legions Last Patrol&#39;</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Kathy Kirby</td><td>Dance On</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>The Searchers</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20II/CD%201/11%20-%20The%20Searchers%20-%20Sweets%20For%20My%20Sweet.mp3">Sweets For My Sweet</a></td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Karl Denver</td><td>Still</td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Buddy Holly</td><td><a href="Music/Buddy%20Holly/The%20Rock%20%27n%27%20Roll%20Era%20-%20Buddy%20Holly/19%20%20wishing.wma">Wishing</a></td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Trini Lopez</td><td>If I Had A Hammer</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>The Crystals</td><td><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/493%20-%20The%20Crystals%20-%20Then%20He%20Kissed%20Me.mp3">Then He Kissed Me</a></td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Billy Fury</td><td><a href="Music/Bily%20Fury/billy%20fury%20-%20in%20summer%20.wma">In Summer</a></td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Frank Ifield</td><td>Confessin&#39;</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>The Bachelors</td><td>Whispering</td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>The Rolling Stones</td><td><a href="Music/The%20Rolling%20Stones%20Full%20Discography%20%281964-2005%29/The%20Rolling%20Stones%20%28xxxx%29%20-%20Singles/The%20Rolling%20Stones%20%281964%29%20-%20Singles/01%20-%20Come%20On.mp3">Come On</a></td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Brian Poole &amp; The Tremeloes</td><td><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/244%20-%20The%20Beatles%20-%20Twist%20And%20Shout.Mp3">Twist And Shout</a></td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>The Hollies</td><td>Searchin&#39;</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>The Dakotas</td><td>The Cruel Sea</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>The Shadows</td><td>Shindig</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>The Crystals</td><td><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/114%20-%20The%20Crystals%20-%20Da%20Doo%20Ron%20Ron%20%28When%20He%20Walked%20Me%20Home%29.mp3">Da Doo Ron Ron</a></td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Jan &amp; Dean</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/13%20-%20Surf%20City%20-%20Jan%20%26%20Dean.mp3">Surf City</a></td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Miki &amp; Griff</td><td>I Wanna Stay Here</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Del Shannon</td><td>Two Silhouettes</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Roy Orbison</td><td>Blue Bayou / Mean Woman Blues</td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Houston Wells</td><td>Only The Heartaches</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Allan Sherman</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/068%20-%20Hello%20Muddah%20Hello%20Fadduh%20-%20Allan%20Sherman.mp3">Hello Muddah! Hello Fadduh!</a></td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Tony Bennett</td><td>The Good Life</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Sam Cooke</td><td>Frankie And Johnny</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>The Fourmost</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD8/814%20-%20Fourmost%20-%20Hello%20Little%20Girl.mp3">Hello Little Girl</a></td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Adam Faith</td><td>The First Time</td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Ken Dodd</td><td>Still</td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Little Peggy March</td><td>Hello Heartache Goodbye Love</td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Kyu Sakamoto</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/10%20-%20Sukiyaki%20-%20Kyu%20Sakamoto.mp3">Sukiyaki</a></td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of October 1963</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Brian Poole &amp; The Tremeloes</td><td>Do You Love Me?</td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>The Beatles</td><td><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/272%20-%20The%20Beatles%20-%20She%20Loves%20You.Mp3">She Loves You</a></td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>The Crystals</td><td><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/493%20-%20The%20Crystals%20-%20Then%20He%20Kissed%20Me.mp3">Then He Kissed Me</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Gerry &amp; The Pacemakers</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD6/618%20-%20Gerry%20%26%20The%20Pacemakers%20-%20You%27ll%20never%20Walk%20Alone.mp3">You&#39;ll Never Walk Alone</a></td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Roy Orbison</td><td>Blue Bayou / Mean Woman Blues</td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Trini Lopez</td><td>If I Had A Hammer</td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Adam Faith</td><td>The First Time</td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>The Shadows</td><td>Shindig</td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Shirley Bassey</td><td>I (Who Have Nothing)</td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Cliff Richard</td><td>It&#39;s All In The Game</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>The Fourmost</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD8/814%20-%20Fourmost%20-%20Hello%20Little%20Girl.mp3">Hello Little Girl</a></td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Jet Harris &amp; Tony Meehan</td><td>Applejack</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Steve Lawrence &amp; Eydie Gorme</td><td>I Want To Stay Here</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Tommy Roe</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/029%20-%20Everybody%20-%20Tommy%20Roe.mp3">Everybody</a></td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Buddy Holly</td><td><a href="Music/Buddy%20Holly/The%20Rock%20%27n%27%20Roll%20Era%20-%20Buddy%20Holly/19%20%20wishing.wma">Wishing</a></td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>The Hollies</td><td>Searchin&#39;</td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Heinz</td><td>Just Like Eddie</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Allan Sherman</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/068%20-%20Hello%20Muddah%20Hello%20Fadduh%20-%20Allan%20Sherman.mp3">Hello Muddah! Hello Fadduh!</a></td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Karl Denver</td><td>Still</td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Chuck Berry</td><td>Let It Rock / Memphis Tennessee</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Johnny Kidd &amp; The Pirates</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD3/312%20-%20Johnny%20Kidd%20%26%20The%20Pirates%20-%20I%27ll%20Never%20Get%20Over%20You.mp3">I&#39;ll Never Get Over You</a></td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Billy Fury</td><td>Somebody Else&#39;s Girl</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Kathy Kirby</td><td>Dance On</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Billy J Kramer &amp; The Dakotas</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD3/305%20-%20Billy%20J%20Kramer%20%26%20The%20Dakotas%20-%20Bad%20To%20Me.mp3">Bad To Me</a></td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Dave Berry &amp; The Cruisers</td><td>Memphis Tennessee</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>The Merseybeats</td><td>It&#39;s Love That Really Counts</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>The Bachelors</td><td>Whispering</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Caravelles</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/058%20-%20You%20Don%27t%20Have%20To%20Be%20A%20Baby%20-%20Caravelles.mp3">You Don&#39;t Have To Be A Baby To Cry</a></td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>The Ronettes</td><td><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/022%20-%20The%20Ronettes%20-%20Be%20My%20Baby.mp3">Be My Baby</a></td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Jimmy Young</td><td>Miss You</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Joe Brown</td><td>Sally Ann</td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>The Surfaris</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Air%20Guitar%20Album%20In%20The%20World%20Ever/CD%201/14%20-%20The%20Surfaris%20-%20Wipe%20Out.mp3">Wipe Out</a></td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>The Rolling Stones</td><td><a href="Music/The%20Rolling%20Stones%20Full%20Discography%20%281964-2005%29/The%20Rolling%20Stones%20%28xxxx%29%20-%20Singles/The%20Rolling%20Stones%20%281964%29%20-%20Singles/01%20-%20Come%20On.mp3">Come On</a></td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Dave Clark Five</td><td>Do You Love Me?</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Ken Dodd</td><td>Still</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>Rick Nelson</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/088%20-%20Fools%20Rush%20In%20-%20Ricky%20Nelson.mp3">Fools Rush In</a></td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>The Searchers</td><td>Sugar And Spice</td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Peter Paul &amp; Mary</td><td>Blowing In The Wind</td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Ken Thorne</td><td>Theme From &#39;the Legions Last Patrol&#39;</td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Little Peggy March</td><td>Hello Heartache Goodbye Love</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of November 1963</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Gerry &amp; The Pacemakers</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD6/618%20-%20Gerry%20%26%20The%20Pacemakers%20-%20You%27ll%20never%20Walk%20Alone.mp3">You&#39;ll Never Walk Alone</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>The Beatles</td><td><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/272%20-%20The%20Beatles%20-%20She%20Loves%20You.Mp3">She Loves You</a></td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>The Searchers</td><td>Sugar And Spice</td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Roy Orbison</td><td>Blue Bayou / Mean Woman Blues</td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>The Ronettes</td><td><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/022%20-%20The%20Ronettes%20-%20Be%20My%20Baby.mp3">Be My Baby</a></td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Brian Poole &amp; The Tremeloes</td><td>Do You Love Me?</td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Chuck Berry</td><td>Let It Rock / Memphis Tennessee</td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>Shirley Bassey</td><td>I (Who Have Nothing)</td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Cliff Richard</td><td>Don&#39;t Talk To Him</td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>The Crystals</td><td><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/493%20-%20The%20Crystals%20-%20Then%20He%20Kissed%20Me.mp3">Then He Kissed Me</a></td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Trini Lopez</td><td>If I Had A Hammer</td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Kathy Kirby</td><td>Secret Love</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Billy J Kramer &amp; The Dakotas</td><td>I&#39;ll Keep You Satisfied</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Adam Faith</td><td>The First Time</td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Rick Nelson</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/088%20-%20Fools%20Rush%20In%20-%20Ricky%20Nelson.mp3">Fools Rush In</a></td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Peter Paul &amp; Mary</td><td>Blowing In The Wind</td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/18%20of%2050%20-%20%5BDouble%20Feature%5D%20It%20Happened%20at%20the%20World%27s%20Fair%20-%20Fun%20In%20Acapulco/20%20-%20bossa%20nova%20baby.mp3">Bossa Nova Baby</a></td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Jimmy Young</td><td>Miss You</td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Los Indios Tabajaras</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/081%20-%20Los%20Indios%20Tabajaras%20-%20Maria%20Elena.mp3">Maria Elena</a></td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>The Fourmost</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD8/814%20-%20Fourmost%20-%20Hello%20Little%20Girl.mp3">Hello Little Girl</a></td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Freddie &amp; The Dreamers</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD3/306%20-%20Freddie%20%26%20The%20Dreamers%20-%20You%20Were%20Made%20For%20Me.mp3">You Were Made For Me</a></td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Tommy Roe</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/029%20-%20Everybody%20-%20Tommy%20Roe.mp3">Everybody</a></td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Karl Denver</td><td>Still</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>The Shadows</td><td>Shindig</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Del Shannon</td><td>Sue&#39;s Gonna Be Mine</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Dave Berry &amp; The Cruisers</td><td>Memphis Tennessee</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>The Hollies</td><td>Searchin&#39;</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Ray Charles</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/049%20-%20Busted%20-%20Ray%20Charles.mp3">Busted</a></td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>The Everly Brothers</td><td>Girl Sang The Blues</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>The Merseybeats</td><td>It&#39;s Love That Really Counts</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Brenda Lee</td><td>Sweet Impossible You</td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Jet Harris &amp; Tony Meehan</td><td>Applejack</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Mark Wynter</td><td>It&#39;s Almost Tomorrow</td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Allan Sherman</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/068%20-%20Hello%20Muddah%20Hello%20Fadduh%20-%20Allan%20Sherman.mp3">Hello Muddah! Hello Fadduh!</a></td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Frank Ifield</td><td>Mule Train</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>Jim Reeves</td><td>Guilty</td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Fats Domino</td><td>Red Sails In The Sunset</td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Nino Tempo &amp; April Stevens</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/025%20-%20Deep%20Purple%20-%20Nino%20Tempo%20%26%20April%20Stevens.mp3">Deep Purple</a></td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Matt Monro</td><td>From Russia With Love</td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Buddy Holly</td><td><a href="Music/Buddy%20Holly/The%20Rock%20%27n%27%20Roll%20Era%20-%20Buddy%20Holly/19%20%20wishing.wma">Wishing</a></td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of December 1963</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>The Beatles</td><td><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/290%20-%20The%20Beatles%20-%20I%20Want%20To%20Hold%20Your%20Hand.Mp3">I Want To Hold Your Hand</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>The Beatles</td><td><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/272%20-%20The%20Beatles%20-%20She%20Loves%20You.Mp3">She Loves You</a></td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Freddie &amp; The Dreamers</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD3/306%20-%20Freddie%20%26%20The%20Dreamers%20-%20You%20Were%20Made%20For%20Me.mp3">You Were Made For Me</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Dave Clark Five</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201964/40%20-%20Glad%20All%20Over%20-%20Dave%20Clark%20Five.mp3">Glad All Over</a></td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Kathy Kirby</td><td>Secret Love</td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Cliff Richard</td><td>Don&#39;t Talk To Him</td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Dusty Springfield</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever/CD%201/07%20-%20Dusty%20Springfield%20-%20I%20Only%20Want%20To%20Be%20With%20You.mp3">I Only Want To Be With You</a></td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>Los Indios Tabajaras</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/081%20-%20Los%20Indios%20Tabajaras%20-%20Maria%20Elena.mp3">Maria Elena</a></td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Gerry &amp; The Pacemakers</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD6/618%20-%20Gerry%20%26%20The%20Pacemakers%20-%20You%27ll%20never%20Walk%20Alone.mp3">You&#39;ll Never Walk Alone</a></td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>The Singing Nun (Soeur Sourire)</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/2%20-%20Dominique%20-%20Singing%20Nun.mp3">Dominique</a></td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Gene Pitney</td><td><a href="Music/Gene%20Pitney/gene%20pitney%20-%2024%20hours%20from%20tulsa.wma">Twenty Four Hours From Tulsa</a></td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Billy J Kramer &amp; The Dakotas</td><td>I&#39;ll Keep You Satisfied</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>The Shadows</td><td>Geronimo</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>The Rolling Stones</td><td><a href="Music/The%20Rolling%20Stones%20Full%20Discography%20%281964-2005%29/The%20Rolling%20Stones%20%28xxxx%29%20-%20Singles/The%20Rolling%20Stones%20%281964%29%20-%20Singles/05%20-%20I%20Wanna%20Be%20Your%20Man.mp3">I Wanna Be Your Man</a></td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Mark Wynter</td><td>It&#39;s Almost Tomorrow</td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Big Dee Irwin</td><td>Swinging On A Star</td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Bern Elliott &amp; The Fenmen</td><td><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/019%20-%20Pink%20Floyd%20-%20Money.mp3">Money</a></td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Shirley Bassey</td><td>I (Who Have Nothing)</td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>The Hollies</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD1/104%20-%20The%20Hollies%20-%20Stay.mp3">Stay</a></td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Roy Orbison</td><td>Blue Bayou / Mean Woman Blues</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>The Ronettes</td><td><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/022%20-%20The%20Ronettes%20-%20Be%20My%20Baby.mp3">Be My Baby</a></td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Johnny Kidd &amp; The Pirates</td><td>Hungry For Love</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Harry Secombe</td><td>If I Ruled The World</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Dora Bryan</td><td>All I Want For Christmas Is A Beatle</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>The Searchers</td><td>Sugar And Spice</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Nino Tempo &amp; April Stevens</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/025%20-%20Deep%20Purple%20-%20Nino%20Tempo%20%26%20April%20Stevens.mp3">Deep Purple</a></td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Chris Sandford</td><td>Not Too Little - Not Too Much</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Peter Paul &amp; Mary</td><td>Blowing In The Wind</td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Matt Monro</td><td>From Russia With Love</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>The Swinging Blue Jeans</td><td><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD2/217%20-%20The%20Swinging%20Blue%20Jeans%20-%20Hippy%20Hippy%20Shake.mp3">Hippy Hippy Shake</a></td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Heinz</td><td>Country Boy</td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/16%20of%2050%20-%20Pot%20Luck%20with%20Elvis/01%20-%20kiss%20me%20quick.mp3">Kiss Me Quick</a></td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Wilfred Brambell &amp; Harry H Corbett</td><td>At The Palace (Parts 1 And 2)</td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Chuck Berry</td><td>Let It Rock / Memphis Tennessee</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Brian Poole &amp; The Tremeloes</td><td>I Can Dance</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>Trini Lopez</td><td>If I Had A Hammer</td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Ray Charles</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201963/049%20-%20Busted%20-%20Ray%20Charles.mp3">Busted</a></td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Adam Faith</td><td>We Are In Love</td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Jimmy Young</td><td>Miss You</td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Chad Stuart &amp; Jeremy Clyde</td><td>Yesterday&#39;s Gone</td></tr>
+</table>
+
+</body>
+
+</html>
+
+
+
+
+
