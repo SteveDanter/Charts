@@ -1,0 +1,3276 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Music Chart Rebuilder">
+
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+
+<a href="index.html" style="
+display:inline-block;
+padding:10px 15px;
+background:#D59BA7;
+color:D7CDAD;
+text-decoration:none;
+border-radius:5px;">Home </a>
+
+<style>
+:root{
+  --bg:#120715;
+  --bg2:#2a1030;
+  --paper:#fff9ea;
+  --paper2:#fff2c8;
+  --ink:#24121c;
+  --muted:#6d5061;
+  --plum:#4b1f52;
+  --pink:#d85aa3;
+  --gold:#e6c15a;
+  --line:rgba(36,18,28,.12);
+  --highlight:rgba(230,193,90,.18);
+}
+html,body{margin:0;padding:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#38163f 0%,#18091d 42%,#080408 100%);color:var(--ink)}
+body.modern-sheet{padding:18px 18px 30px;}
+body.modern-sheet::before{content:'';position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at top,rgba(255,255,255,.06),transparent 45%);}
+body.modern-sheet > table{position:relative;z-index:1;width:min(1280px,calc(100vw - 36px)) !important;table-layout:auto !important;margin:0 auto;background:var(--paper);border-collapse:separate !important;border-spacing:0;overflow:hidden;display:block;padding:0 20px 24px;border:1px solid rgba(255,255,255,.08);box-shadow:0 22px 60px rgba(0,0,0,.38)}
+body.modern-sheet col{width:auto !important;}
+body.modern-sheet tr{height:auto !important;}
+body.modern-sheet td{white-space:normal !important;padding:11px 14px !important;border-bottom:1px solid var(--line);font-size:15px;line-height:1.35;background:transparent;vertical-align:top;display:table-cell !important;}
+body.modern-sheet tr:hover td{background:rgba(216,90,163,.045);}
+body.modern-sheet tr:first-child td{border-bottom:none;background:transparent;padding:0 !important;height:0 !important;line-height:0 !important;font-size:0 !important;}
+body.modern-sheet td:first-child{display:none !important;}
+body.modern-sheet td:nth-child(2){width:84px;text-align:center;font-weight:800;color:#8a3d68;}
+body.modern-sheet td:nth-child(3){width:36%;font-weight:700;color:var(--ink);}
+body.modern-sheet td:nth-child(4){color:var(--muted);}
+body.modern-sheet tr.month-header td:first-child{display:none !important;}
+body.modern-sheet tr.month-header td[colspan]{display:block !important;width:calc(100% + 40px) !important;margin:28px -20px 0 !important;padding:18px 24px 16px !important;border:none !important;border-top:1px solid rgba(255,255,255,.08) !important;border-bottom:4px solid var(--gold) !important;border-radius:0 !important;background:linear-gradient(90deg,rgba(75,31,82,.96) 0%,rgba(59,19,64,.98) 55%,rgba(43,16,48,.98) 100%) !important;color:#f9eed2 !important;font-size:clamp(24px,3vw,38px) !important;line-height:1.08;font-weight:900;letter-spacing:.04em;text-transform:uppercase;text-align:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.12);}
+body.modern-sheet tr.month-header + tr td{background:linear-gradient(180deg,var(--paper2),#f9eab8) !important;font-size:13px !important;text-transform:uppercase;letter-spacing:.12em;color:#5a3b46 !important;font-weight:800;position:sticky;top:76px;z-index:2;border-bottom:2px solid rgba(36,18,28,.16);padding-top:9px !important;padding-bottom:9px !important;display:table-cell !important;white-space:nowrap !important;}
+body.modern-sheet tr.month-header + tr td:nth-child(2){text-align:center !important;color:#5a3b46 !important;width:84px;}
+body.modern-sheet tr.month-header + tr td:nth-child(3){text-align:left !important;width:36%;}
+body.modern-sheet tr.month-header + tr td:nth-child(4){text-align:left !important;width:auto;}
+body.modern-sheet tr.top-track td{background:linear-gradient(90deg,var(--highlight),rgba(230,193,90,.05));}
+body.modern-sheet tr.top-track td:nth-child(2){color:#9a6a11;font-weight:900;}
+body.modern-sheet .sheet-toolbar{position:sticky;top:0;z-index:9;width:min(1280px,calc(100vw - 36px));margin:0 auto 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:rgba(33,11,37,.96);border:1px solid rgba(255,255,255,.10);box-shadow:0 14px 40px rgba(0,0,0,.35);padding:10px 16px;border-radius:14px;backdrop-filter:blur(8px);}
+body.modern-sheet .sheet-year{font-size:16px;font-weight:800;color:#f7e8b7;letter-spacing:.04em;text-transform:uppercase;}
+body.modern-sheet .month-links{display:flex;gap:8px;flex-wrap:wrap;}
+body.modern-sheet .month-links a{color:#f7e8b7;text-decoration:none;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;transition:.15s ease;}
+body.modern-sheet .month-links a:hover{background:rgba(216,90,163,.12);border-color:rgba(216,90,163,.35);transform:translateY(-1px);}
+@media (max-width: 760px){
+  body.modern-sheet{padding:10px 10px 24px;}
+  body.modern-sheet > table,.sheet-toolbar{width:calc(100vw - 20px) !important;}
+  body.modern-sheet > table{padding:0 10px 18px;}
+  body.modern-sheet td{font-size:13px;padding:9px 8px !important;}
+  body.modern-sheet td:nth-child(2){width:54px;}
+  body.modern-sheet .sheet-year{font-size:14px;}
+  body.modern-sheet tr.month-header + tr td{top:104px;font-size:11px !important;letter-spacing:.08em;}
+  body.modern-sheet tr.month-header td[colspan]{width:calc(100% + 20px) !important;margin:22px -10px 0 !important;padding:14px 14px 12px !important;font-size:clamp(20px,7vw,30px) !important;}
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const rows = Array.from(document.querySelectorAll('body.modern-sheet table tr'));
+  const monthLinks = [];
+  let currentSection = null;
+  rows.forEach((row) => {
+    const titleCell = row.querySelector('.xl66,.xl67');
+    if (titleCell && /Top 40 Hits of/i.test(titleCell.textContent)) {
+      row.classList.add('month-header');
+      const slug = titleCell.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+      row.id = slug;
+      const monthMatch = titleCell.textContent.match(/Top 40 Hits of (.+)$/i);
+      const label = monthMatch ? monthMatch[1] : titleCell.textContent.trim();
+      monthLinks.push({href:'#'+slug,label});
+      currentSection = row;
+      return;
+    }
+    if (!currentSection) return;
+    const cells = row.querySelectorAll('td');
+    if (cells.length >= 4) {
+      const pos = (cells[1].textContent || '').trim();
+      const artist = (cells[2].textContent || '').trim();
+      const title = (cells[3].textContent || '').trim();
+      if (/^1$/.test(pos) && artist && title) row.classList.add('top-track');
+    }
+  });
+  const toolbar = document.createElement('div');
+  toolbar.className = 'sheet-toolbar';
+  toolbar.innerHTML = '<div class="sheet-year">UK Music Charts - 1976</div><div class="month-links"></div>';
+  const linksWrap = toolbar.querySelector('.month-links');
+  monthLinks.forEach(item => {
+    const a = document.createElement('a');
+    a.href = item.href;
+    a.textContent = item.label;
+    linksWrap.appendChild(a);
+  });
+  document.body.prepend(toolbar);
+});
+</script>
+
+<title>UK Music Charts 1976 - Retro Edition</title>
+</head>
+
+<body class="xl65 modern-sheet">
+
+<div style="position:sticky;top:0;background:#111;padding:12px;z-index:999;border-bottom:2px solid #444;">
+  <input
+    type="text"
+    id="chartSearch"
+    placeholder="Search artist or song title..."
+    onkeyup="searchChart()"
+    style="width:320px;padding:8px;font-size:16px;"
+  >
+
+  <button onclick="clearSearch()" style="padding:8px 12px;font-size:16px;">
+    Clear
+  </button>
+
+  <span id="searchCount" style="margin-left:12px;color:white;font-family:Arial;">
+  </span>
+</div>
+
+<script>
+function searchChart() {
+  const searchText = document.getElementById("chartSearch").value.toLowerCase().trim();
+  const words = searchText.split(/\s+/).filter(Boolean);
+  const rows = document.querySelectorAll("tr");
+  let visibleCount = 0;
+
+  rows.forEach(row => {
+    const cells = row.querySelectorAll("td");
+
+    if (cells.length < 4) {
+      return;
+    }
+
+    const artist = cells[2].innerText.toLowerCase();
+    const title = cells[3].innerText.toLowerCase();
+    const rowText = artist + " " + title;
+
+    const match = words.every(word => rowText.includes(word));
+
+    if (searchText === "" || match) {
+      row.style.display = "";
+      visibleCount++;
+    } else {
+      row.style.display = "none";
+    }
+  });
+
+  document.getElementById("searchCount").innerText =
+    searchText === "" ? "" : visibleCount + " matching row(s)";
+}
+
+function clearSearch() {
+  document.getElementById("chartSearch").value = "";
+  searchChart();
+}
+</script>
+
+<table border=0 cellpadding=0 cellspacing=0 width=744 style='border-collapse:
+ collapse;table-layout:fixed;width:558pt'>
+ <col class=xl65 width=64 style='width:48pt'>
+ <col class=xl65 width=40 style='mso-width-source:userset;mso-width-alt:1462;
+ width:30pt'>
+ <col class=xl65 width=285 style='mso-width-source:userset;mso-width-alt:10422;
+ width:214pt'>
+ <col class=xl65 width=355 style='mso-width-source:userset;mso-width-alt:12982;
+ width:266pt'>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 width=64 style='height:17.45pt;width:48pt'></td>
+  <td class=xl65 width=40 style='width:30pt'></td>
+  <td class=xl65 width=285 style='width:214pt'></td>
+  <td class=xl65 width=355 style='width:266pt'></td>
+ </tr>
+ <tr class=xl67 height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl67 style='height:17.45pt'></td>
+  <td colspan=3 class=xl66>Top 40 Hits of January 1976</td>
+ </tr>
+ <tr class=xl67 height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl67 style='height:17.45pt'></td>
+  <td class=xl66>Pos.</td>
+  <td class=xl66>Artist</td>
+  <td class=xl66>Title</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>1</td>
+  <td class=xl65>Queen</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/017%20-%20Queen%20-%20Bohemian%20Rhapsody.mp3">Bohemian Rhapsody</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>2</td>
+  <td class=xl65>Sailor</td>
+  <td class=xl65>Glass Of Champagne</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>3</td>
+  <td class=xl65>Abba</td>
+  <td class=xl65><a href="Music/ABBA/%281975%29%20Abba/01%20-%20Abba%20-%20Mamma%20Mia.mp3">Mamma Mia</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>4</td>
+  <td class=xl65>Laurel &amp; Hardy With The Avalon Boys featuring Chill Wills</td>
+  <td class=xl65>The Trail Of The Lonesome Pine</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>5</td>
+  <td class=xl65>Mike Oldfield</td>
+  <td class=xl65>In Dulce Jubilo / On Horseback</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>6</td>
+  <td class=xl65>Chubby Checker</td>
+  <td class=xl65>Let&#39;s Twist Again / The Twist</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>7</td>
+  <td class=xl65>Andy Fairweather-Low</td>
+  <td class=xl65>Wide Eyed And Legless</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>8</td>
+  <td class=xl65>Greg Lake</td>
+  <td class=xl65><a href="Music/Now%20That%27s%20What%20I%20Call%20Music/Now%20Christmas%202005/06%20-%20Greg%20Lake%20_%20I%20Believe%20In%20Father%20Christmas.mp3">I Believe In Father Christmas</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>9</td>
+  <td class=xl65>10cc</td>
+  <td class=xl65>Art For Art&#39;s Sake</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>10</td>
+  <td class=xl65>Billy Howard</td>
+  <td class=xl65>King Of The Cops</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>11</td>
+  <td class=xl65>The Miracles</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201976/03%20-%20The%20Miracles%20-%20Love%20Machine%20%28Part%201%29.mp3">Love Machine</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>12</td>
+  <td class=xl65>David Bowie</td>
+  <td class=xl65><a href="Music/David%20Bowie/Best%20of%20Bowie%20CD2/13%20-%20golden%20years.wma">Golden Years</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>13</td>
+  <td class=xl65>The Small Faces</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD2/201%20-%20Small%20Faces%20-%20Itchycoo%20Park.mp3">Itchycoo Park</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>14</td>
+  <td class=xl65>Slik</td>
+  <td class=xl65>Forever And Ever</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>15</td>
+  <td class=xl65>Demis Roussos</td>
+  <td class=xl65>Happy To Be On An Island In The Sun</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>16</td>
+  <td class=xl65>The Drifters</td>
+  <td class=xl65><a href="Music/Drifters/The%20Drifters%20-%20The%20Definitive/CD2/Drifters%20-%20The%20Definitive%20Drifters%20%28Disc%202%29/24%20-%20Can%20I%20Take%20You%20Home%20Little%20Girl_%20-%20Drifters.mp3">Can I Take You Home Little Girl</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>17</td>
+  <td class=xl65>Dana</td>
+  <td class=xl65>It&#39;s Gonna Be A Cold Cold Christmas</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>18</td>
+  <td class=xl65>Barry White</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%202%20of%203/The%20Best%20Pop%20Songs%20Ever/CD%202/12%20-%20Barry%20White%20-%20Let%20The%20Music%20Play.mp3">Let The Music Play</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>19</td>
+  <td class=xl65>R &amp; J Stone</td>
+  <td class=xl65>We Do lt</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>20</td>
+  <td class=xl65>Paul Davidson</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Wow%20That%20Was%20The%2070s%20Disk%208/807%20-%20Paul%20Davidson%20-%20Midnight%20Rider.mp3">Midnight Rider</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>21</td>
+  <td class=xl65>Hot Chocolate</td>
+  <td class=xl65><a href="Music/Now%20That%27s%20What%20I%20Call%20Music/now%2009/Disc1/06_Hot%20Chocolate%20-%20You%20Sexy%20Thing.mp3">You Sexy Thing</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>22</td>
+  <td class=xl65>David Essex</td>
+  <td class=xl65>If I Could</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>23</td>
+  <td class=xl65>The Fatback Band</td>
+  <td class=xl65>Do The Bus Stop</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>24</td>
+  <td class=xl65>Electric Light Orchestra</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/198%20-%20Electric%20Light%20Orchestra%20-%20Evil%20Woman.mp3">Evil Woman</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>25</td>
+  <td class=xl65>Sheer Elegance</td>
+  <td class=xl65>Milky Way</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>26</td>
+  <td class=xl65>Donna Summer</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-035%20-%20Donna%20Summer%20-%20Love%20To%20Love%20You%20Baby%20%28Oasis%29.mp3">Love To Love You Baby</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>27</td>
+  <td class=xl65>Crispy &amp; Company</td>
+  <td class=xl65>Get It Together</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>28</td>
+  <td class=xl65>The Stylistics</td>
+  <td class=xl65>Na Na Is The Saddest Word</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>29</td>
+  <td class=xl65>Roxy Music</td>
+  <td class=xl65>Both Ends Burning</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>30</td>
+  <td class=xl65>Judge Dread</td>
+  <td class=xl65>Christmas In Dreadland / Come Outside</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>31</td>
+  <td class=xl65>Mud</td>
+  <td class=xl65>Show Me You&#39;re A Woman</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>32</td>
+  <td class=xl65>Chris Hill</td>
+  <td class=xl65>Renta Santa</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>33</td>
+  <td class=xl65>Bay City Rollers</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-080%20-%20Bay%20City%20Rollers%20-%20Money%20Honey%20%28Arista%29.mp3">Money Honey</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>34</td>
+  <td class=xl65>The Impressions</td>
+  <td class=xl65>First Impressions</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>35</td>
+  <td class=xl65>Barbara Dickson</td>
+  <td class=xl65>Answer Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>36</td>
+  <td class=xl65>Paul Simon</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-007%20-%20Paul%20Simon%20-%2050%20Ways%20To%20Leave%20Your%20Lover%20%28Columbia%29.mp3">50 Ways To Leave Your Lover</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>37</td>
+  <td class=xl65>Frank Sinatra</td>
+  <td class=xl65>I Believe I&#39;m Gonna Love You</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>38</td>
+  <td class=xl65>Osibisa</td>
+  <td class=xl65>Sunshine Day</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>39</td>
+  <td class=xl65>David Ruffin</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-078%20-%20David%20Ruffin%20-%20Walk%20Away%20From%20Love%20%28Motown%29.mp3">Walk Away From Love</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>40</td>
+  <td class=xl65>Ethna Campbell</td>
+  <td class=xl65>The Old Rugged Cross</td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr class=xl67 height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl67 style='height:17.45pt'></td>
+  <td colspan=3 class=xl66>Top 40 Hits of February 1976</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>1</td>
+  <td class=xl65>The Four Seasons</td>
+  <td class=xl65>December &#39;63</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>2</td>
+  <td class=xl65>Slik</td>
+  <td class=xl65>Forever And Ever</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>3</td>
+  <td class=xl65>Abba</td>
+  <td class=xl65><a href="Music/ABBA/%281975%29%20Abba/01%20-%20Abba%20-%20Mamma%20Mia.mp3">Mamma Mia</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>4</td>
+  <td class=xl65>Tina Charles</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/80%27s%20Greatest%20Hits/Greatest%20Hits%20of%201987/Tina%20Charles%20-%20I%20Love%20To%20Love.mp3">I Love To Love</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>5</td>
+  <td class=xl65>Manuel &amp; The Music Of The Mountains</td>
+  <td class=xl65>Rodrigo&#39;s Guitar Concerto De Aranjuez</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>6</td>
+  <td class=xl65>Donna Summer</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-035%20-%20Donna%20Summer%20-%20Love%20To%20Love%20You%20Baby%20%28Oasis%29.mp3">Love To Love You Baby</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>7</td>
+  <td class=xl65>The Miracles</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201976/03%20-%20The%20Miracles%20-%20Love%20Machine%20%28Part%201%29.mp3">Love Machine</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>8</td>
+  <td class=xl65>CW McCall</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-021%20-%20C.W.%20McCall%20-%20Convoy%20%28MGM%29.mp3">Convoy</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>9</td>
+  <td class=xl65>R &amp; J Stone</td>
+  <td class=xl65>We Do lt</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>10</td>
+  <td class=xl65>Yvonne Fair</td>
+  <td class=xl65>It Should Have Been Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>11</td>
+  <td class=xl65>The Walker Brothers</td>
+  <td class=xl65>No Regrets</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>12</td>
+  <td class=xl65>Pluto Shervington</td>
+  <td class=xl65>DAT</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>13</td>
+  <td class=xl65>The Who</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/111%20-%20The%20Who%20-%20Squeeze%20Box.mp3">Squeeze Box</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>14</td>
+  <td class=xl65>Glenn Miller</td>
+  <td class=xl65>Moonlight Serenade / Little Brown Jug / In The Mood</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>15</td>
+  <td class=xl65>War</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201975/1975-084%20-%20War%20-%20Low%20Rider%20%28United%20Art%29.mp3">Low Rider</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>16</td>
+  <td class=xl65>Status Quo</td>
+  <td class=xl65>Rain</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>17</td>
+  <td class=xl65>David Ruffin</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-078%20-%20David%20Ruffin%20-%20Walk%20Away%20From%20Love%20%28Motown%29.mp3">Walk Away From Love</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>18</td>
+  <td class=xl65>Slade</td>
+  <td class=xl65><a href="Music/Slade%20-%20Greatest%20Hits%202CD/SLADE-%20Greatest%20Hits%202CD%20%282008%29/Disc%201/18.Let%27s%20Call%20It%20Quits.mp3">Let&#39;s Call It Quits</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>19</td>
+  <td class=xl65>Wing And A Prayer Fife &amp; Drum Corps</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-114%20-%20Wing%20%26%20A%20Prayer%20Fife%20%26%20Drum%20Corps%20-%20Baby%20Face%20%28Wing%20%26%20Prayer%29.mp3">Baby Face</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>20</td>
+  <td class=xl65>Queen</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/017%20-%20Queen%20-%20Bohemian%20Rhapsody.mp3">Bohemian Rhapsody</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>21</td>
+  <td class=xl65>The O&#39;Jays</td>
+  <td class=xl65>I Love Music</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>22</td>
+  <td class=xl65>Smokie</td>
+  <td class=xl65>Something&#39;s Been Making Me Blue</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>23</td>
+  <td class=xl65>Electric Light Orchestra</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/198%20-%20Electric%20Light%20Orchestra%20-%20Evil%20Woman.mp3">Evil Woman</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>24</td>
+  <td class=xl65>Barbara Dickson</td>
+  <td class=xl65>Answer Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>25</td>
+  <td class=xl65>Paul Davidson</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Wow%20That%20Was%20The%2070s%20Disk%208/807%20-%20Paul%20Davidson%20-%20Midnight%20Rider.mp3">Midnight Rider</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>26</td>
+  <td class=xl65>The Stylistics</td>
+  <td class=xl65>Funky Weekend</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>27</td>
+  <td class=xl65>Billy Howard</td>
+  <td class=xl65>King Of The Cops</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>28</td>
+  <td class=xl65>The Manhattan Transfer</td>
+  <td class=xl65>Tuxedo Junction</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>29</td>
+  <td class=xl65>Sailor</td>
+  <td class=xl65>Glass Of Champagne</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>30</td>
+  <td class=xl65>Billy Ocean</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/100%20Love%20Songs%20-%205CD%20-%202004/412%20-%20billy%20ocean%20-%20love%20really%20hurts%20without%20you.mp3">Love Really Hurts Without You</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>31</td>
+  <td class=xl65>Evelyn Thomas</td>
+  <td class=xl65>Weak Spot</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>32</td>
+  <td class=xl65>LJ Johnson</td>
+  <td class=xl65>Your Magic Put A Spell On Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>33</td>
+  <td class=xl65>Cliff Richard</td>
+  <td class=xl65>Miss You Nights</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>34</td>
+  <td class=xl65>The Small Faces</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/60%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2060%27s%20CD2/201%20-%20Small%20Faces%20-%20Itchycoo%20Park.mp3">Itchycoo Park</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>35</td>
+  <td class=xl65>Mike Oldfield</td>
+  <td class=xl65>In Dulce Jubilo / On Horseback</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>36</td>
+  <td class=xl65>Donny &amp; Marie Osmond</td>
+  <td class=xl65><a href="Music/Donny%20%26%20Marie%20Osmond%20-%20The%20Best%20Of/Donny%20%26%20Marie%20Osmond%20-%20The%20Best%20Of%20Donny%20%26%20Marie%20Osmond/09%20-%20Deep%20Purple%20-%20Donny%20%26%20Marie%20Osmond.mp3">Deep Purple</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>37</td>
+  <td class=xl65>The Fatback Band</td>
+  <td class=xl65>(Do The) Spanish Hustle</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>38</td>
+  <td class=xl65>Guys &#39;N&#39; Dolls</td>
+  <td class=xl65>You Don&#39;t Have To Say You Love Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>39</td>
+  <td class=xl65>Osibisa</td>
+  <td class=xl65>Sunshine Day</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>40</td>
+  <td class=xl65>The Captain &amp; Tennille</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201975/1975-058%20-%20Captain%20%26%20Tennille%20-%20The%20Way%20I%20Want%20To%20Touch%20You%20%28A%26M%29.mp3">The Way I Want To Touch You</a></td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr class=xl67 height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl67 style='height:17.45pt'></td>
+  <td colspan=3 class=xl66>Top 40 Hits of March 1976</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>1</td>
+  <td class=xl65>Tina Charles</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/80%27s%20Greatest%20Hits/Greatest%20Hits%20of%201987/Tina%20Charles%20-%20I%20Love%20To%20Love.mp3">I Love To Love</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>2</td>
+  <td class=xl65>Billy Ocean</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/100%20Love%20Songs%20-%205CD%20-%202004/412%20-%20billy%20ocean%20-%20love%20really%20hurts%20without%20you.mp3">Love Really Hurts Without You</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>3</td>
+  <td class=xl65>Brotherhood Of Man</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-164%20-%20Brotherhood%20Of%20Man%20-%20Save%20Your%20Kisses%20For%20Me%20%28Pye%29.mp3">Save Your Kisses For Me</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>4</td>
+  <td class=xl65>CW McCall</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-021%20-%20C.W.%20McCall%20-%20Convoy%20%28MGM%29.mp3">Convoy</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>5</td>
+  <td class=xl65>The Four Seasons</td>
+  <td class=xl65>December &#39;63</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>6</td>
+  <td class=xl65>Barry White</td>
+  <td class=xl65>You See The Trouble With Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>7</td>
+  <td class=xl65>The Glitter Band</td>
+  <td class=xl65>People Like You People Like Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>8</td>
+  <td class=xl65>Guys &#39;N&#39; Dolls</td>
+  <td class=xl65>You Don&#39;t Have To Say You Love Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>9</td>
+  <td class=xl65>Gallagher &amp; Lyle</td>
+  <td class=xl65>I Wanna Stay With You</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>10</td>
+  <td class=xl65>Manuel &amp; The Music Of The Mountains</td>
+  <td class=xl65>Rodrigo&#39;s Guitar Concerto De Aranjuez</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>11</td>
+  <td class=xl65>Yvonne Fair</td>
+  <td class=xl65>It Should Have Been Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>12</td>
+  <td class=xl65>Marmalade</td>
+  <td class=xl65>Falling Apart At The Seams</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>13</td>
+  <td class=xl65>The Fatback Band</td>
+  <td class=xl65>(Do The) Spanish Hustle</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>14</td>
+  <td class=xl65>Status Quo</td>
+  <td class=xl65>Rain</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>15</td>
+  <td class=xl65>Pluto Shervington</td>
+  <td class=xl65>DAT</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>16</td>
+  <td class=xl65>Cliff Richard</td>
+  <td class=xl65>Miss You Nights</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>17</td>
+  <td class=xl65>The Beatles</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/015%20-%20The%20Beatles%20-%20Yesterday.mp3">Yesterday</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>18</td>
+  <td class=xl65>The Stylistics</td>
+  <td class=xl65>Funky Weekend</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>19</td>
+  <td class=xl65>Randy Edelman</td>
+  <td class=xl65>Concrete And Clay</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>20</td>
+  <td class=xl65>The Eagles</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-048%20-%20Eagles%20-%20Take%20It%20To%20The%20Limit%20%28Asylum%29.mp3">Take It To The Limit</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>21</td>
+  <td class=xl65>John Miles</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/80%27s%20Greatest%20Hits/Greatest%20Hits%20of%201982/John%20Miles%20-%20Music.mp3">Music</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>22</td>
+  <td class=xl65>M &amp; O Band</td>
+  <td class=xl65>Let&#39;s Do The Latin Hustle</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>23</td>
+  <td class=xl65>Peters &amp; Lee</td>
+  <td class=xl65>Hey Mr Music Man</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>24</td>
+  <td class=xl65>The O&#39;Jays</td>
+  <td class=xl65>I Love Music</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>25</td>
+  <td class=xl65>Eddie Drennon &amp; BBS Unlimited</td>
+  <td class=xl65>Let&#39;s Do The Latin Hustle</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>26</td>
+  <td class=xl65>Harold Melvin &amp; The Bluenotes</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-100%20-%20Harold%20Melvin%20%26%20The%20Blue%20Notes%20-%20Wake%20Up%20Everybody%20%28Part%201%29%20%28Philadel%20Int%29.mp3">Wake Up Everybody</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>27</td>
+  <td class=xl65>The Who</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/111%20-%20The%20Who%20-%20Squeeze%20Box.mp3">Squeeze Box</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>28</td>
+  <td class=xl65>The Drifters</td>
+  <td class=xl65><a href="Music/Drifters/The%20Drifters%20-%20The%20Definitive/CD2/Drifters%20-%20The%20Definitive%20Drifters%20%28Disc%202%29/26%20-%20Hello%20Happiness%20-%20Drifters.mp3">Hello Happiness</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>29</td>
+  <td class=xl65>Be Bop Deluxe</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/02%20-%20Be%20Bop%20Deluxe%20-%20Ships%20In%20The%20Night.mp3">Ships In The Night</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>30</td>
+  <td class=xl65>Elton John</td>
+  <td class=xl65>Pinball Wizard</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>31</td>
+  <td class=xl65>10cc</td>
+  <td class=xl65>I&#39;m Mandy Fly Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>32</td>
+  <td class=xl65>Slade</td>
+  <td class=xl65><a href="Music/Slade%20-%20Greatest%20Hits%202CD/SLADE-%20Greatest%20Hits%202CD%20%282008%29/Disc%201/18.Let%27s%20Call%20It%20Quits.mp3">Let&#39;s Call It Quits</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>33</td>
+  <td class=xl65>Smokie</td>
+  <td class=xl65>Something&#39;s Been Making Me Blue</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>34</td>
+  <td class=xl65>Slik</td>
+  <td class=xl65>Forever And Ever</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>35</td>
+  <td class=xl65>Emmylou Harris</td>
+  <td class=xl65>Here There And Everywhere</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>36</td>
+  <td class=xl65>Hank Mizell</td>
+  <td class=xl65>Jungle Rock</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>37</td>
+  <td class=xl65>Dana</td>
+  <td class=xl65>Never Gonna Fall In Love Again</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>38</td>
+  <td class=xl65>Hot Chocolate</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/18%20-%20Hot%20Chocolate%20-%20Don%27t%20Stop%20It%20Now.mp3">Don&#39;t Stop It Now</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>39</td>
+  <td class=xl65>Chequers</td>
+  <td class=xl65>Hey Miss Payne</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>40</td>
+  <td class=xl65>David Essex</td>
+  <td class=xl65>City Lights</td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr class=xl67 height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl67 style='height:17.45pt'></td>
+  <td colspan=3 class=xl66>Top 40 Hits of April 1976</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>1</td>
+  <td class=xl65>Brotherhood Of Man</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-164%20-%20Brotherhood%20Of%20Man%20-%20Save%20Your%20Kisses%20For%20Me%20%28Pye%29.mp3">Save Your Kisses For Me</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>2</td>
+  <td class=xl65>Abba</td>
+  <td class=xl65><a href="Music/Abba%20-%20Number%20Ones/Fernando.mp3">Fernando</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>3</td>
+  <td class=xl65>Barry White</td>
+  <td class=xl65>You See The Trouble With Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>4</td>
+  <td class=xl65>John Miles</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/80%27s%20Greatest%20Hits/Greatest%20Hits%20of%201982/John%20Miles%20-%20Music.mp3">Music</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>5</td>
+  <td class=xl65>Hank Mizell</td>
+  <td class=xl65>Jungle Rock</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>6</td>
+  <td class=xl65>10cc</td>
+  <td class=xl65>I&#39;m Mandy Fly Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>7</td>
+  <td class=xl65>Diana Ross</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-018%20-%20Diana%20Ross%20-%20Theme%20From%20Mahogany%20%28Do%20You%20Know%20Where%20You%27re%20Going%20To%29%20%28Motown%29.mp3">Theme From Mahogany (Do You Know Where You&#39;re Going To)</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>8</td>
+  <td class=xl65>Sailor</td>
+  <td class=xl65>Girls Girls Girls</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>9</td>
+  <td class=xl65>Billy Ocean</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/100%20Love%20Songs%20-%205CD%20-%202004/412%20-%20billy%20ocean%20-%20love%20really%20hurts%20without%20you.mp3">Love Really Hurts Without You</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>10</td>
+  <td class=xl65>Elton John</td>
+  <td class=xl65>Pinball Wizard</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>11</td>
+  <td class=xl65>Bay City Rollers</td>
+  <td class=xl65>Love Me Like I Love You</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>12</td>
+  <td class=xl65>Hot Chocolate</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/18%20-%20Hot%20Chocolate%20-%20Don%27t%20Stop%20It%20Now.mp3">Don&#39;t Stop It Now</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>13</td>
+  <td class=xl65>The Beatles</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/015%20-%20The%20Beatles%20-%20Yesterday.mp3">Yesterday</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>14</td>
+  <td class=xl65>The Beatles</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/027%20-%20The%20Beatles%20-%20Hey%20Jude.Mp3">Hey Jude</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>15</td>
+  <td class=xl65>Marmalade</td>
+  <td class=xl65>Falling Apart At The Seams</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>16</td>
+  <td class=xl65>The Drifters</td>
+  <td class=xl65><a href="Music/Drifters/The%20Drifters%20-%20The%20Definitive/CD2/Drifters%20-%20The%20Definitive%20Drifters%20%28Disc%202%29/26%20-%20Hello%20Happiness%20-%20Drifters.mp3">Hello Happiness</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>17</td>
+  <td class=xl65>Fox</td>
+  <td class=xl65>S-S-S-Single Bed</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>18</td>
+  <td class=xl65>Gallagher &amp; Lyle</td>
+  <td class=xl65>I Wanna Stay With You</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>19</td>
+  <td class=xl65>Silver Convention</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-028%20-%20Silver%20Convention%20-%20Get%20Up%20And%20Boogie%20%28That%27s%20Right%29%20%28Midland%20Int%27l%29.mp3">Get Up And Boogie</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>20</td>
+  <td class=xl65>Isaac Hayes</td>
+  <td class=xl65>Disco Connection</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>21</td>
+  <td class=xl65>Sheer Elegance</td>
+  <td class=xl65>Life Is Too Short Girl</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>22</td>
+  <td class=xl65>Tina Charles</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/80%27s%20Greatest%20Hits/Greatest%20Hits%20of%201987/Tina%20Charles%20-%20I%20Love%20To%20Love.mp3">I Love To Love</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>23</td>
+  <td class=xl65>The Glitter Band</td>
+  <td class=xl65>People Like You People Like Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>24</td>
+  <td class=xl65>The Carpenters</td>
+  <td class=xl65>There&#39;s A Kind Of Hush</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>25</td>
+  <td class=xl65>Eric Carmen</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201976/09%20-%20Eric%20Carmen%20-%20All%20By%20Myself.mp3">All By Myself</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>26</td>
+  <td class=xl65>Brass Construction</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/15%20-%20Brass%20Construction%20-%20Movin%27.mp3">Movin&#39;</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>27</td>
+  <td class=xl65>Rodger Collins</td>
+  <td class=xl65>You Sexy Sugar Plum (But I Like It)</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>28</td>
+  <td class=xl65>The Sutherland Brothers &amp; Quiver</td>
+  <td class=xl65>Arms Of Mary</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>29</td>
+  <td class=xl65>The Eagles</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-048%20-%20Eagles%20-%20Take%20It%20To%20The%20Limit%20%28Asylum%29.mp3">Take It To The Limit</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>30</td>
+  <td class=xl65>Keith Emerson</td>
+  <td class=xl65>Honky Tonk Train Blues</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>31</td>
+  <td class=xl65>Randy Edelman</td>
+  <td class=xl65>Concrete And Clay</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>32</td>
+  <td class=xl65>Beatles With Billy Preston</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/217%20-%20The%20Beatles%20-%20Get%20Back.mp3">Get Back</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>33</td>
+  <td class=xl65>The Beatles</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/300%20-%20The%20Beatles%20-%20Paperback%20Writer.Mp3">Paperback Writer</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>34</td>
+  <td class=xl65>Laurie Lingo &amp; The Dipsticks</td>
+  <td class=xl65>Convoy GB</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>35</td>
+  <td class=xl65>The Trammps</td>
+  <td class=xl65>That&#39;s Where The Happy People Go</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>36</td>
+  <td class=xl65>Frankie Valli</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-203%20-%20Frankie%20Valli%20-%20Fallen%20Angel%20%28Private%20St%29.mp3">Fallen Angel</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>37</td>
+  <td class=xl65>Peters &amp; Lee</td>
+  <td class=xl65>Hey Mr Music Man</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>38</td>
+  <td class=xl65>Andrea True Connection</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-050%20-%20Andrea%20True%20Connection%20-%20More%2C%20More%2C%20More%20Pt.%201%20%28Buddah%29.mp3">More More More</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>39</td>
+  <td class=xl65>CW McCall</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-021%20-%20C.W.%20McCall%20-%20Convoy%20%28MGM%29.mp3">Convoy</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>40</td>
+  <td class=xl65>Guys &#39;N&#39; Dolls</td>
+  <td class=xl65>You Don&#39;t Have To Say You Love Me</td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr class=xl67 height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl67 style='height:17.45pt'></td>
+  <td colspan=3 class=xl66>Top 40 Hits of May 1976</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>1</td>
+  <td class=xl65>Abba</td>
+  <td class=xl65><a href="Music/Abba%20-%20Number%20Ones/Fernando.mp3">Fernando</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>2</td>
+  <td class=xl65>Brotherhood Of Man</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-164%20-%20Brotherhood%20Of%20Man%20-%20Save%20Your%20Kisses%20For%20Me%20%28Pye%29.mp3">Save Your Kisses For Me</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>3</td>
+  <td class=xl65>JJ Barrie</td>
+  <td class=xl65>No Charge</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>4</td>
+  <td class=xl65>Hank Mizell</td>
+  <td class=xl65>Jungle Rock</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>5</td>
+  <td class=xl65>Fox</td>
+  <td class=xl65>S-S-S-Single Bed</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>6</td>
+  <td class=xl65>The Sutherland Brothers &amp; Quiver</td>
+  <td class=xl65>Arms Of Mary</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>7</td>
+  <td class=xl65>Andrea True Connection</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-050%20-%20Andrea%20True%20Connection%20-%20More%2C%20More%2C%20More%20Pt.%201%20%28Buddah%29.mp3">More More More</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>8</td>
+  <td class=xl65>The Four Seasons</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-215%20-%20The%20Four%20Seasons%20-%20Silver%20Star%20%28Warner%20Crb%29.mp3">Silver Star</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>9</td>
+  <td class=xl65>The Wurzels</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/12%20-%20The%20Wurzels%20-%20Combine%20Harvester%20%28Band%20New%20Key%29.mp3">Combine Harvester</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>10</td>
+  <td class=xl65>The Stylistics</td>
+  <td class=xl65>Can&#39;t Help Falling In Love</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>11</td>
+  <td class=xl65>Silver Convention</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-028%20-%20Silver%20Convention%20-%20Get%20Up%20And%20Boogie%20%28That%27s%20Right%29%20%28Midland%20Int%27l%29.mp3">Get Up And Boogie</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>12</td>
+  <td class=xl65>The Rolling Stones</td>
+  <td class=xl65><a href="Music/The%20Rolling%20Stones%20Full%20Discography%20%281964-2005%29/The%20Rolling%20Stones%20%281976%29%20-%20Black%20and%20Blue/07%20-%20Fool%20To%20Cry.mp3">Fool To Cry</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>13</td>
+  <td class=xl65>Robin Sarstedt</td>
+  <td class=xl65>My Resistance Is Low</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>14</td>
+  <td class=xl65>Laurie Lingo &amp; The Dipsticks</td>
+  <td class=xl65>Convoy GB</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>15</td>
+  <td class=xl65>The Bellamy Brothers</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201976/04%20-%20The%20Bellamy%20Brothers%20-%20Let%20Your%20Love%20Flow.mp3">Let Your Love Flow</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>16</td>
+  <td class=xl65>Diana Ross</td>
+  <td class=xl65><a href="Music/Diana%20Ross/The%20No%201s/19-diana_ross_and_the_supremes-love_hangover-cns.mp3">Love Hangover</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>17</td>
+  <td class=xl65>Bay City Rollers</td>
+  <td class=xl65>Love Me Like I Love You</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>18</td>
+  <td class=xl65>James &amp; Bobby Purify</td>
+  <td class=xl65>I&#39;m Your Puppet</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>19</td>
+  <td class=xl65>Wings</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-002%20-%20Paul%20McCartney%20%26%20Wings%20-%20Silly%20Love%20Songs%20%28Capitol%29.mp3">Silly Love Songs</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>20</td>
+  <td class=xl65>Sheer Elegance</td>
+  <td class=xl65>Life Is Too Short Girl</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>21</td>
+  <td class=xl65>Isaac Hayes</td>
+  <td class=xl65>Disco Connection</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>22</td>
+  <td class=xl65>Frankie Valli</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-203%20-%20Frankie%20Valli%20-%20Fallen%20Angel%20%28Private%20St%29.mp3">Fallen Angel</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>23</td>
+  <td class=xl65>Cliff Richard</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-061%20-%20Cliff%20Richard%20-%20Devil%20Woman%20%28Rocket%29.mp3">Devil Woman</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>24</td>
+  <td class=xl65>Diana Ross</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-018%20-%20Diana%20Ross%20-%20Theme%20From%20Mahogany%20%28Do%20You%20Know%20Where%20You%27re%20Going%20To%29%20%28Motown%29.mp3">Theme From Mahogany (Do You Know Where You&#39;re Going To)</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>25</td>
+  <td class=xl65>Paul Nicholas</td>
+  <td class=xl65>Reggae Like It Used To Be</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>26</td>
+  <td class=xl65>Eric Carmen</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201976/09%20-%20Eric%20Carmen%20-%20All%20By%20Myself.mp3">All By Myself</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>27</td>
+  <td class=xl65>Gladys Knight &amp; The Pips</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/432%20-%20Gladys%20Knight%20And%20The%20Pips%20-%20Midnight%20Train%20To%20Georgia.mp3">Midnight Train To Georgia</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>28</td>
+  <td class=xl65>Jimmy James &amp; The Vagabonds</td>
+  <td class=xl65>I&#39;ll Go Where Your Music Takes Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>29</td>
+  <td class=xl65>Johnnie Taylor</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-004%20-%20Johnnie%20Taylor%20-%20Disco%20Lady%20%28Columbia%29.mp3">Disco Lady</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>30</td>
+  <td class=xl65>Peter Frampton</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/202%20-%20Peter%20Frampton%20-%20Show%20Me%20The%20Way.mp3">Show Me The Way</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>31</td>
+  <td class=xl65>Sailor</td>
+  <td class=xl65>Girls Girls Girls</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>32</td>
+  <td class=xl65>Mud</td>
+  <td class=xl65>Shake It Down</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>33</td>
+  <td class=xl65>John Miles</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/80%27s%20Greatest%20Hits/Greatest%20Hits%20of%201982/John%20Miles%20-%20Music.mp3">Music</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>34</td>
+  <td class=xl65>10cc</td>
+  <td class=xl65>I&#39;m Mandy Fly Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>35</td>
+  <td class=xl65>Archie Bell &amp; The Drells</td>
+  <td class=xl65>Soul City Walk</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>36</td>
+  <td class=xl65>Melba Moore</td>
+  <td class=xl65>This Is It</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>37</td>
+  <td class=xl65>Harpo</td>
+  <td class=xl65>Movie Star</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>38</td>
+  <td class=xl65>Slik</td>
+  <td class=xl65>Requiem</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>39</td>
+  <td class=xl65>Dolly Parton</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/217%20-%20Dolly%20Parton%20-%20Jolene.mp3">Jolene</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>40</td>
+  <td class=xl65>The Rubettes</td>
+  <td class=xl65>You&#39;re The Reason Why</td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr class=xl67 height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl67 style='height:17.45pt'></td>
+  <td colspan=3 class=xl66>Top 40 Hits of June 1976</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>1</td>
+  <td class=xl65>The Wurzels</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/12%20-%20The%20Wurzels%20-%20Combine%20Harvester%20%28Band%20New%20Key%29.mp3">Combine Harvester</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>2</td>
+  <td class=xl65>The Real Thing</td>
+  <td class=xl65>You To Me Are Everything</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>3</td>
+  <td class=xl65>Wings</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-002%20-%20Paul%20McCartney%20%26%20Wings%20-%20Silly%20Love%20Songs%20%28Capitol%29.mp3">Silly Love Songs</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>4</td>
+  <td class=xl65>JJ Barrie</td>
+  <td class=xl65>No Charge</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>5</td>
+  <td class=xl65>Our Kid</td>
+  <td class=xl65>You Just Might See Me Cry</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>6</td>
+  <td class=xl65>Rod Stewart</td>
+  <td class=xl65>Tonight&#39;s The Night</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>7</td>
+  <td class=xl65>Robin Sarstedt</td>
+  <td class=xl65>My Resistance Is Low</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>8</td>
+  <td class=xl65>Gallagher &amp; Lyle</td>
+  <td class=xl65>Heart On My Sleeve</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>9</td>
+  <td class=xl65>Abba</td>
+  <td class=xl65><a href="Music/Abba%20-%20Number%20Ones/Fernando.mp3">Fernando</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>10</td>
+  <td class=xl65>Candi Staton</td>
+  <td class=xl65><a href="Music/I%20Love%20Disco%20-%20Ministry%20Of%20Sound/I%20Love%20Disco%20-%20Ministry%20Of%20Sound%202017/1/16.%20Young%20Hearts%20Run%20Free%20-%20Candi%20Staton.mp3">Young Hearts Run Free</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>11</td>
+  <td class=xl65>Dolly Parton</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/217%20-%20Dolly%20Parton%20-%20Jolene.mp3">Jolene</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>12</td>
+  <td class=xl65>The Bellamy Brothers</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201976/04%20-%20The%20Bellamy%20Brothers%20-%20Let%20Your%20Love%20Flow.mp3">Let Your Love Flow</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>13</td>
+  <td class=xl65>The Rolling Stones</td>
+  <td class=xl65><a href="Music/The%20Rolling%20Stones%20Full%20Discography%20%281964-2005%29/The%20Rolling%20Stones%20%281976%29%20-%20Black%20and%20Blue/07%20-%20Fool%20To%20Cry.mp3">Fool To Cry</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>14</td>
+  <td class=xl65>Peter Frampton</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/202%20-%20Peter%20Frampton%20-%20Show%20Me%20The%20Way.mp3">Show Me The Way</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>15</td>
+  <td class=xl65>Bryan Ferry</td>
+  <td class=xl65><a href="Music/Now%20That%27s%20What%20I%20Call%20Music/now%2013/Disc1/12_bryan%20ferry%20-%20let%27s%20stick%20together.mp3">Let&#39;s Stick Together</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>16</td>
+  <td class=xl65>Thin Lizzy</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/421%20-%20Thin%20Lizzy%20-%20The%20Boys%20Are%20Back%20In%20Town.mp3">The Boys Are Back In Town</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>17</td>
+  <td class=xl65>The Shangri-Las</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/100%20Golden%20Love%20Songs/050%20-%20The%20Shangri-Las%20-%20Leader%20Of%20The%20Pack.mp3">Leader Of The Pack</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>18</td>
+  <td class=xl65>Melba Moore</td>
+  <td class=xl65>This Is It</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>19</td>
+  <td class=xl65>Gladys Knight &amp; The Pips</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/432%20-%20Gladys%20Knight%20And%20The%20Pips%20-%20Midnight%20Train%20To%20Georgia.mp3">Midnight Train To Georgia</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>20</td>
+  <td class=xl65>Mud</td>
+  <td class=xl65>Shake It Down</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>21</td>
+  <td class=xl65>Cliff Richard</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-061%20-%20Cliff%20Richard%20-%20Devil%20Woman%20%28Rocket%29.mp3">Devil Woman</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>22</td>
+  <td class=xl65>Archie Bell &amp; The Drells</td>
+  <td class=xl65>Soul City Walk</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>23</td>
+  <td class=xl65>Lee Garrett</td>
+  <td class=xl65>You&#39;re My Everything</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>24</td>
+  <td class=xl65>Dion</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20III/CD%201/13%20-%20Dion%20-%20The%20Wanderer.mp3">The Wanderer</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>25</td>
+  <td class=xl65>Diana Ross</td>
+  <td class=xl65><a href="Music/Diana%20Ross/The%20No%201s/19-diana_ross_and_the_supremes-love_hangover-cns.mp3">Love Hangover</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>26</td>
+  <td class=xl65>The Sutherland Brothers &amp; Quiver</td>
+  <td class=xl65>Arms Of Mary</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>27</td>
+  <td class=xl65>Maureen McGovern</td>
+  <td class=xl65>The Continental</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>28</td>
+  <td class=xl65>Mistura featuring Lloyd Michels</td>
+  <td class=xl65>The Flasher</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>29</td>
+  <td class=xl65>James &amp; Bobby Purify</td>
+  <td class=xl65>I&#39;m Your Puppet</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>30</td>
+  <td class=xl65>The Manhattans</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/100%20Golden%20Love%20Songs/066%20-%20The%20Manhattans%20-%20Kiss%20And%20Say%20Goodbye.mp3">Kiss And Say Goodbye</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>31</td>
+  <td class=xl65>Brotherhood Of Man</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-164%20-%20Brotherhood%20Of%20Man%20-%20Save%20Your%20Kisses%20For%20Me%20%28Pye%29.mp3">Save Your Kisses For Me</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>32</td>
+  <td class=xl65>Andrea True Connection</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-050%20-%20Andrea%20True%20Connection%20-%20More%2C%20More%2C%20More%20Pt.%201%20%28Buddah%29.mp3">More More More</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>33</td>
+  <td class=xl65>Slik</td>
+  <td class=xl65>Requiem</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>34</td>
+  <td class=xl65>Johnny Nash</td>
+  <td class=xl65>What A Wonderful World</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>35</td>
+  <td class=xl65>Osibisa</td>
+  <td class=xl65>Dance The Body Music</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>36</td>
+  <td class=xl65>T Rex</td>
+  <td class=xl65>I Love To Boogie</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>37</td>
+  <td class=xl65>The Four Seasons</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-215%20-%20The%20Four%20Seasons%20-%20Silver%20Star%20%28Warner%20Crb%29.mp3">Silver Star</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>38</td>
+  <td class=xl65>Donna Summer</td>
+  <td class=xl65>Could It Be Magic</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>39</td>
+  <td class=xl65>The Sensational Alex Harvey Band</td>
+  <td class=xl65>The Boston Tea Party</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>40</td>
+  <td class=xl65>Demis Roussos</td>
+  <td class=xl65>The Roussos Phenomenon</td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr class=xl67 height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl67 style='height:17.45pt'></td>
+  <td colspan=3 class=xl66>Top 40 Hits of July 1976</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>1</td>
+  <td class=xl65>Elton John &amp; Kiki Dee</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201976/01%20-%20Elton%20John%20%26%20Kiki%20Dee%20-%20Don%27t%20Go%20Breaking%20My%20Heart.mp3">Don&#39;t Go Breaking My Heart</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>2</td>
+  <td class=xl65>Demis Roussos</td>
+  <td class=xl65>The Roussos Phenomenon</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>3</td>
+  <td class=xl65>The Real Thing</td>
+  <td class=xl65>You To Me Are Everything</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>4</td>
+  <td class=xl65>Candi Staton</td>
+  <td class=xl65><a href="Music/I%20Love%20Disco%20-%20Ministry%20Of%20Sound/I%20Love%20Disco%20-%20Ministry%20Of%20Sound%202017/1/16.%20Young%20Hearts%20Run%20Free%20-%20Candi%20Staton.mp3">Young Hearts Run Free</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>5</td>
+  <td class=xl65>Dr Hook</td>
+  <td class=xl65><a href="Music/Dr.%20Hook%20%26%20The%20Medicine%20Show/Greatest%20Hits%20%28and%20More%29/04%20A%20Little%20Bit%20More.mp3">A Little Bit More</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>6</td>
+  <td class=xl65>The Manhattans</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/100%20Golden%20Love%20Songs/066%20-%20The%20Manhattans%20-%20Kiss%20And%20Say%20Goodbye.mp3">Kiss And Say Goodbye</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>7</td>
+  <td class=xl65>Our Kid</td>
+  <td class=xl65>You Just Might See Me Cry</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>8</td>
+  <td class=xl65>Bryan Ferry</td>
+  <td class=xl65><a href="Music/Now%20That%27s%20What%20I%20Call%20Music/now%2013/Disc1/12_bryan%20ferry%20-%20let%27s%20stick%20together.mp3">Let&#39;s Stick Together</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>9</td>
+  <td class=xl65>Dorothy Moore</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-038%20-%20Dorothy%20Moore%20-%20Misty%20Blue%20%28Malaco%29.mp3">Misty Blue</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>10</td>
+  <td class=xl65>Rod Stewart</td>
+  <td class=xl65>Tonight&#39;s The Night</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>11</td>
+  <td class=xl65>Queen</td>
+  <td class=xl65><a href="Music/Queen/Greatest%20Hits%20%5B2004%5D/06%20You%27re%20My%20Best%20Friend.wma">You&#39;re My Best Friend</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>12</td>
+  <td class=xl65>The Shangri-Las</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/100%20Golden%20Love%20Songs/050%20-%20The%20Shangri-Las%20-%20Leader%20Of%20The%20Pack.mp3">Leader Of The Pack</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>13</td>
+  <td class=xl65>100 Ton &amp; A Feather</td>
+  <td class=xl65>It Only Takes A Minute</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>14</td>
+  <td class=xl65>Liverpool Express</td>
+  <td class=xl65>You Are My Love</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>15</td>
+  <td class=xl65>Thin Lizzy</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/421%20-%20Thin%20Lizzy%20-%20The%20Boys%20Are%20Back%20In%20Town.mp3">The Boys Are Back In Town</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>16</td>
+  <td class=xl65>T Rex</td>
+  <td class=xl65>I Love To Boogie</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>17</td>
+  <td class=xl65>Tavares</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/80%27s%20Greatest%20Hits/Top%201000%20Pop%20Hits%20of%20the%2080s%20%284.32gb%29/Tavares%20-%20Heaven%20Must%20Be%20Missing%20An%20Angel.mp3">Heaven Must Be Missing An Angel</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>18</td>
+  <td class=xl65>Hot Chocolate</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/04%20-%20Hot%20Chocolate%20-%20Man%20To%20Man.mp3">Man To Man</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>19</td>
+  <td class=xl65>Gallagher &amp; Lyle</td>
+  <td class=xl65>Heart On My Sleeve</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>20</td>
+  <td class=xl65>The Sensational Alex Harvey Band</td>
+  <td class=xl65>The Boston Tea Party</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>21</td>
+  <td class=xl65>Wings</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-002%20-%20Paul%20McCartney%20%26%20Wings%20-%20Silly%20Love%20Songs%20%28Capitol%29.mp3">Silly Love Songs</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>22</td>
+  <td class=xl65>Don Williams</td>
+  <td class=xl65>I Recall A Gypsy Woman</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>23</td>
+  <td class=xl65>The Wurzels</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/12%20-%20The%20Wurzels%20-%20Combine%20Harvester%20%28Band%20New%20Key%29.mp3">Combine Harvester</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>24</td>
+  <td class=xl65>War</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201974/1974-132%20-%20War%20-%20Me%20And%20Baby%20Brother%20%28United%20Art%29.mp3">Me And Baby Brother</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>25</td>
+  <td class=xl65>The Isley Brothers</td>
+  <td class=xl65>Harvest For The World</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>26</td>
+  <td class=xl65>The Beatles</td>
+  <td class=xl65><a href="Music/Beatles/1967%20-%201970%20Disc%202/%28The_Beatles%29-Back_In_The_Ussr.Mp3">Back In The USSR</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>27</td>
+  <td class=xl65>The Beach Boys</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/205%20-%20The%20Beach%20Boys%20-%20Good%20Vibrations.mp3">Good Vibrations</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>28</td>
+  <td class=xl65>Maureen McGovern</td>
+  <td class=xl65>The Continental</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>29</td>
+  <td class=xl65>Johnny Nash</td>
+  <td class=xl65>What A Wonderful World</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>30</td>
+  <td class=xl65>Dolly Parton</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/217%20-%20Dolly%20Parton%20-%20Jolene.mp3">Jolene</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>31</td>
+  <td class=xl65>Brotherhood Of Man</td>
+  <td class=xl65>My Sweet Rosalie</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>32</td>
+  <td class=xl65>Billy Ocean</td>
+  <td class=xl65>Love On Delivery</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>33</td>
+  <td class=xl65>Johnny Cash &amp; The Tennessee Three</td>
+  <td class=xl65>One Piece At A Time</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>34</td>
+  <td class=xl65>Status Quo</td>
+  <td class=xl65>Mystery Song</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>35</td>
+  <td class=xl65>David Dundas</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Wow%20That%20Was%20The%2070s%20Disk%201/104%20-%20David%20Dundas%20-%20Jeans%20On.mp3">Jeans On</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>36</td>
+  <td class=xl65>Jimmy James &amp; The Vagabonds</td>
+  <td class=xl65>Now Is The Time</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>37</td>
+  <td class=xl65>Peter Frampton</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/202%20-%20Peter%20Frampton%20-%20Show%20Me%20The%20Way.mp3">Show Me The Way</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>38</td>
+  <td class=xl65>The Carpenters</td>
+  <td class=xl65><a href="Music/Carpenters/The%20Carpenters%20Gold%20greatest%20hits/05%20i%20need%20to%20be%20in%20love.wma">I Need To Be In Love</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>39</td>
+  <td class=xl65>Dion</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Sixties%20Album%20In%20The%20World%20Ever%20III/CD%201/13%20-%20Dion%20-%20The%20Wanderer.mp3">The Wanderer</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>40</td>
+  <td class=xl65>Walter Murphy</td>
+  <td class=xl65><a href="Music/Various%20Artists/Saturday%20Night%20Fever%20-%20Original%20Soundtrack/Saturday%20NightFever/06%20-%20Walter%20Murphy%20_%20A%20Fifth%20Of%20Beethoven.mp3">A Fifth Of Beethoven</a></td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr class=xl67 height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl67 style='height:17.45pt'></td>
+  <td colspan=3 class=xl66>Top 40 Hits of August 1976</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>1</td>
+  <td class=xl65>Elton John &amp; Kiki Dee</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201976/01%20-%20Elton%20John%20%26%20Kiki%20Dee%20-%20Don%27t%20Go%20Breaking%20My%20Heart.mp3">Don&#39;t Go Breaking My Heart</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>2</td>
+  <td class=xl65>Dr Hook</td>
+  <td class=xl65><a href="Music/Dr.%20Hook%20%26%20The%20Medicine%20Show/Greatest%20Hits%20%28and%20More%29/04%20A%20Little%20Bit%20More.mp3">A Little Bit More</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>3</td>
+  <td class=xl65>David Dundas</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Wow%20That%20Was%20The%2070s%20Disk%201/104%20-%20David%20Dundas%20-%20Jeans%20On.mp3">Jeans On</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>4</td>
+  <td class=xl65>Wings</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-039%20-%20Paul%20McCartney%20%26%20Wings%20-%20Let%20%27Em%20In%20%28Capitol%29.mp3">Let &#39;Em In</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>5</td>
+  <td class=xl65>Johnny Wakelin</td>
+  <td class=xl65>In Zaire</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>6</td>
+  <td class=xl65>Tavares</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/80%27s%20Greatest%20Hits/Top%201000%20Pop%20Hits%20of%20the%2080s%20%284.32gb%29/Tavares%20-%20Heaven%20Must%20Be%20Missing%20An%20Angel.mp3">Heaven Must Be Missing An Angel</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>7</td>
+  <td class=xl65>Jimmy James &amp; The Vagabonds</td>
+  <td class=xl65>Now Is The Time</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>8</td>
+  <td class=xl65>5000 Volts</td>
+  <td class=xl65>Dr Kiss Kiss</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>9</td>
+  <td class=xl65>The Bee Gees</td>
+  <td class=xl65><a href="Music/Bee%20Gee%27s/Their%20Greatest%20Hits/Bee%20Gees%20CD%201/bee%20gees%20-%2021%20-%20you%20should%20be%20dancing.wma">You Should Be Dancing</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>10</td>
+  <td class=xl65>Demis Roussos</td>
+  <td class=xl65>The Roussos Phenomenon</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>11</td>
+  <td class=xl65>Abba</td>
+  <td class=xl65><a href="Music/ABBA/%281976%29%20Arrival/02%20-%20Abba%20-%20Dancing%20Queen.mp3">Dancing Queen</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>12</td>
+  <td class=xl65>Billie Jo Spears</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/17%20-%20Billie%20Jo%20Spears%20-%20What%20I%27ve%20Got%20In%20Mind.mp3">What I&#39;ve Got In Mind</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>13</td>
+  <td class=xl65>Dorothy Moore</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-038%20-%20Dorothy%20Moore%20-%20Misty%20Blue%20%28Malaco%29.mp3">Misty Blue</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>14</td>
+  <td class=xl65>Bryan Ferry</td>
+  <td class=xl65>Extended Play</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>15</td>
+  <td class=xl65>The Chi-Lites</td>
+  <td class=xl65>You Don&#39;t Have To Go</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>16</td>
+  <td class=xl65>Steve Harley &amp; Cockney Rebel</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/20%20-%20Steve%20Harley%20%26%20Cockney%20Rebel%20-%20Here%20Comes%20The%20Sun.mp3">Here Comes The Sun</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>17</td>
+  <td class=xl65>Status Quo</td>
+  <td class=xl65>Mystery Song</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>18</td>
+  <td class=xl65>Lou Rawls</td>
+  <td class=xl65><a href="Music/Golden%20Love%20Songs%208CDs/Golden%20Love%20Songs%20Top%20100%20-%20Vol%202%20CD1/10%20-%20Lou%20Rawls%20_%20You%27ll%20Never%20Find%20Another%20Love%20Like%20Mine.mp3">You&#39;ll Never Find Another Love Like Mine</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>19</td>
+  <td class=xl65>The Stylistics</td>
+  <td class=xl65>16 Bars</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>20</td>
+  <td class=xl65>The Manhattans</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/100%20Golden%20Love%20Songs/066%20-%20The%20Manhattans%20-%20Kiss%20And%20Say%20Goodbye.mp3">Kiss And Say Goodbye</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>21</td>
+  <td class=xl65>The Isley Brothers</td>
+  <td class=xl65>Harvest For The World</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>22</td>
+  <td class=xl65>Rod Stewart</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201977/1977-175%20-%20Rod%20Stewart%20-%20The%20Killing%20Of%20Georgie%20%28Part%20I%20And%20II%29%20%28Warner%29.mp3">The Killing Of Georgie</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>23</td>
+  <td class=xl65>Jesse Green</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Wow%20That%20Was%20The%2070s%20Disk%205/509%20-%20Jesse%20Green%20-%20Nice%20And%20Slow.mp3">Nice And Slow</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>24</td>
+  <td class=xl65>The Starland Vocal Band</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-011%20-%20Starland%20Vocal%20Band%20-%20Afternoon%20Delight%20%28Windsong%29.mp3">Afternoon Delight</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>25</td>
+  <td class=xl65>Billy Ocean</td>
+  <td class=xl65>Love On Delivery</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>26</td>
+  <td class=xl65>KC &amp; The Sunshine Band</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/09%20-%20KC%20%26%20The%20Sunshine%20Band%20-%20%28Shake%2C%20Shake%2C%20Shake%29%20Shake%20Your%20Booty.mp3">(Shake, Shake, Shake) Shake Your Booty</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>27</td>
+  <td class=xl65>Candi Staton</td>
+  <td class=xl65><a href="Music/I%20Love%20Disco%20-%20Ministry%20Of%20Sound/I%20Love%20Disco%20-%20Ministry%20Of%20Sound%202017/1/16.%20Young%20Hearts%20Run%20Free%20-%20Candi%20Staton.mp3">Young Hearts Run Free</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>28</td>
+  <td class=xl65>James &amp; Bobby Purify</td>
+  <td class=xl65>Morning Glory</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>29</td>
+  <td class=xl65>Liverpool Express</td>
+  <td class=xl65>You Are My Love</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>30</td>
+  <td class=xl65>Walter Murphy</td>
+  <td class=xl65><a href="Music/Various%20Artists/Saturday%20Night%20Fever%20-%20Original%20Soundtrack/Saturday%20NightFever/06%20-%20Walter%20Murphy%20_%20A%20Fifth%20Of%20Beethoven.mp3">A Fifth Of Beethoven</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>31</td>
+  <td class=xl65>100 Ton &amp; A Feather</td>
+  <td class=xl65>It Only Takes A Minute</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>32</td>
+  <td class=xl65>Queen</td>
+  <td class=xl65><a href="Music/Queen/Greatest%20Hits%20%5B2004%5D/06%20You%27re%20My%20Best%20Friend.wma">You&#39;re My Best Friend</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>33</td>
+  <td class=xl65>Georghe Zamfir</td>
+  <td class=xl65>(Light Of Experience) Doina De Jale</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>34</td>
+  <td class=xl65>Twiggy</td>
+  <td class=xl65>Here I Go Again</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>35</td>
+  <td class=xl65>Barry White</td>
+  <td class=xl65>Baby We Better Try And Get It Together</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>36</td>
+  <td class=xl65>The Sensational Alex Harvey Band</td>
+  <td class=xl65>The Boston Tea Party</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>37</td>
+  <td class=xl65>Thin Lizzy</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Best%20Air%20Guitar%20Album%20In%20The%20World%20Ever%20II/CD%201/11%20-%20Thin%20Lizzy%20-%20Jailbreak.mp3">Jailbreak</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>38</td>
+  <td class=xl65>Cliff Richard</td>
+  <td class=xl65>I Can&#39;t Ask For Anything More Than You Babe</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>39</td>
+  <td class=xl65>Neil Diamond</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-098%20-%20Neil%20Diamond%20-%20If%20You%20Know%20What%20I%20Mean%20%28Columbia%29.mp3">If You Know What I Mean</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>40</td>
+  <td class=xl65>Mr Acker Bilk</td>
+  <td class=xl65>Aria</td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr class=xl67 height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl67 style='height:17.45pt'></td>
+  <td colspan=3 class=xl66>Top 40 Hits of September 1976</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>1</td>
+  <td class=xl65>Abba</td>
+  <td class=xl65><a href="Music/ABBA/%281976%29%20Arrival/02%20-%20Abba%20-%20Dancing%20Queen.mp3">Dancing Queen</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>2</td>
+  <td class=xl65>The Real Thing</td>
+  <td class=xl65>Can&#39;t Get By Without You</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>3</td>
+  <td class=xl65>Wings</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-039%20-%20Paul%20McCartney%20%26%20Wings%20-%20Let%20%27Em%20In%20%28Capitol%29.mp3">Let &#39;Em In</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>4</td>
+  <td class=xl65>Rod Stewart</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201977/1977-175%20-%20Rod%20Stewart%20-%20The%20Killing%20Of%20Georgie%20%28Part%20I%20And%20II%29%20%28Warner%29.mp3">The Killing Of Georgie</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>5</td>
+  <td class=xl65>The Chi-Lites</td>
+  <td class=xl65>You Don&#39;t Have To Go</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>6</td>
+  <td class=xl65>Georghe Zamfir</td>
+  <td class=xl65>(Light Of Experience) Doina De Jale</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>7</td>
+  <td class=xl65>Pussycat</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/13%20-%20Pussycat%20-%20Mississippi.mp3">Mississippi</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>8</td>
+  <td class=xl65>Elton John &amp; Kiki Dee</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201976/01%20-%20Elton%20John%20%26%20Kiki%20Dee%20-%20Don%27t%20Go%20Breaking%20My%20Heart.mp3">Don&#39;t Go Breaking My Heart</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>9</td>
+  <td class=xl65>The Wurzels</td>
+  <td class=xl65>I Am A Cider Drinker</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>10</td>
+  <td class=xl65>Mr Acker Bilk</td>
+  <td class=xl65>Aria</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>11</td>
+  <td class=xl65>The Stylistics</td>
+  <td class=xl65>16 Bars</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>12</td>
+  <td class=xl65>Manfred Mann&#39;s Earth Band</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/082%20-%20Manfred%20Mann%20-%20Blinded%20By%20The%20Light.mp3">Blinded By The Light</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>13</td>
+  <td class=xl65>Bay City Rollers</td>
+  <td class=xl65>I Only Wanna Be With You</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>14</td>
+  <td class=xl65>Billie Jo Spears</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/17%20-%20Billie%20Jo%20Spears%20-%20What%20I%27ve%20Got%20In%20Mind.mp3">What I&#39;ve Got In Mind</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>15</td>
+  <td class=xl65>Tina Charles</td>
+  <td class=xl65>Dance Little Lady Dance</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>16</td>
+  <td class=xl65>Bryan Ferry</td>
+  <td class=xl65>Extended Play</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>17</td>
+  <td class=xl65>The Bee Gees</td>
+  <td class=xl65><a href="Music/Bee%20Gee%27s/Their%20Greatest%20Hits/Bee%20Gees%20CD%201/bee%20gees%20-%2021%20-%20you%20should%20be%20dancing.wma">You Should Be Dancing</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>18</td>
+  <td class=xl65>Barry White</td>
+  <td class=xl65>Baby We Better Try And Get It Together</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>19</td>
+  <td class=xl65>Lou Rawls</td>
+  <td class=xl65><a href="Music/Golden%20Love%20Songs%208CDs/Golden%20Love%20Songs%20Top%20100%20-%20Vol%202%20CD1/10%20-%20Lou%20Rawls%20_%20You%27ll%20Never%20Find%20Another%20Love%20Like%20Mine.mp3">You&#39;ll Never Find Another Love Like Mine</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>20</td>
+  <td class=xl65>Dr Hook</td>
+  <td class=xl65><a href="Music/Dr.%20Hook%20%26%20The%20Medicine%20Show/Greatest%20Hits%20%28and%20More%29/04%20A%20Little%20Bit%20More.mp3">A Little Bit More</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>21</td>
+  <td class=xl65>Rod Stewart</td>
+  <td class=xl65>Sailing</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>22</td>
+  <td class=xl65>Twiggy</td>
+  <td class=xl65>Here I Go Again</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>23</td>
+  <td class=xl65>Cliff Richard</td>
+  <td class=xl65>I Can&#39;t Ask For Anything More Than You Babe</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>24</td>
+  <td class=xl65>Johnny Wakelin</td>
+  <td class=xl65>In Zaire</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>25</td>
+  <td class=xl65>Jesse Green</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Wow%20That%20Was%20The%2070s%20Disk%205/509%20-%20Jesse%20Green%20-%20Nice%20And%20Slow.mp3">Nice And Slow</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>26</td>
+  <td class=xl65>Elvis Presley</td>
+  <td class=xl65><a href="Music/Elvis%20Presley/10%20of%2050%20-%20Elvis%20Is%20Back/03%20-%20the%20girl%20of%20my%20best%20friend.mp3">Girl Of My Best Friend</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>27</td>
+  <td class=xl65>The Starland Vocal Band</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-011%20-%20Starland%20Vocal%20Band%20-%20Afternoon%20Delight%20%28Windsong%29.mp3">Afternoon Delight</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>28</td>
+  <td class=xl65>Kiki Dee</td>
+  <td class=xl65>Loving And Free</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>29</td>
+  <td class=xl65>Hot Chocolate</td>
+  <td class=xl65>Heaven Is In The Back Seat Of My Cadillac</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>30</td>
+  <td class=xl65>Tommy Hunt</td>
+  <td class=xl65>Loving On The Losing Side</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>31</td>
+  <td class=xl65>Rick Dees &amp; His Cast Of Idiots</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-014%20-%20Rick%20Dees%20-%20Disco%20Duck%20%28Part%201%29%20%28RSO%29.mp3">Disco Duck</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>32</td>
+  <td class=xl65>5000 Volts</td>
+  <td class=xl65>Dr Kiss Kiss</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>33</td>
+  <td class=xl65>David Dundas</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Wow%20That%20Was%20The%2070s%20Disk%201/104%20-%20David%20Dundas%20-%20Jeans%20On.mp3">Jeans On</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>34</td>
+  <td class=xl65>Can</td>
+  <td class=xl65>I Want More</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>35</td>
+  <td class=xl65>The Ritchie Family</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-127%20-%20The%20Ritchie%20Family%20-%20The%20Best%20Disco%20In%20Town%20%28Marlin%29.mp3">The Best Disco In Town</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>36</td>
+  <td class=xl65>Tavares</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/80%27s%20Greatest%20Hits/Top%201000%20Pop%20Hits%20of%20the%2080s%20%284.32gb%29/Tavares%20-%20Heaven%20Must%20Be%20Missing%20An%20Angel.mp3">Heaven Must Be Missing An Angel</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>37</td>
+  <td class=xl65>Lynyrd Skynyrd</td>
+  <td class=xl65>Sweet Home Alabama / Double Trouble</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>38</td>
+  <td class=xl65>JALN Band</td>
+  <td class=xl65>Disco Music (I Like It)</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>39</td>
+  <td class=xl65>The Drifters</td>
+  <td class=xl65>Every Nite&#39;s A Saturday Night With You</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>40</td>
+  <td class=xl65>Barry Biggs</td>
+  <td class=xl65>Work All Day</td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr class=xl67 height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl67 style='height:17.45pt'></td>
+  <td colspan=3 class=xl66>Top 40 Hits of October 1976</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>1</td>
+  <td class=xl65>Pussycat</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/13%20-%20Pussycat%20-%20Mississippi.mp3">Mississippi</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>2</td>
+  <td class=xl65>Abba</td>
+  <td class=xl65><a href="Music/ABBA/%281976%29%20Arrival/02%20-%20Abba%20-%20Dancing%20Queen.mp3">Dancing Queen</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>3</td>
+  <td class=xl65>Demis Roussos</td>
+  <td class=xl65>When Forever Has Gone</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>4</td>
+  <td class=xl65>Rod Stewart</td>
+  <td class=xl65>Sailing</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>5</td>
+  <td class=xl65>The Real Thing</td>
+  <td class=xl65>Can&#39;t Get By Without You</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>6</td>
+  <td class=xl65>Sherbet</td>
+  <td class=xl65>Howzat</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>7</td>
+  <td class=xl65>Rick Dees &amp; His Cast Of Idiots</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-014%20-%20Rick%20Dees%20-%20Disco%20Duck%20%28Part%201%29%20%28RSO%29.mp3">Disco Duck</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>8</td>
+  <td class=xl65>The Wurzels</td>
+  <td class=xl65>I Am A Cider Drinker</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>9</td>
+  <td class=xl65>Tina Charles</td>
+  <td class=xl65>Dance Little Lady Dance</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>10</td>
+  <td class=xl65>The Manhattans</td>
+  <td class=xl65>Hurt</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>11</td>
+  <td class=xl65>Bay City Rollers</td>
+  <td class=xl65>I Only Wanna Be With You</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>12</td>
+  <td class=xl65>Chicago</td>
+  <td class=xl65><a href="Music/Various%20Artists/I%20Love%20U%20-%20Various/CD1/08%20-%20Chicago%20-%20If%20You%20Leave%20Me%20Now.mp3">If You Leave Me Now</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>13</td>
+  <td class=xl65>Elvis Presley</td>
+  <td class=xl65><a href="Music/Elvis%20Presley/10%20of%2050%20-%20Elvis%20Is%20Back/03%20-%20the%20girl%20of%20my%20best%20friend.mp3">Girl Of My Best Friend</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>14</td>
+  <td class=xl65>The Ritchie Family</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-127%20-%20The%20Ritchie%20Family%20-%20The%20Best%20Disco%20In%20Town%20%28Marlin%29.mp3">The Best Disco In Town</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>15</td>
+  <td class=xl65>Mr Acker Bilk</td>
+  <td class=xl65>Aria</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>16</td>
+  <td class=xl65>Simon May</td>
+  <td class=xl65>The Summer Of My Life</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>17</td>
+  <td class=xl65>Tavares</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Wow%20That%20Was%20The%2070s%20Disk%201/109%20-%20Tavares%20-%20Don%27t%20Take%20Away%20The%20Music.mp3">Don&#39;t Take Away The Music</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>18</td>
+  <td class=xl65>Manfred Mann&#39;s Earth Band</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/082%20-%20Manfred%20Mann%20-%20Blinded%20By%20The%20Light.mp3">Blinded By The Light</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>19</td>
+  <td class=xl65>Smokey Robinson &amp; The Miracles</td>
+  <td class=xl65>I&#39;ll Meet You At Midnight</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>20</td>
+  <td class=xl65>Kiki Dee</td>
+  <td class=xl65>Loving And Free</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>21</td>
+  <td class=xl65>The Detroit Spinners</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-027%20-%20Spinners%20-%20The%20Rubberband%20Man%20%28Atlantic%29.mp3">The Rubberband Man</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>22</td>
+  <td class=xl65>JALN Band</td>
+  <td class=xl65>Disco Music (I Like It)</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>23</td>
+  <td class=xl65>Paul Nicholas</td>
+  <td class=xl65>Dancing With The Captain</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>24</td>
+  <td class=xl65>Rod Stewart</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201977/1977-175%20-%20Rod%20Stewart%20-%20The%20Killing%20Of%20Georgie%20%28Part%20I%20And%20II%29%20%28Warner%29.mp3">The Killing Of Georgie</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>25</td>
+  <td class=xl65>Wild Cherry</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201976/05%20-%20Wild%20Cherry%20-%20Play%20That%20Funky%20Music.mp3">Play That Funky Music</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>26</td>
+  <td class=xl65>Randy Edelman</td>
+  <td class=xl65>Uptown, Uptempo Woman</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>27</td>
+  <td class=xl65>Can</td>
+  <td class=xl65>I Want More</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>28</td>
+  <td class=xl65>England Dan &amp; John Ford Coley</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/100%20Golden%20Love%20Songs/067%20-%20England%20Dan%20%26%20John%20Ford%20Coley%20-%20I%27d%20Really%20Love%20To%20See%20You%20Tonight.mp3">I&#39;d Really Love To See You Tonight</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>29</td>
+  <td class=xl65>The Climax Blues Band</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201977/09%20-%20Climax%20Blues%20Band%20-%20Couldn%27t%20Get%20It%20Right.mp3">Couldn&#39;t Get It Right</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>30</td>
+  <td class=xl65>Georghe Zamfir</td>
+  <td class=xl65>(Light Of Experience) Doina De Jale</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>31</td>
+  <td class=xl65>James Brown</td>
+  <td class=xl65><a href="Music/VH1%20Top%20100%20Albums/034%20-%20James%20Brown%20-%20Sex%20Machine%20the%20Very%20Best%20of%20James%20Brown%20-%201991/15%20Get%20Up%20Offa%20That%20Thing.mp3">Get Up Offa That Thing</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>32</td>
+  <td class=xl65>Lalo Schiffrin</td>
+  <td class=xl65>Jaws</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>33</td>
+  <td class=xl65>Twiggy</td>
+  <td class=xl65>Here I Go Again</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>34</td>
+  <td class=xl65>Smokey Robinson &amp; The Miracles</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%203%20of%203/The%20Best%20Number%20One%20Singles%20In%20The%20World%20Ever/CD%201/07%20-%20Smokey%20Robinson%20%26%20The%20Miracles%20-%20The%20Tears%20Of%20A%20Clown.mp3">Tears Of A Clown</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>35</td>
+  <td class=xl65>Jesse Green</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Wow%20That%20Was%20The%2070s%20Disk%205/509%20-%20Jesse%20Green%20-%20Nice%20And%20Slow.mp3">Nice And Slow</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>36</td>
+  <td class=xl65>The Average White Band</td>
+  <td class=xl65>Queen Of My Soul</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>37</td>
+  <td class=xl65>Joan Armatrading</td>
+  <td class=xl65><a href="Music/Songbird/cd1/08%20-%20Joan%20Armatrading%20_%20Love%20And%20Affection.mp3">Love And Affection</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>38</td>
+  <td class=xl65>The Drifters</td>
+  <td class=xl65>Every Nite&#39;s A Saturday Night With You</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>39</td>
+  <td class=xl65>Hot Blood</td>
+  <td class=xl65>Soul Dracula</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>40</td>
+  <td class=xl65>Cliff Richard</td>
+  <td class=xl65>I Can&#39;t Ask For Anything More Than You Babe</td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr class=xl67 height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl67 style='height:17.45pt'></td>
+  <td colspan=3 class=xl66>Top 40 Hits of November 1976</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>1</td>
+  <td class=xl65>Chicago</td>
+  <td class=xl65><a href="Music/Various%20Artists/I%20Love%20U%20-%20Various/CD1/08%20-%20Chicago%20-%20If%20You%20Leave%20Me%20Now.mp3">If You Leave Me Now</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>2</td>
+  <td class=xl65>Pussycat</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/13%20-%20Pussycat%20-%20Mississippi.mp3">Mississippi</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>3</td>
+  <td class=xl65>Leo Sayer</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201977/06%20-%20Leo%20Sayer%20-%20You%20Make%20Me%20Feel%20Like%20Dancing.mp3">You Make Me Feel Like Dancing</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>4</td>
+  <td class=xl65>Showaddywaddy</td>
+  <td class=xl65><a href="Music/Various%20Artists/It%27s%20The%20Sensational%2070s%20-%20Various/CD3/01%20-%20Showaddywaddy%20_%20Under%20The%20Moon%20Of%20Love.mp3">Under The Moon Of Love</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>5</td>
+  <td class=xl65>Tavares</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Wow%20That%20Was%20The%2070s%20Disk%201/109%20-%20Tavares%20-%20Don%27t%20Take%20Away%20The%20Music.mp3">Don&#39;t Take Away The Music</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>6</td>
+  <td class=xl65>Dr Hook</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/10%20-%20Dr.%20Hook%20-%20If%20Not%20You.mp3">If Not You</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>7</td>
+  <td class=xl65>The Manhattans</td>
+  <td class=xl65>Hurt</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>8</td>
+  <td class=xl65>Demis Roussos</td>
+  <td class=xl65>When Forever Has Gone</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>9</td>
+  <td class=xl65>Wild Cherry</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201976/05%20-%20Wild%20Cherry%20-%20Play%20That%20Funky%20Music.mp3">Play That Funky Music</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>10</td>
+  <td class=xl65>The Climax Blues Band</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201977/09%20-%20Climax%20Blues%20Band%20-%20Couldn%27t%20Get%20It%20Right.mp3">Couldn&#39;t Get It Right</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>11</td>
+  <td class=xl65>The Who</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/401%20-%20The%20Who%20-%20Substitute.mp3">Substitute</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>12</td>
+  <td class=xl65>Bonnie Tyler</td>
+  <td class=xl65>Lost In France</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>13</td>
+  <td class=xl65>Neil Diamond</td>
+  <td class=xl65>Beautiful Noise</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>14</td>
+  <td class=xl65>Yvonne Elliman</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-112%20-%20Yvonne%20Elliman%20-%20Love%20me%20%28RSO%29.mp3">Love Me</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>15</td>
+  <td class=xl65>Paul Nicholas</td>
+  <td class=xl65>Dancing With The Captain</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>16</td>
+  <td class=xl65>Joan Armatrading</td>
+  <td class=xl65><a href="Music/Songbird/cd1/08%20-%20Joan%20Armatrading%20_%20Love%20And%20Affection.mp3">Love And Affection</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>17</td>
+  <td class=xl65>Sherbet</td>
+  <td class=xl65>Howzat</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>18</td>
+  <td class=xl65>Simon May</td>
+  <td class=xl65>The Summer Of My Life</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>19</td>
+  <td class=xl65>The Steve Miller Band</td>
+  <td class=xl65>Rock &#39;N&#39; Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>20</td>
+  <td class=xl65>Queen</td>
+  <td class=xl65><a href="Music/Now%20That%27s%20What%20I%20Call%20Music/Now%2025/CD1/01%20-%20%28George%20Michael%20%26%20Queen%29%20-%20Somebody%20To%20Love.mp3">Somebody To Love</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>21</td>
+  <td class=xl65>Electric Light Orchestra</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/351%20-%20Electric%20Light%20Orchestra%20-%20Livin%27%20Thing.mp3">Livin&#39; Thing</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>22</td>
+  <td class=xl65>Lalo Schiffrin</td>
+  <td class=xl65>Jaws</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>23</td>
+  <td class=xl65>Rod Stewart</td>
+  <td class=xl65>Sailing</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>24</td>
+  <td class=xl65>Abba</td>
+  <td class=xl65><a href="Music/ABBA/%281976%29%20Arrival/06%20-%20Abba%20-%20Money%2C%20Money%2C%20Money.mp3">Money Money Money</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>25</td>
+  <td class=xl65>Hank C Burnette</td>
+  <td class=xl65>Spinning Rock Boogie</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>26</td>
+  <td class=xl65>Nilsson</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%201%20of%203/The%20Greatest%20Driving%20Anthems%20In%20The%20World%20Ever%20II/cd2/15%20-%20Nilsson%20-%20Without%20You.mp3">Without You</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>27</td>
+  <td class=xl65>Elton John</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/00%27s%20Greatest%20Hits/I%20Luv%20Smash%20Hits/CD1/03%20-%20Blue%20feat.%20Elton%20John%20_%20Sorry%20Seems%20To%20Be%20The%20Hardest%20Word.mp3">Sorry Seems To Be The Hardest Word</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>28</td>
+  <td class=xl65>Dana</td>
+  <td class=xl65>Fairy Tale</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>29</td>
+  <td class=xl65>Abba</td>
+  <td class=xl65><a href="Music/ABBA/%281976%29%20Arrival/02%20-%20Abba%20-%20Dancing%20Queen.mp3">Dancing Queen</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>30</td>
+  <td class=xl65>Gladys Knight &amp; The Pips</td>
+  <td class=xl65>So Sad The Song</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>31</td>
+  <td class=xl65>Barry White</td>
+  <td class=xl65>Don&#39;t Make Me Wait Too Long</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>32</td>
+  <td class=xl65>The Detroit Spinners</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-027%20-%20Spinners%20-%20The%20Rubberband%20Man%20%28Atlantic%29.mp3">The Rubberband Man</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>33</td>
+  <td class=xl65>Rod Stewart</td>
+  <td class=xl65>Get Back</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>34</td>
+  <td class=xl65>Smokey Robinson &amp; The Miracles</td>
+  <td class=xl65>I&#39;ll Meet You At Midnight</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>35</td>
+  <td class=xl65>Johnny Mathis</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%203%20of%203/The%20Best%20Christmas%20Album%20In%20The%20World%20Ever/CD2/05%20-%20Johnny%20Mathis%20-%20When%20A%20Child%20Is%20Born.mp3">When A Child Is Born</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>36</td>
+  <td class=xl65>Elvis Presley</td>
+  <td class=xl65><a href="Music/Elvis%20Presley/10%20of%2050%20-%20Elvis%20Is%20Back/03%20-%20the%20girl%20of%20my%20best%20friend.mp3">Girl Of My Best Friend</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>37</td>
+  <td class=xl65>Billy Ocean</td>
+  <td class=xl65>Stop Me (If You&#39;ve Heard It All Before)</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>38</td>
+  <td class=xl65>David Essex</td>
+  <td class=xl65>Coming Home</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>39</td>
+  <td class=xl65>Be Bop Deluxe</td>
+  <td class=xl65>Hot Valves</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>40</td>
+  <td class=xl65>Eddie &amp; The Hotrods</td>
+  <td class=xl65><a href="Music/Various%20Artists/No%20Thanks%20-The%2070s%20Punk%20Rebellion/No%20Thanks%20-%20The%20%2770s%20Punk%20Rebellion%20-%20d1/21%20-%20Teenage%20Depression%20-%20Eddie%20%26%20The%20Hot%20Rods.mp3">Teenage Depression</a></td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr height=23 style='height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+ </tr>
+ <tr class=xl67 height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl67 style='height:17.45pt'></td>
+  <td colspan=3 class=xl66>Top 40 Hits of December 1976</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>1</td>
+  <td class=xl65>Showaddywaddy</td>
+  <td class=xl65><a href="Music/Various%20Artists/It%27s%20The%20Sensational%2070s%20-%20Various/CD3/01%20-%20Showaddywaddy%20_%20Under%20The%20Moon%20Of%20Love.mp3">Under The Moon Of Love</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>2</td>
+  <td class=xl65>Johnny Mathis</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%203%20of%203/The%20Best%20Christmas%20Album%20In%20The%20World%20Ever/CD2/05%20-%20Johnny%20Mathis%20-%20When%20A%20Child%20Is%20Born.mp3">When A Child Is Born</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>3</td>
+  <td class=xl65>Queen</td>
+  <td class=xl65><a href="Music/Now%20That%27s%20What%20I%20Call%20Music/Now%2025/CD1/01%20-%20%28George%20Michael%20%26%20Queen%29%20-%20Somebody%20To%20Love.mp3">Somebody To Love</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>4</td>
+  <td class=xl65>Abba</td>
+  <td class=xl65><a href="Music/ABBA/%281976%29%20Arrival/06%20-%20Abba%20-%20Money%2C%20Money%2C%20Money.mp3">Money Money Money</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>5</td>
+  <td class=xl65>Electric Light Orchestra</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/351%20-%20Electric%20Light%20Orchestra%20-%20Livin%27%20Thing.mp3">Livin&#39; Thing</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>6</td>
+  <td class=xl65>Chicago</td>
+  <td class=xl65><a href="Music/Various%20Artists/I%20Love%20U%20-%20Various/CD1/08%20-%20Chicago%20-%20If%20You%20Leave%20Me%20Now.mp3">If You Leave Me Now</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>7</td>
+  <td class=xl65>Yvonne Elliman</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201976/1976-112%20-%20Yvonne%20Elliman%20-%20Love%20me%20%28RSO%29.mp3">Love Me</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>8</td>
+  <td class=xl65>Leo Sayer</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201977/06%20-%20Leo%20Sayer%20-%20You%20Make%20Me%20Feel%20Like%20Dancing.mp3">You Make Me Feel Like Dancing</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>9</td>
+  <td class=xl65>Mike Oldfield</td>
+  <td class=xl65>Portsmouth</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>10</td>
+  <td class=xl65>Mud</td>
+  <td class=xl65>Lean On Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>11</td>
+  <td class=xl65>Rod Stewart</td>
+  <td class=xl65>Get Back</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>12</td>
+  <td class=xl65>Smokie</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201977/1977-153%20-%20Smokie%20-%20Living%20Next%20Door%20To%20Alice%20%28RSO%29.mp3">Living Next Door To Alice</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>13</td>
+  <td class=xl65>Bonnie Tyler</td>
+  <td class=xl65>Lost In France</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>14</td>
+  <td class=xl65>Tina Charles</td>
+  <td class=xl65>Dr Love</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>15</td>
+  <td class=xl65>Chris Hill</td>
+  <td class=xl65>Bionic Santa</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>16</td>
+  <td class=xl65>Kursaal Flyers</td>
+  <td class=xl65>Little Does She Know</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>17</td>
+  <td class=xl65>Elton John</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/00%27s%20Greatest%20Hits/I%20Luv%20Smash%20Hits/CD1/03%20-%20Blue%20feat.%20Elton%20John%20_%20Sorry%20Seems%20To%20Be%20The%20Hardest%20Word.mp3">Sorry Seems To Be The Hardest Word</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>18</td>
+  <td class=xl65>Dr Hook</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/10%20-%20Dr.%20Hook%20-%20If%20Not%20You.mp3">If Not You</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>19</td>
+  <td class=xl65>Dana</td>
+  <td class=xl65>Fairy Tale</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>20</td>
+  <td class=xl65>Billy Ocean</td>
+  <td class=xl65>Stop Me (If You&#39;ve Heard It All Before)</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>21</td>
+  <td class=xl65>Pussycat</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/A%20Time%20To%20Remember/A%20Time%20To%20Remember%201976-1980/1976%20-%201252-/13%20-%20Pussycat%20-%20Mississippi.mp3">Mississippi</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>22</td>
+  <td class=xl65>Paul Nicholas</td>
+  <td class=xl65>Grandma&#39;s Party</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>23</td>
+  <td class=xl65>Barry White</td>
+  <td class=xl65>Don&#39;t Make Me Wait Too Long</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>24</td>
+  <td class=xl65>Status Quo</td>
+  <td class=xl65>Wild Side Of Life</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>25</td>
+  <td class=xl65>The Stylistics</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201973/1973-160%20-%20The%20Stylistics%20-%20You%27ll%20Never%20Get%20To%20Heaven%20%28If%20You%20Break%20My%20Heart%29%20%28Avco%29.mp3">You&#39;ll Never Get To Heaven EP</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>26</td>
+  <td class=xl65>David Soul</td>
+  <td class=xl65><a href="Music/Golden%20Love%20Songs%208CDs/Golden%20Love%20Songs%20Top%20100%20-%20Vol%201%20CD3/03%20-%20David%20Soul_Don%27t%20give%20up%20on%20us.mp3">Don&#39;t Give Up On Us</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>27</td>
+  <td class=xl65>Barry Biggs</td>
+  <td class=xl65>Sideshow</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>28</td>
+  <td class=xl65>10cc</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201977/1977-055%20-%2010%20CC%20-%20The%20Things%20We%20Do%20For%20Love%20%28Mercury%29.mp3">Things We Do For Love</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>29</td>
+  <td class=xl65>The Steve Miller Band</td>
+  <td class=xl65>Rock &#39;N&#39; Me</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>30</td>
+  <td class=xl65>Gladys Knight &amp; The Pips</td>
+  <td class=xl65>So Sad The Song</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>31</td>
+  <td class=xl65>Cliff Richard</td>
+  <td class=xl65>Hey Mr Dream Maker</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>32</td>
+  <td class=xl65>Steely Dan</td>
+  <td class=xl65>Haitian Divorce</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>33</td>
+  <td class=xl65>Rod Stewart</td>
+  <td class=xl65><a href="Music/500%20Greatest%20Rock%20%26%20Roll%20Songs%20of%20All%20Time%20%28Rolling%20Stone%29/069%20-%20Rod%20Stewart%20-%20Maggie%20May.mp3">Maggie May</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>34</td>
+  <td class=xl65>Hank C Burnette</td>
+  <td class=xl65>Spinning Rock Boogie</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>35</td>
+  <td class=xl65>Stevie Wonder</td>
+  <td class=xl65>I Wish</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>36</td>
+  <td class=xl65>The Sandpipers</td>
+  <td class=xl65>Hang On Sloopy</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>37</td>
+  <td class=xl65>Neil Diamond</td>
+  <td class=xl65>Beautiful Noise</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>38</td>
+  <td class=xl65>Rod Stewart</td>
+  <td class=xl65>Sailing</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>39</td>
+  <td class=xl65>Wild Cherry</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/70%27s%20Greatest%20Hits/Billboard%20Top%20Hits%201976/05%20-%20Wild%20Cherry%20-%20Play%20That%20Funky%20Music.mp3">Play That Funky Music</a></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.45pt'>
+  <td height=23 class=xl65 style='height:17.45pt'></td>
+  <td class=xl65>40</td>
+  <td class=xl65>Jethro Tull</td>
+  <td class=xl65><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%203%20of%203/The%20Best%20Christmas%20Album%20In%20The%20World%20Ever/CD1/20%20-%20Jethro%20Tull%20-%20Ring%20Out%2C%20Solstice%20Bells.mp3">Ring Out Solstice Bells</a></td>
+ </tr>
+
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=64 style='width:48pt'></td>
+  <td width=40 style='width:30pt'></td>
+  <td width=285 style='width:214pt'></td>
+  <td width=355 style='width:266pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

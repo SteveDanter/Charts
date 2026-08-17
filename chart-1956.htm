@@ -1,0 +1,683 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+
+<a href="index.html" style="
+display:inline-block;
+padding:10px 15px;
+background:#D59BA7;
+color:D7CDAD;
+text-decoration:none;
+border-radius:5px;">Home </a>
+
+
+<style>
+:root{
+  --bg:#120715;
+  --bg2:#2a1030;
+  --paper:#fff9ea;
+  --paper2:#fff2c8;
+  --ink:#24121c;
+  --muted:#6d5061;
+  --plum:#4b1f52;
+  --pink:#d85aa3;
+  --gold:#e6c15a;
+  --line:rgba(36,18,28,.12);
+  --highlight:rgba(230,193,90,.18);
+}
+html,body{margin:0;padding:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#38163f 0%,#18091d 42%,#080408 100%);color:var(--ink)}
+body.modern-sheet{padding:18px 18px 30px;}
+body.modern-sheet::before{content:'';position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at top,rgba(255,255,255,.06),transparent 45%);}
+body.modern-sheet > table{position:relative;z-index:1;width:min(1280px,calc(100vw - 36px)) !important;table-layout:auto !important;margin:0 auto;background:var(--paper);border-collapse:separate !important;border-spacing:0;overflow:hidden;display:block;padding:0 20px 24px;border:1px solid rgba(255,255,255,.08);box-shadow:0 22px 60px rgba(0,0,0,.38)}
+body.modern-sheet col{width:auto !important;}
+body.modern-sheet tr{height:auto !important;}
+body.modern-sheet td{white-space:normal !important;padding:11px 14px !important;border-bottom:1px solid var(--line);font-size:15px;line-height:1.35;background:transparent;vertical-align:top;display:table-cell !important;}
+body.modern-sheet tr:hover td{background:rgba(216,90,163,.045);}
+body.modern-sheet tr:first-child td{border-bottom:none;background:transparent;padding:0 !important;height:0 !important;line-height:0 !important;font-size:0 !important;}
+body.modern-sheet td:first-child{display:none !important;}
+body.modern-sheet td:nth-child(2){width:84px;text-align:center;font-weight:800;color:#8a3d68;}
+body.modern-sheet td:nth-child(3){width:36%;font-weight:700;color:var(--ink);}
+body.modern-sheet td:nth-child(4){color:var(--muted);}
+body.modern-sheet tr.month-header td:first-child{display:none !important;}
+body.modern-sheet tr.month-header td[colspan]{display:block !important;width:calc(100% + 40px) !important;margin:28px -20px 0 !important;padding:18px 24px 16px !important;border:none !important;border-top:1px solid rgba(255,255,255,.08) !important;border-bottom:4px solid var(--gold) !important;border-radius:0 !important;background:linear-gradient(90deg,rgba(75,31,82,.96) 0%,rgba(59,19,64,.98) 55%,rgba(43,16,48,.98) 100%) !important;color:#f9eed2 !important;font-size:clamp(24px,3vw,38px) !important;line-height:1.08;font-weight:900;letter-spacing:.04em;text-transform:uppercase;text-align:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.12);}
+body.modern-sheet tr.month-header + tr td{background:linear-gradient(180deg,var(--paper2),#f9eab8) !important;font-size:13px !important;text-transform:uppercase;letter-spacing:.12em;color:#5a3b46 !important;font-weight:800;position:sticky;top:76px;z-index:2;border-bottom:2px solid rgba(36,18,28,.16);padding-top:9px !important;padding-bottom:9px !important;display:table-cell !important;white-space:nowrap !important;}
+body.modern-sheet tr.month-header + tr td:nth-child(2){text-align:center !important;color:#5a3b46 !important;width:84px;}
+body.modern-sheet tr.month-header + tr td:nth-child(3){text-align:left !important;width:36%;}
+body.modern-sheet tr.month-header + tr td:nth-child(4){text-align:left !important;width:auto;}
+body.modern-sheet tr.top-track td{background:linear-gradient(90deg,var(--highlight),rgba(230,193,90,.05));}
+body.modern-sheet tr.top-track td:nth-child(2){color:#9a6a11;font-weight:900;}
+body.modern-sheet .sheet-toolbar{position:sticky;top:0;z-index:9;width:min(1280px,calc(100vw - 36px));margin:0 auto 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:rgba(33,11,37,.96);border:1px solid rgba(255,255,255,.10);box-shadow:0 14px 40px rgba(0,0,0,.35);padding:10px 16px;border-radius:14px;backdrop-filter:blur(8px);}
+body.modern-sheet .sheet-year{font-size:16px;font-weight:800;color:#f7e8b7;letter-spacing:.04em;text-transform:uppercase;}
+body.modern-sheet .month-links{display:flex;gap:8px;flex-wrap:wrap;}
+body.modern-sheet .month-links a{color:#f7e8b7;text-decoration:none;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;transition:.15s ease;}
+body.modern-sheet .month-links a:hover{background:rgba(216,90,163,.12);border-color:rgba(216,90,163,.35);transform:translateY(-1px);}
+@media (max-width: 760px){
+  body.modern-sheet{padding:10px 10px 24px;}
+  body.modern-sheet > table,.sheet-toolbar{width:calc(100vw - 20px) !important;}
+  body.modern-sheet > table{padding:0 10px 18px;}
+  body.modern-sheet td{font-size:13px;padding:9px 8px !important;}
+  body.modern-sheet td:nth-child(2){width:54px;}
+  body.modern-sheet .sheet-year{font-size:14px;}
+  body.modern-sheet tr.month-header + tr td{top:104px;font-size:11px !important;letter-spacing:.08em;}
+  body.modern-sheet tr.month-header td[colspan]{width:calc(100% + 20px) !important;margin:22px -10px 0 !important;padding:14px 14px 12px !important;font-size:clamp(20px,7vw,30px) !important;}
+}
+</style>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const rows = Array.from(document.querySelectorAll('body.modern-sheet table tr'));
+  const monthLinks = [];
+  let currentSection = null;
+  rows.forEach((row) => {
+    const titleCell = row.querySelector('.xl66,.xl67');
+    if (titleCell && /Top 40 Hits of/i.test(titleCell.textContent)) {
+      row.classList.add('month-header');
+      const slug = titleCell.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+      row.id = slug;
+      const monthMatch = titleCell.textContent.match(/Top 40 Hits of (.+)$/i);
+      const label = monthMatch ? monthMatch[1] : titleCell.textContent.trim();
+      monthLinks.push({href:'#'+slug,label});
+      currentSection = row;
+      return;
+    }
+    if (!currentSection) return;
+    const cells = row.querySelectorAll('td');
+    if (cells.length >= 4) {
+      const pos = (cells[1].textContent || '').trim();
+      const artist = (cells[2].textContent || '').trim();
+      const title = (cells[3].textContent || '').trim();
+      if (/^1$/.test(pos) && artist && title) row.classList.add('top-track');
+    }
+  });
+  const toolbar = document.createElement('div');
+  toolbar.className = 'sheet-toolbar';
+  toolbar.innerHTML = '<div class="sheet-year">UK Music Charts - 1956</div><div class="month-links"></div>';
+  const linksWrap = toolbar.querySelector('.month-links');
+  monthLinks.forEach(item => {
+    const a = document.createElement('a');
+    a.href = item.href;
+    a.textContent = item.label;
+    linksWrap.appendChild(a);
+  });
+  document.body.prepend(toolbar);
+});
+</script>
+
+<title>UK Music Charts 1956 - Retro Edition</title>
+</head>
+
+<body class="xl65 modern-sheet">
+
+<div style="position:sticky;top:0;background:#111;padding:12px;z-index:999;border-bottom:2px solid #444;">
+  <input
+    type="text"
+    id="chartSearch"
+    placeholder="Search artist or song title..."
+    onkeyup="searchChart()"
+    style="width:320px;padding:8px;font-size:16px;"
+  >
+
+  <button onclick="clearSearch()" style="padding:8px 12px;font-size:16px;">
+    Clear
+  </button>
+
+  <span id="searchCount" style="margin-left:12px;color:white;font-family:Arial;">
+  </span>
+</div>
+
+<script>
+function searchChart() {
+  const searchText = document.getElementById("chartSearch").value.toLowerCase().trim();
+  const words = searchText.split(/\s+/).filter(Boolean);
+  const rows = document.querySelectorAll("tr");
+  let visibleCount = 0;
+
+  rows.forEach(row => {
+    const cells = row.querySelectorAll("td");
+
+    if (cells.length < 4) {
+      return;
+    }
+
+    const artist = cells[2].innerText.toLowerCase();
+    const title = cells[3].innerText.toLowerCase();
+    const rowText = artist + " " + title;
+
+    const match = words.every(word => rowText.includes(word));
+
+    if (searchText === "" || match) {
+      row.style.display = "";
+      visibleCount++;
+    } else {
+      row.style.display = "none";
+    }
+  });
+
+  document.getElementById("searchCount").innerText =
+    searchText === "" ? "" : visibleCount + " matching row(s)";
+}
+
+function clearSearch() {
+  document.getElementById("chartSearch").value = "";
+  searchChart();
+}
+</script>
+
+<table border=0 cellpadding=0 cellspacing=0 width=744 style='border-collapse:
+ collapse;table-layout:fixed;width:558pt'>
+
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of January 1956</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Tennessee Ernie Ford</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Billboard%20Top%2030%20Hits%20Of%201955/11%20-%20Tennessee%20Ernie%20Ford%20-%20Sixteen%20Tons.mp3">Sixteen Tons</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Bill Haley &amp; His Comets</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Billboard%20Top%2030%20Hits%20Of%201955/02%20-%20Bill%20Haley%20%26%20His%20Comets%20-%20Rock%20Around%20The%20Clock.mp3">Rock Around The Clock</a></td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Bill Hayes</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Billboard%20Top%2030%20Hits%20Of%201955/03%20-%20Bill%20Hayes%20-%20The%20Ballad%20Of%20Davy%20Crockett.mp3">The Ballad Of Davy Crockett</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>The Four Aces</td><td>Love Is A Many Splendored Thing</td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Bill Haley &amp; His Comets</td><td>Rock-A-Beatin&#39; Boogie</td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Frank Sinatra</td><td>Love And Marriage</td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Max Bygraves</td><td>Meet Me On The Corner</td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>Tennessee Ernie Ford</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Billboard%20Top%2030%20Hits%20Of%201955/24%20-%20Tennessee%20Ernie%20Ford%20-%20The%20Ballad%20Of%20Davy%20Crockett.mp3">The Ballad Of Davy Crockett</a></td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Lonnie Donegan</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/050%20-%20Lonnie%20Donegan%20-%20Rock%20Island%20Line.mp3">Rock Island Line</a></td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>David Whitfield With Mantovani &amp; His Orchestra</td><td>When You Lose The One You Love</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Frank Sinatra</td><td>(Love Is) The Tender Trap</td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Eve Boswell</td><td>Pickin&#39; A Chicken</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Petula Clark</td><td>Suddenly There&#39;s A Valley</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Alma Cogan</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2050%27s%20CD3/306-Alma%20Cogan-Never%20Do%20A%20Tango%20With%20An%20Eskimo.mp3">Never Do A Tango With An Eskimo</a></td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>The Stargazers</td><td>Twenty Tiny Fingers</td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Gary Miller</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/One%20Hundred%2050%27s%20Favourites%20CD2/21%20-%20Gary%20Miller%20-%20Robin%20Hood.mp3">Robin Hood</a></td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Frankie Laine With The Mellomen</td><td>Sixteen Tons</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Jimmy Young</td><td>Someone On Your Mind</td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Dick James With Stephen James &amp; His Chums</td><td>Robin Hood / The Ballad Of Davy Crockett</td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Frankie Laine</td><td>Hawkeye</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Eamonn Andrews</td><td>The Shifting Whispering Sands</td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Nat &#39;King&#39; Cole</td><td>Dreams Can Tell A Lie</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>The Hilltoppers</td><td>Only You</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Pat Boone</td><td>Ain&#39;t That A Shame</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Dickie Valentine</td><td>The Old Pianna Rag</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Lou Busch</td><td>Zambesi</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Dickie Valentine</td><td>Christmas Alphabet</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Winifred Atwell</td><td>Let&#39;s Have A Ding Dong</td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Jo Stafford</td><td>Suddenly There&#39;s A Valley</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Big Ben Banjo Band</td><td>Let&#39;s Get Together Again</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Anne Shelton</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2050%27s%20CD2/223-Ann%20Shelton-Arrivederci%20Darling.mp3">Arrivederci Darling</a></td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Edna Savage</td><td>Arrivederci Darling</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Frankie Vaughan</td><td>My Boy Flat Top</td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Don Lang</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2050%27s%20CD1/124-Don%20Lang-Cloudburst.mp3">Cloudburst</a></td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Billy Vaughn Orchestra &amp; Chorus</td><td>The Shifting Whispering Sands</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>Malcolm Vaughan</td><td>With Your Love</td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Lee Lawrence</td><td>Suddenly There&#39;s A Valley</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of February 1956</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Tennessee Ernie Ford</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Billboard%20Top%2030%20Hits%20Of%201955/11%20-%20Tennessee%20Ernie%20Ford%20-%20Sixteen%20Tons.mp3">Sixteen Tons</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Dean Martin</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%202%20of%203/The%20Best%20Easy%20Album%20Ever/CD%201/02%20-%20Dean%20Martin%20-%20Memories%20Are%20Made%20Of%20This.mp3">Memories Are Made Of This</a></td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Frank Sinatra</td><td>(Love Is) The Tender Trap</td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Lou Busch</td><td>Zambesi</td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Bill Hayes</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Billboard%20Top%2030%20Hits%20Of%201955/03%20-%20Bill%20Hayes%20-%20The%20Ballad%20Of%20Davy%20Crockett.mp3">The Ballad Of Davy Crockett</a></td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Frank Sinatra</td><td>Love And Marriage</td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>The Dreamweavers</td><td>It&#39;s Almost Tomorrow</td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>The Hilltoppers</td><td>Only You</td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Lonnie Donegan</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/050%20-%20Lonnie%20Donegan%20-%20Rock%20Island%20Line.mp3">Rock Island Line</a></td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Nat &#39;King&#39; Cole</td><td>Dreams Can Tell A Lie</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Bill Haley &amp; His Comets</td><td>Rock-A-Beatin&#39; Boogie</td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Tennessee Ernie Ford</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Billboard%20Top%2030%20Hits%20Of%201955/24%20-%20Tennessee%20Ernie%20Ford%20-%20The%20Ballad%20Of%20Davy%20Crockett.mp3">The Ballad Of Davy Crockett</a></td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Don Cherry</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/038%20-%20Don%20Cherry%20-%20Band%20of%20Gold.mp3">Band Of Gold</a></td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Kay Starr</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/010%20-%20Kay%20Starr%20-%20Rock%20and%20Roll%20Waltz.mp3">Rock And Roll Waltz</a></td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Dick James With Stephen James &amp; His Chums</td><td>Robin Hood / The Ballad Of Davy Crockett</td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Gary Miller</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/One%20Hundred%2050%27s%20Favourites%20CD2/21%20-%20Gary%20Miller%20-%20Robin%20Hood.mp3">Robin Hood</a></td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Edmund Hockridge</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/One%20Hundred%2050%27s%20Favourites%20CD4/21%20-%20Edmund%20Hochridge%20-%20Young%20and%20Foolish.mp3">Young And Foolish</a></td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Dave King With The Keynotes</td><td>Memories Are Made Of This</td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>The Four Aces</td><td>Love Is A Many Splendored Thing</td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Bill Haley &amp; His Comets</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Billboard%20Top%2030%20Hits%20Of%201955/02%20-%20Bill%20Haley%20%26%20His%20Comets%20-%20Rock%20Around%20The%20Clock.mp3">Rock Around The Clock</a></td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Eve Boswell</td><td>Pickin&#39; A Chicken</td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Frank Chacksfield</td><td>In Old Lisbon</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Johnnie Ray</td><td>Who&#39;s Sorry Now</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Ronnie Hilton</td><td><a href="Music/Greatest%20Crooners/disc%202/Various%20-%20The%20Greatest%20Crooners%20Cd2/14%20-%20Ronnie%20Hilton%20_%20Young%20And%20Foolish.mp3">Young And Foolish</a></td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Frankie Vaughan</td><td>My Boy Flat Top</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>David Whitfield With Mantovani &amp; His Orchestra</td><td>When You Lose The One You Love</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Frankie Laine With The Mellomen</td><td>Sixteen Tons</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Jimmy Parkinson</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2050%27s%20CD3/304-Jimmy%20Parkinson-The%20Great%20Pretender.mp3">The Great Pretender</a></td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Eamonn Andrews</td><td>The Shifting Whispering Sands</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Malcolm Vaughan</td><td>With Your Love</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>David Whitfield</td><td>My September Love</td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Jo Stafford</td><td>Suddenly There&#39;s A Valley</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Dean Martin</td><td>Young And Foolish</td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Max Bygraves</td><td>The Ballad Of Davy Crockett</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of March 1956</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>The Dreamweavers</td><td>It&#39;s Almost Tomorrow</td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Dean Martin</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%202%20of%203/The%20Best%20Easy%20Album%20Ever/CD%201/02%20-%20Dean%20Martin%20-%20Memories%20Are%20Made%20Of%20This.mp3">Memories Are Made Of This</a></td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Kay Starr</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/010%20-%20Kay%20Starr%20-%20Rock%20and%20Roll%20Waltz.mp3">Rock And Roll Waltz</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Lou Busch</td><td>Zambesi</td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>The Hilltoppers</td><td>Only You</td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Dave King With The Keynotes</td><td>Memories Are Made Of This</td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Don Cherry</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/038%20-%20Don%20Cherry%20-%20Band%20of%20Gold.mp3">Band Of Gold</a></td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>Bill Haley &amp; His Comets</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Loud%2C%20Fast%2C%20%26%20Out%20Of%20Control%20The%20Wild%20Sounds%20Of%20%2750s%20Rock%20%28Disc%203%29/05%20-%20Bill%20Haley%20%26%20His%20Comets%20-%20See%20You%20Later%2C%20Alligator.mp3">See You Later Alligator</a></td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Edmund Hockridge</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/One%20Hundred%2050%27s%20Favourites%20CD4/21%20-%20Edmund%20Hochridge%20-%20Young%20and%20Foolish.mp3">Young And Foolish</a></td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Lonnie Donegan</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/050%20-%20Lonnie%20Donegan%20-%20Rock%20Island%20Line.mp3">Rock Island Line</a></td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Jimmy Parkinson</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2050%27s%20CD3/304-Jimmy%20Parkinson-The%20Great%20Pretender.mp3">The Great Pretender</a></td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Winifred Atwell</td><td>The Poor People Of Paris</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Frank Sinatra</td><td>(Love Is) The Tender Trap</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Nat &#39;King&#39; Cole</td><td>Dreams Can Tell A Lie</td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Tennessee Ernie Ford</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Billboard%20Top%2030%20Hits%20Of%201955/11%20-%20Tennessee%20Ernie%20Ford%20-%20Sixteen%20Tons.mp3">Sixteen Tons</a></td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Jimmy Young</td><td>Chain Gang</td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Dick Hyman Trio</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/060%20-%20Moritat%20%28Theme%20From%20Threepenny%20Opera%29-%20Dick%20Hyman%20-%20.mp3">Theme From &#39;The Threepenny Opera&#39;</a></td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Frank Chacksfield</td><td>In Old Lisbon</td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Eve Boswell</td><td>Pickin&#39; A Chicken</td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>David Whitfield</td><td>My September Love</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Dick James With Stephen James &amp; His Chums</td><td>Robin Hood / The Ballad Of Davy Crockett</td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Alfi &amp; Harry</td><td>The Trouble With Harry</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Billy Vaughn</td><td>Theme From &#39;The Threepenny Opera&#39;</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Eddie Calvert</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2050%27s%20CD1/115-Eddie%20Calvert-Zambesi.mp3">Zambesi</a></td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Lita Roza</td><td>Jimmy Unknown</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Ronnie Hilton</td><td><a href="Music/Greatest%20Crooners/disc%202/Various%20-%20The%20Greatest%20Crooners%20Cd2/14%20-%20Ronnie%20Hilton%20_%20Young%20And%20Foolish.mp3">Young And Foolish</a></td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Slim Whitman</td><td>Tumbling Tumbleweeds</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Bill Hayes</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Billboard%20Top%2030%20Hits%20Of%201955/03%20-%20Bill%20Hayes%20-%20The%20Ballad%20Of%20Davy%20Crockett.mp3">The Ballad Of Davy Crockett</a></td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Frank Sinatra</td><td>Love And Marriage</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Alma Cogan</td><td>Willie Can</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Michael Holliday</td><td>Nothin&#39; To Do</td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Malcolm Vaughan</td><td>With Your Love</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Dean Martin</td><td>Young And Foolish</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of April 1956</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Winifred Atwell</td><td>The Poor People Of Paris</td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>The Dreamweavers</td><td>It&#39;s Almost Tomorrow</td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Kay Starr</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/010%20-%20Kay%20Starr%20-%20Rock%20and%20Roll%20Waltz.mp3">Rock And Roll Waltz</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>The Hilltoppers</td><td>Only You</td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Dave King With The Keynotes</td><td>Memories Are Made Of This</td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Lou Busch</td><td>Zambesi</td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Ronnie Hilton</td><td><a href="Music/Greatest%20Crooners/disc%203/Various%20-%20The%20Greatest%20Crooners%20CD3/08%20-%20Ronnie%20Hilton_%20No%20other%20love.mp3">No Other Love</a></td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>Dean Martin</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%202%20of%203/The%20Best%20Easy%20Album%20Ever/CD%201/02%20-%20Dean%20Martin%20-%20Memories%20Are%20Made%20Of%20This.mp3">Memories Are Made Of This</a></td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Bill Haley &amp; His Comets</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Loud%2C%20Fast%2C%20%26%20Out%20Of%20Control%20The%20Wild%20Sounds%20Of%20%2750s%20Rock%20%28Disc%203%29/05%20-%20Bill%20Haley%20%26%20His%20Comets%20-%20See%20You%20Later%2C%20Alligator.mp3">See You Later Alligator</a></td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Dick Hyman Trio</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/060%20-%20Moritat%20%28Theme%20From%20Threepenny%20Opera%29-%20Dick%20Hyman%20-%20.mp3">Theme From &#39;The Threepenny Opera&#39;</a></td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Jimmy Parkinson</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2050%27s%20CD3/304-Jimmy%20Parkinson-The%20Great%20Pretender.mp3">The Great Pretender</a></td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Teresa Brewer</td><td>A Tear Fell</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Alma Cogan</td><td>Willie Can</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Eddie Calvert</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2050%27s%20CD1/115-Eddie%20Calvert-Zambesi.mp3">Zambesi</a></td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Billy Vaughn</td><td>Theme From &#39;The Threepenny Opera&#39;</td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Louis Armstrong With His All-Stars</td><td>A Theme From &#39;The Threepenny Opera&#39; (Mack The Knife)</td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Dave King With The Keynotes</td><td>You Can&#39;t Be True To Two</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>David Whitfield</td><td>My September Love</td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Jimmy Young</td><td>Chain Gang</td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Anne Shelton</td><td>Seven Days</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Don Cherry</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/038%20-%20Don%20Cherry%20-%20Band%20of%20Gold.mp3">Band Of Gold</a></td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Johnnie Ray</td><td>Ain&#39;t Misbehavin&#39;</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Slim Whitman</td><td>I&#39;m A Fool</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>The Beverley Sisters</td><td>Willie Can</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Lita Roza</td><td>Jimmy Unknown</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Lonnie Donegan</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/050%20-%20Lonnie%20Donegan%20-%20Rock%20Island%20Line.mp3">Rock Island Line</a></td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Alfi &amp; Harry</td><td>The Trouble With Harry</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Lonnie Donegan</td><td>Lost John / Stewball</td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Eve Boswell</td><td>Pickin&#39; A Chicken</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Billy May</td><td>Main Title Theme From &#39;Man With The Golden Arm&#39;</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Pat Boone</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/034%20-%20Pat%20Boone%20-%20I%27ll%20Be%20Home.mp3">I&#39;ll Be Home</a></td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Cyril Stapleton</td><td>The Italian Theme</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Dean Martin</td><td>Innamorata</td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Bing Crosby</td><td>In A Little Spanish Town</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Perry Como</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/076%20-%20Perry%20Como%20-%20Juke%20Box%20Baby.mp3">Juke Box Baby</a></td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>Mel Torme</td><td>Mountain Greenery</td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Johnston Brothers</td><td>No Other Love</td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Lonnie Donegan</td><td>Stewball</td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Edmund Hockridge</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/One%20Hundred%2050%27s%20Favourites%20CD4/21%20-%20Edmund%20Hochridge%20-%20Young%20and%20Foolish.mp3">Young And Foolish</a></td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Sammy Davis Jr</td><td>In A Persian Market</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of May 1956</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Ronnie Hilton</td><td><a href="Music/Greatest%20Crooners/disc%203/Various%20-%20The%20Greatest%20Crooners%20CD3/08%20-%20Ronnie%20Hilton_%20No%20other%20love.mp3">No Other Love</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Winifred Atwell</td><td>The Poor People Of Paris</td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Teresa Brewer</td><td>A Tear Fell</td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Kay Starr</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/010%20-%20Kay%20Starr%20-%20Rock%20and%20Roll%20Waltz.mp3">Rock And Roll Waltz</a></td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Lonnie Donegan</td><td>Lost John / Stewball</td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Pat Boone</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/034%20-%20Pat%20Boone%20-%20I%27ll%20Be%20Home.mp3">I&#39;ll Be Home</a></td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>The Dreamweavers</td><td>It&#39;s Almost Tomorrow</td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>David Whitfield</td><td>My September Love</td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>The Hilltoppers</td><td>Only You</td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Billy May</td><td>Main Title Theme From &#39;Man With The Golden Arm&#39;</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Louis Armstrong With His All-Stars</td><td>A Theme From &#39;The Threepenny Opera&#39; (Mack The Knife)</td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/01%20Heartbreak%20Hotel.mp3">Heartbreak Hotel</a></td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Dave King With The Keynotes</td><td>You Can&#39;t Be True To Two</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Don Robertson</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/043%20-%20Don%20Robertson%20-%20The%20Happy%20Whistler.mp3">The Happy Whistler</a></td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Bill Haley &amp; His Comets</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Loud%2C%20Fast%2C%20%26%20Out%20Of%20Control%20The%20Wild%20Sounds%20Of%20%2750s%20Rock%20%28Disc%203%29/05%20-%20Bill%20Haley%20%26%20His%20Comets%20-%20See%20You%20Later%2C%20Alligator.mp3">See You Later Alligator</a></td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Mel Torme</td><td>Mountain Greenery</td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Nat &#39;King&#39; Cole</td><td>Too Young To Go Steady</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Dave King With The Keynotes</td><td>Memories Are Made Of This</td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Dean Martin</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%202%20of%203/The%20Best%20Easy%20Album%20Ever/CD%201/02%20-%20Dean%20Martin%20-%20Memories%20Are%20Made%20Of%20This.mp3">Memories Are Made Of This</a></td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Perry Como</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/076%20-%20Perry%20Como%20-%20Juke%20Box%20Baby.mp3">Juke Box Baby</a></td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Johnnie Ray</td><td>Ain&#39;t Misbehavin&#39;</td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Carl Perkins</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Loud%2C%20Fast%2C%20%26%20Out%20Of%20Control%20The%20Wild%20Sounds%20Of%20%2750s%20Rock%20%28Disc%203%29/23%20-%20Carl%20Perkins%20-%20Blue%20Suede%20Shoes.mp3">Blue Suede Shoes</a></td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Jimmy Parkinson</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2050%27s%20CD3/304-Jimmy%20Parkinson-The%20Great%20Pretender.mp3">The Great Pretender</a></td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Alma Cogan</td><td>Willie Can</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Dick Hyman Trio</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/060%20-%20Moritat%20%28Theme%20From%20Threepenny%20Opera%29-%20Dick%20Hyman%20-%20.mp3">Theme From &#39;The Threepenny Opera&#39;</a></td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Winifred Atwell &amp; Frank Chacksfield</td><td>Port Au Prince</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Lou Busch</td><td>Zambesi</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Lonnie Donegan</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/050%20-%20Lonnie%20Donegan%20-%20Rock%20Island%20Line.mp3">Rock Island Line</a></td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Perry Como</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/016%20-%20Perry%20Como%20-%20Hot%20Diggity%20%28Dog%20Ziggity%29.mp3">Hot Diggity (Dog Ziggity Boom)</a></td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Bill Haley &amp; His Comets</td><td>The Saints Rock &#39;N&#39; Roll</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/01%20of%2050%20-%20Elvis%20Presley/01%20-%20Blue%20Suede%20Shoes.mp3">Blue Suede Shoes</a></td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Dean Martin</td><td>Innamorata</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Edmund Hockridge</td><td>No Other Love</td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Michael Holliday</td><td>Nothin&#39; To Do</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Max Bygraves</td><td>Out Of Town</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>Bing Crosby</td><td>In A Little Spanish Town</td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Three Kayes</td><td>Ivory Tower</td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Eve Boswell</td><td>Pickin&#39; A Chicken</td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>The McGuire Sisters</td><td>Delilah Jones</td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Billy Vaughn</td><td>Theme From &#39;The Threepenny Opera&#39;</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of June 1956</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Pat Boone</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/034%20-%20Pat%20Boone%20-%20I%27ll%20Be%20Home.mp3">I&#39;ll Be Home</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Ronnie Hilton</td><td><a href="Music/Greatest%20Crooners/disc%203/Various%20-%20The%20Greatest%20Crooners%20CD3/08%20-%20Ronnie%20Hilton_%20No%20other%20love.mp3">No Other Love</a></td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Lonnie Donegan</td><td>Lost John / Stewball</td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/01%20Heartbreak%20Hotel.mp3">Heartbreak Hotel</a></td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>David Whitfield</td><td>My September Love</td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Perry Como</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/016%20-%20Perry%20Como%20-%20Hot%20Diggity%20%28Dog%20Ziggity%29.mp3">Hot Diggity (Dog Ziggity Boom)</a></td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Teresa Brewer</td><td>A Tear Fell</td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>Bill Haley &amp; His Comets</td><td>The Saints Rock &#39;N&#39; Roll</td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/01%20of%2050%20-%20Elvis%20Presley/01%20-%20Blue%20Suede%20Shoes.mp3">Blue Suede Shoes</a></td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Nat &#39;King&#39; Cole</td><td>Too Young To Go Steady</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Don Robertson</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/043%20-%20Don%20Robertson%20-%20The%20Happy%20Whistler.mp3">The Happy Whistler</a></td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Morris Stoloff</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/011%20-%20Morris%20Stoloff%20-%20Moonglow%20and%20Theme%20From%20%27Picnic%27.mp3">Moonglow And The Theme From &#39;Picnic&#39;</a></td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Winifred Atwell</td><td>The Poor People Of Paris</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Kay Starr</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/010%20-%20Kay%20Starr%20-%20Rock%20and%20Roll%20Waltz.mp3">Rock And Roll Waltz</a></td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Carl Perkins</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Loud%2C%20Fast%2C%20%26%20Out%20Of%20Control%20The%20Wild%20Sounds%20Of%20%2750s%20Rock%20%28Disc%203%29/23%20-%20Carl%20Perkins%20-%20Blue%20Suede%20Shoes.mp3">Blue Suede Shoes</a></td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Mel Torme</td><td>Mountain Greenery</td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Billy May</td><td>Main Title Theme From &#39;Man With The Golden Arm&#39;</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>The Hilltoppers</td><td>Only You</td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Lonnie Donegan</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/050%20-%20Lonnie%20Donegan%20-%20Rock%20Island%20Line.mp3">Rock Island Line</a></td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Max Bygraves</td><td>Out Of Town</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Winifred Atwell &amp; Frank Chacksfield</td><td>Port Au Prince</td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Louis Armstrong With His All-Stars</td><td>A Theme From &#39;The Threepenny Opera&#39; (Mack The Knife)</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Michael Holliday</td><td>The Gal With The Yaller Shoes</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Frank Sinatra</td><td>Songs For Swingin&#39; Lovers (LP)</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Cyril Stapleton Orchestra featuring Desmond Lane</td><td>The Happy Whistler</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Three Kayes</td><td>Ivory Tower</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Michael Holliday</td><td>Hot Diggity (Dog Ziggity Boom) / The Gal With The Yaller Shoes</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Johnny Dankworth</td><td>Experiments With Mice</td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Dave King With The Keynotes</td><td>You Can&#39;t Be True To Two</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>The Dreamweavers</td><td>It&#39;s Almost Tomorrow</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Tex Ritter</td><td>The Wayward Wind</td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Slim Whitman</td><td>Serenade</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>The McGuire Sisters</td><td>Delilah Jones</td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Edmund Hockridge</td><td>No Other Love</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Various Artists</td><td>All Star Hit Parade (EP)</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>Gogi Grant</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/005%20-%20Gogi%20Grant%20-%20The%20Wayward%20Wind.mp3">The Wayward Wind</a></td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Doris Day</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%202%20of%203/The%20Best%20Easy%20Album%20Ever/CD%201/13%20-%20Doris%20Day%20-%20Whatever%20Will%20Be%2C%20Will%20Be%20%28Que%20Sera%2C%20Sera%29.mp3">Whatever Will Be Will Be (Que Sera Sera)</a></td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Teenagers featuring Frankie Lymon</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/028%20-%20Frankie%20Lymon%20-%20Why%20Do%20Fools%20Fall%20in%20Love.mp3">Why Do Fools Fall In Love</a></td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Bill Haley &amp; His Comets</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Loud%2C%20Fast%2C%20%26%20Out%20Of%20Control%20The%20Wild%20Sounds%20Of%20%2750s%20Rock%20%28Disc%203%29/05%20-%20Bill%20Haley%20%26%20His%20Comets%20-%20See%20You%20Later%2C%20Alligator.mp3">See You Later Alligator</a></td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Johnnie Ray</td><td>Ain&#39;t Misbehavin&#39;</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of July 1956</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Pat Boone</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/034%20-%20Pat%20Boone%20-%20I%27ll%20Be%20Home.mp3">I&#39;ll Be Home</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Teenagers featuring Frankie Lymon</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/028%20-%20Frankie%20Lymon%20-%20Why%20Do%20Fools%20Fall%20in%20Love.mp3">Why Do Fools Fall In Love</a></td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/01%20Heartbreak%20Hotel.mp3">Heartbreak Hotel</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Various Artists</td><td>All Star Hit Parade (EP)</td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>The Goons</td><td>I&#39;m Walking Backwards For Christmas / Bluebottle Blues</td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Doris Day</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%202%20of%203/The%20Best%20Easy%20Album%20Ever/CD%201/13%20-%20Doris%20Day%20-%20Whatever%20Will%20Be%2C%20Will%20Be%20%28Que%20Sera%2C%20Sera%29.mp3">Whatever Will Be Will Be (Que Sera Sera)</a></td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Perry Como</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/016%20-%20Perry%20Como%20-%20Hot%20Diggity%20%28Dog%20Ziggity%29.mp3">Hot Diggity (Dog Ziggity Boom)</a></td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>Lonnie Donegan</td><td>Lost John / Stewball</td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Tony Martin</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/074%20-%20Tony%20Martin%20-%20Walk%20Hand%20in%20Hand.mp3">Walk Hand In Hand</a></td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Johnny Dankworth</td><td>Experiments With Mice</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>David Whitfield</td><td>My September Love</td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Bill Haley &amp; His Comets</td><td>The Saints Rock &#39;N&#39; Roll</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Ronnie Hilton</td><td>Who Are We</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Tex Ritter</td><td>The Wayward Wind</td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Gogi Grant</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/005%20-%20Gogi%20Grant%20-%20The%20Wayward%20Wind.mp3">The Wayward Wind</a></td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Morris Stoloff</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/011%20-%20Morris%20Stoloff%20-%20Moonglow%20and%20Theme%20From%20%27Picnic%27.mp3">Moonglow And The Theme From &#39;Picnic&#39;</a></td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Teresa Brewer</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/046%20-%20Teresa%20Brewer%20-%20A%20Sweet%20Old%20Fashioned%20Girl.mp3">Sweet Old-Fashioned Girl</a></td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Frank Sinatra</td><td>Songs For Swingin&#39; Lovers (LP)</td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Nat &#39;King&#39; Cole</td><td>Too Young To Go Steady</td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Ted Heath &amp; His Music</td><td>The Faithful Hussar</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Ronnie Hilton</td><td><a href="Music/Greatest%20Crooners/disc%203/Various%20-%20The%20Greatest%20Crooners%20CD3/08%20-%20Ronnie%20Hilton_%20No%20other%20love.mp3">No Other Love</a></td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Humphrey Lyttelton Band</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2050%27s%20CD3/314-Humphrey%20Lyttleton-Bad%20Penny%20Blues.mp3">Bad Penny Blues</a></td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Teresa Brewer</td><td>A Tear Fell</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Joe &#39;Fingers&#39; Carr</td><td>Portuguese Washerwoman</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Winifred Atwell</td><td>Left Bank</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Alma Cogan</td><td>The Birds And The Bees</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Michael Holliday</td><td>Hot Diggity (Dog Ziggity Boom) / The Gal With The Yaller Shoes</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/01%20of%2050%20-%20Elvis%20Presley/01%20-%20Blue%20Suede%20Shoes.mp3">Blue Suede Shoes</a></td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Ronnie Carroll</td><td>Walk Hand In Hand</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Mel Torme</td><td>Mountain Greenery</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Lonnie Donegan</td><td>Skiffle Session (EP)</td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Elvis Presley</td><td>I Want You I Need You I Love You</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Louis Armstrong With His All-Stars</td><td>The Faithful Hussar</td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Slim Whitman</td><td>Serenade</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Pat Boone</td><td>Long Tall Sally</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>Gene Vincent</td><td><a href="Music/Gene%20Vincent/gene%20vincent%20-%20be%20bop%20a%20lula.wma">Be Bop A Lula</a></td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Don Robertson</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/043%20-%20Don%20Robertson%20-%20The%20Happy%20Whistler.mp3">The Happy Whistler</a></td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Carl Perkins</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Loud%2C%20Fast%2C%20%26%20Out%20Of%20Control%20The%20Wild%20Sounds%20Of%20%2750s%20Rock%20%28Disc%203%29/23%20-%20Carl%20Perkins%20-%20Blue%20Suede%20Shoes.mp3">Blue Suede Shoes</a></td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Georgia Gibbs</td><td>Kiss Me Another</td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Stan Freberg &amp; His Sniffle Group</td><td>Rock Island Line / Heartbreak Hotel</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of August 1956</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Doris Day</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%202%20of%203/The%20Best%20Easy%20Album%20Ever/CD%201/13%20-%20Doris%20Day%20-%20Whatever%20Will%20Be%2C%20Will%20Be%20%28Que%20Sera%2C%20Sera%29.mp3">Whatever Will Be Will Be (Que Sera Sera)</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Teenagers featuring Frankie Lymon</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/028%20-%20Frankie%20Lymon%20-%20Why%20Do%20Fools%20Fall%20in%20Love.mp3">Why Do Fools Fall In Love</a></td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Tony Martin</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/074%20-%20Tony%20Martin%20-%20Walk%20Hand%20in%20Hand.mp3">Walk Hand In Hand</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Teresa Brewer</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/046%20-%20Teresa%20Brewer%20-%20A%20Sweet%20Old%20Fashioned%20Girl.mp3">Sweet Old-Fashioned Girl</a></td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/01%20Heartbreak%20Hotel.mp3">Heartbreak Hotel</a></td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Pat Boone</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/034%20-%20Pat%20Boone%20-%20I%27ll%20Be%20Home.mp3">I&#39;ll Be Home</a></td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Mel Torme</td><td>Mountain Greenery</td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>Tex Ritter</td><td>The Wayward Wind</td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Ronnie Hilton</td><td>Who Are We</td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Bill Haley &amp; His Comets</td><td>The Saints Rock &#39;N&#39; Roll</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Bill Haley &amp; His Comets</td><td>Rockin&#39; Through The Rye</td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>The Goons</td><td>I&#39;m Walking Backwards For Christmas / Bluebottle Blues</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Ronnie Carroll</td><td>Walk Hand In Hand</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Gogi Grant</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/005%20-%20Gogi%20Grant%20-%20The%20Wayward%20Wind.mp3">The Wayward Wind</a></td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Various Artists</td><td>All Star Hit Parade (EP)</td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Johnny Dankworth</td><td>Experiments With Mice</td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Slim Whitman</td><td>Serenade</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Winifred Atwell</td><td>Left Bank</td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>David Whitfield</td><td>My September Love</td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Ted Heath &amp; His Music</td><td>The Faithful Hussar</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Elvis Presley</td><td>I Want You I Need You I Love You</td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Perry Como</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/016%20-%20Perry%20Como%20-%20Hot%20Diggity%20%28Dog%20Ziggity%29.mp3">Hot Diggity (Dog Ziggity Boom)</a></td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Pat Boone</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/013%20-%20Pat%20Boone%20-%20I%20Almost%20Lost%20My%20Mind.mp3">I Almost Lost My Mind</a></td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Michael Holliday</td><td>Hot Diggity (Dog Ziggity Boom) / The Gal With The Yaller Shoes</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Alma Cogan</td><td>Why Do Fools Fall In Love</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Lonnie Donegan</td><td>Lost John / Stewball</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Pat Boone</td><td>Long Tall Sally</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Humphrey Lyttelton Band</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Greatest%20Hits%20of%20the%2050%27s%20CD3/314-Humphrey%20Lyttleton-Bad%20Penny%20Blues.mp3">Bad Penny Blues</a></td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Anne Shelton</td><td>Lay Down Your Arms</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Nat &#39;King&#39; Cole</td><td>Too Young To Go Steady</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Fats Domino</td><td>I&#39;m In Love Again</td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Morris Stoloff</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/011%20-%20Morris%20Stoloff%20-%20Moonglow%20and%20Theme%20From%20%27Picnic%27.mp3">Moonglow And The Theme From &#39;Picnic&#39;</a></td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>David Whitfield</td><td>My Son John</td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Ray Martin</td><td>The Carousel Waltz</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/01%20of%2050%20-%20Elvis%20Presley/01%20-%20Blue%20Suede%20Shoes.mp3">Blue Suede Shoes</a></td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>Frank Cordell</td><td>Sadie&#39;s Shawl</td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>The Chordettes</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/037%20-%20Chordettes%20-%20Born%20to%20Be%20with%20You.mp3">Born To Be With You</a></td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Gene Vincent</td><td><a href="Music/Gene%20Vincent/gene%20vincent%20-%20be%20bop%20a%20lula.wma">Be Bop A Lula</a></td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Ruby Murray</td><td>You Are My First Love</td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>The Hilltoppers</td><td>Only You</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of September 1956</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Doris Day</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%202%20of%203/The%20Best%20Easy%20Album%20Ever/CD%201/13%20-%20Doris%20Day%20-%20Whatever%20Will%20Be%2C%20Will%20Be%20%28Que%20Sera%2C%20Sera%29.mp3">Whatever Will Be Will Be (Que Sera Sera)</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Anne Shelton</td><td>Lay Down Your Arms</td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Bill Haley &amp; His Comets</td><td>Rockin&#39; Through The Rye</td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Teenagers featuring Frankie Lymon</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/028%20-%20Frankie%20Lymon%20-%20Why%20Do%20Fools%20Fall%20in%20Love.mp3">Why Do Fools Fall In Love</a></td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Tony Martin</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/074%20-%20Tony%20Martin%20-%20Walk%20Hand%20in%20Hand.mp3">Walk Hand In Hand</a></td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Teresa Brewer</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/046%20-%20Teresa%20Brewer%20-%20A%20Sweet%20Old%20Fashioned%20Girl.mp3">Sweet Old-Fashioned Girl</a></td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Mel Torme</td><td>Mountain Greenery</td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>The Platters</td><td>The Great Pretender / Only You</td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>The Goons</td><td>The Ying Tong Song / Bloodnok&#39;s Rock &#39;N&#39; Roll Call</td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Bill Haley &amp; His Comets</td><td>The Saints Rock &#39;N&#39; Roll</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Slim Whitman</td><td>Serenade</td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Frankie Laine</td><td><a href="Music/Singles%20By%20Decade/100%20Golden%20Love%20Songs/079%20-%20Frankie%20Laine%20-%20Woman%20In%20Love.mp3">A Woman In Love</a></td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>The Chordettes</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/037%20-%20Chordettes%20-%20Born%20to%20Be%20with%20You.mp3">Born To Be With You</a></td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Lonnie Donegan</td><td>Bring A Little Water Sylvie / Dead Or Alive</td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Elvis Presley</td><td>I Want You I Need You I Love You</td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Fats Domino</td><td>I&#39;m In Love Again</td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/03%20Hound%20Dog.mp3">Hound Dog</a></td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/01%20Heartbreak%20Hotel.mp3">Heartbreak Hotel</a></td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Pat Boone</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/013%20-%20Pat%20Boone%20-%20I%20Almost%20Lost%20My%20Mind.mp3">I Almost Lost My Mind</a></td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Edmund Hockridge</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/One%20Hundred%2050%27s%20Favourites%20CD4/20%20-%20Edmund%20Hochridge%20-%20By%20The%20Fountains%20Of%20Rome.mp3">By The Fountains Of Rome</a></td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Pat Boone</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/034%20-%20Pat%20Boone%20-%20I%27ll%20Be%20Home.mp3">I&#39;ll Be Home</a></td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Tex Ritter</td><td>The Wayward Wind</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Ruby Murray</td><td>You Are My First Love</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Pat Boone</td><td>Long Tall Sally</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Bill Haley &amp; His Comets</td><td>Razzle Dazzle</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Freddie Bell &amp; The Bellboys</td><td>Giddy-Up-A-Ding-Dong</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Gene Vincent</td><td><a href="Music/Gene%20Vincent/gene%20vincent%20-%20be%20bop%20a%20lula.wma">Be Bop A Lula</a></td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Ronnie Carroll</td><td>Walk Hand In Hand</td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Ronnie Hilton</td><td>Who Are We</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Perry Como</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/039%20-%20Perry%20Como%20-%20More.mp3">More</a></td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>David Whitfield</td><td>My Son John</td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Bill Haley &amp; His Comets</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Loud%2C%20Fast%2C%20%26%20Out%20Of%20Control%20The%20Wild%20Sounds%20Of%20%2750s%20Rock%20%28Disc%203%29/05%20-%20Bill%20Haley%20%26%20His%20Comets%20-%20See%20You%20Later%2C%20Alligator.mp3">See You Later Alligator</a></td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Mitchell Torok</td><td>When Mexico Gave Up The Rhumba</td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Jimmy Young</td><td>More</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Nat &#39;King&#39; Cole</td><td>Love Me As Though There Were No Tomorrow</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>David Whitfield</td><td>My September Love</td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Frank Chacksfield</td><td>Donkey Cart</td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Gogi Grant</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/005%20-%20Gogi%20Grant%20-%20The%20Wayward%20Wind.mp3">The Wayward Wind</a></td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Perry Como</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/080%20-%20Perry%20Como%20-%20Glendora.mp3">Glendora</a></td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Glen Mason</td><td>Glendora</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of October 1956</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Frankie Laine</td><td><a href="Music/Singles%20By%20Decade/100%20Golden%20Love%20Songs/079%20-%20Frankie%20Laine%20-%20Woman%20In%20Love.mp3">A Woman In Love</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Anne Shelton</td><td>Lay Down Your Arms</td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/03%20Hound%20Dog.mp3">Hound Dog</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Doris Day</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%202%20of%203/The%20Best%20Easy%20Album%20Ever/CD%201/13%20-%20Doris%20Day%20-%20Whatever%20Will%20Be%2C%20Will%20Be%20%28Que%20Sera%2C%20Sera%29.mp3">Whatever Will Be Will Be (Que Sera Sera)</a></td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Freddie Bell &amp; The Bellboys</td><td>Giddy-Up-A-Ding-Dong</td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Bill Haley &amp; His Comets</td><td>Rockin&#39; Through The Rye</td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>The Platters</td><td>The Great Pretender / Only You</td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>The Goons</td><td>The Ying Tong Song / Bloodnok&#39;s Rock &#39;N&#39; Roll Call</td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Lonnie Donegan</td><td>Bring A Little Water Sylvie / Dead Or Alive</td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Johnnie Ray</td><td><a href="Music/Golden%20Love%20Songs%208CDs/Golden%20Love%20Songs%20Top%20100%20-%20Vol%202%20CD3/13%20-%20Johnnie%20Ray%20_%20Just%20Walkin%27%20In%20The%20Rain.mp3">Just Walkin&#39; In The Rain</a></td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Bill Haley &amp; His Comets</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Billboard%20Top%2030%20Hits%20Of%201955/02%20-%20Bill%20Haley%20%26%20His%20Comets%20-%20Rock%20Around%20The%20Clock.mp3">Rock Around The Clock</a></td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Mitchell Torok</td><td>When Mexico Gave Up The Rhumba</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Perry Como</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/039%20-%20Perry%20Como%20-%20More.mp3">More</a></td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Jimmy Young</td><td>More</td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Bill Haley &amp; His Comets</td><td>The Saints Rock &#39;N&#39; Roll</td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Bill Haley &amp; His Comets</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Loud%2C%20Fast%2C%20%26%20Out%20Of%20Control%20The%20Wild%20Sounds%20Of%20%2750s%20Rock%20%28Disc%203%29/05%20-%20Bill%20Haley%20%26%20His%20Comets%20-%20See%20You%20Later%2C%20Alligator.mp3">See You Later Alligator</a></td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Bill Haley &amp; His Comets</td><td>Razzle Dazzle</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>The Chordettes</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/037%20-%20Chordettes%20-%20Born%20to%20Be%20with%20You.mp3">Born To Be With You</a></td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Mel Torme</td><td>Mountain Greenery</td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Perry Como</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/080%20-%20Perry%20Como%20-%20Glendora.mp3">Glendora</a></td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Fats Domino</td><td>I&#39;m In Love Again</td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Tony Martin</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/074%20-%20Tony%20Martin%20-%20Walk%20Hand%20in%20Hand.mp3">Walk Hand In Hand</a></td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>George Melachrino Orchestra</td><td>Autumn Concerto</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Nat &#39;King&#39; Cole</td><td>Love Me As Though There Were No Tomorrow</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Teresa Brewer</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/046%20-%20Teresa%20Brewer%20-%20A%20Sweet%20Old%20Fashioned%20Girl.mp3">Sweet Old-Fashioned Girl</a></td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>The Four Aces</td><td>A Woman In Love</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Slim Whitman</td><td>Serenade</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Gene Vincent</td><td><a href="Music/Gene%20Vincent/gene%20vincent%20%26%20his%20blue%20caps%20-%20blue%20jean%20bop.wma">Blue Jean Bop</a></td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Michael Holliday</td><td>Ten Thousand Miles</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Tommy Steele &amp; The Steelmen</td><td>Rock With The Caveman</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Teenagers featuring Frankie Lymon</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/028%20-%20Frankie%20Lymon%20-%20Why%20Do%20Fools%20Fall%20in%20Love.mp3">Why Do Fools Fall In Love</a></td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Winifred Atwell</td><td>Make It A Party</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>The Platters</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/004%20-%20Platters%20-%20My%20Prayer.mp3">My Prayer</a></td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Gene Vincent</td><td><a href="Music/Gene%20Vincent/gene%20vincent%20-%20be%20bop%20a%20lula.wma">Be Bop A Lula</a></td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Jim Lowe &amp; The High Fives</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/019%20-%20Jim%20Lowe%20-%20The%20Green%20Door.mp3">The Green Door</a></td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>Vera Lynn</td><td>A House With Love In It</td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Tony Crombie &amp; His Rockets</td><td>Teach You To Rock / Short&#39;Nin&#39; Bread</td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Elvis Presley</td><td>I Want You I Need You I Love You</td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Ruby Murray</td><td>You Are My First Love</td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/01%20Heartbreak%20Hotel.mp3">Heartbreak Hotel</a></td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of November 1956</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Frankie Laine</td><td><a href="Music/Singles%20By%20Decade/100%20Golden%20Love%20Songs/079%20-%20Frankie%20Laine%20-%20Woman%20In%20Love.mp3">A Woman In Love</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Johnnie Ray</td><td><a href="Music/Golden%20Love%20Songs%208CDs/Golden%20Love%20Songs%20Top%20100%20-%20Vol%202%20CD3/13%20-%20Johnnie%20Ray%20_%20Just%20Walkin%27%20In%20The%20Rain.mp3">Just Walkin&#39; In The Rain</a></td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/03%20Hound%20Dog.mp3">Hound Dog</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Jimmy Young</td><td>More</td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>The Platters</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/004%20-%20Platters%20-%20My%20Prayer.mp3">My Prayer</a></td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Bill Haley &amp; His Comets</td><td>Rockin&#39; Through The Rye</td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>Mitchell Torok</td><td>When Mexico Gave Up The Rhumba</td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>Bill Haley &amp; His Comets</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Billboard%20Top%2030%20Hits%20Of%201955/02%20-%20Bill%20Haley%20%26%20His%20Comets%20-%20Rock%20Around%20The%20Clock.mp3">Rock Around The Clock</a></td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Frankie Vaughan</td><td>The Green Door</td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Anne Shelton</td><td>Lay Down Your Arms</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Nat &#39;King&#39; Cole</td><td>Love Me As Though There Were No Tomorrow</td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Bill Haley &amp; His Comets</td><td>Rip It Up</td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Winifred Atwell</td><td>Make It A Party</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Freddie Bell &amp; The Bellboys</td><td>Giddy-Up-A-Ding-Dong</td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Jim Lowe &amp; The High Fives</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/019%20-%20Jim%20Lowe%20-%20The%20Green%20Door.mp3">The Green Door</a></td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Perry Como</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/039%20-%20Perry%20Como%20-%20More.mp3">More</a></td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>George Melachrino Orchestra</td><td>Autumn Concerto</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Doris Day</td><td><a href="Music/Singles%20By%20Decade/The%20Best%20Ever%20Collection%20%5B30%20Albums%5D%20Part%202%20of%203/The%20Best%20Easy%20Album%20Ever/CD%201/13%20-%20Doris%20Day%20-%20Whatever%20Will%20Be%2C%20Will%20Be%20%28Que%20Sera%2C%20Sera%29.mp3">Whatever Will Be Will Be (Que Sera Sera)</a></td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/01%20of%2050%20-%20Elvis%20Presley/11%20-%20Blue%20Moon.mp3">Blue Moon</a></td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Vera Lynn</td><td>A House With Love In It</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>The Platters</td><td>The Great Pretender / Only You</td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Ronnie Hilton</td><td>Two Different Worlds</td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Lonnie Donegan</td><td>Bring A Little Water Sylvie / Dead Or Alive</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Tommy Steele &amp; The Steelmen</td><td>Rock With The Caveman</td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Bill Haley &amp; His Comets</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Loud%2C%20Fast%2C%20%26%20Out%20Of%20Control%20The%20Wild%20Sounds%20Of%20%2750s%20Rock%20%28Disc%203%29/05%20-%20Bill%20Haley%20%26%20His%20Comets%20-%20See%20You%20Later%2C%20Alligator.mp3">See You Later Alligator</a></td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Malcolm Vaughan</td><td>St Therese Of The Roses</td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Gene Vincent</td><td><a href="Music/Gene%20Vincent/gene%20vincent%20%26%20his%20blue%20caps%20-%20blue%20jean%20bop.wma">Blue Jean Bop</a></td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>The Goons</td><td>The Ying Tong Song / Bloodnok&#39;s Rock &#39;N&#39; Roll Call</td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Eddie Fisher</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/058%20-%20Eddie%20Fisher%20-%20Cindy%20Oh%20Cindy.mp3">Cindy Oh Cindy</a></td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Fats Domino</td><td>I&#39;m In Love Again</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Bing Crosby &amp; Grace Kelly</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/044%20-%20Bing-Grace%20Kelly%20-%20True%20Love.mp3">True Love</a></td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Glen Mason</td><td>The Green Door</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>Patience &amp; Prudence</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/026%20-%20Patience%20and%20Prudence%20-%20Tonight%20You%20Belong%20to%20Me.mp3">Tonight You Belong To Me</a></td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Alma Cogan</td><td>In The Middle Of The House</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Jimmy Parkinson</td><td>In The Middle Of The House</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/01%20Heartbreak%20Hotel.mp3">Heartbreak Hotel</a></td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Bill Haley &amp; His Comets</td><td>The Saints Rock &#39;N&#39; Roll</td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>Bill Haley &amp; His Comets</td><td>Razzle Dazzle</td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Fats Domino</td><td><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/081%20-%20Fats%20Domino%20-%20Blueberry%20Hill.mp3">Blueberry Hill</a></td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Johnston Brothers</td><td>In The Middle Of The House</td></tr>
+        <tr class="xl67"><td></td><td colspan="3">Top 40 Hits of December 1956</td></tr>
+        <tr class="xl66"><td></td><td>Pos</td><td>Artist</td><td>Title</td></tr>
+        <tr class="xl65"><td></td><td>1</td><td>Johnnie Ray</td><td><a href="Music/Golden%20Love%20Songs%208CDs/Golden%20Love%20Songs%20Top%20100%20-%20Vol%202%20CD3/13%20-%20Johnnie%20Ray%20_%20Just%20Walkin%27%20In%20The%20Rain.mp3">Just Walkin&#39; In The Rain</a></td></tr>
+        <tr class="xl65"><td></td><td>2</td><td>Frankie Vaughan</td><td>The Green Door</td></tr>
+        <tr class="xl65"><td></td><td>3</td><td>Guy Mitchell</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/040%20-%20Guy%20Mitchell%20-%20Singing%20the%20Blues.mp3">Singing The Blues</a></td></tr>
+        <tr class="xl65"><td></td><td>4</td><td>Malcolm Vaughan</td><td>St Therese Of The Roses</td></tr>
+        <tr class="xl65"><td></td><td>5</td><td>Bill Haley &amp; His Comets</td><td>Rip It Up</td></tr>
+        <tr class="xl65"><td></td><td>6</td><td>Eddie Fisher</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/058%20-%20Eddie%20Fisher%20-%20Cindy%20Oh%20Cindy.mp3">Cindy Oh Cindy</a></td></tr>
+        <tr class="xl65"><td></td><td>7</td><td>The Platters</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/004%20-%20Platters%20-%20My%20Prayer.mp3">My Prayer</a></td></tr>
+        <tr class="xl65"><td></td><td>8</td><td>Bing Crosby &amp; Grace Kelly</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/044%20-%20Bing-Grace%20Kelly%20-%20True%20Love.mp3">True Love</a></td></tr>
+        <tr class="xl65"><td></td><td>9</td><td>Frankie Laine</td><td><a href="Music/Singles%20By%20Decade/100%20Golden%20Love%20Songs/079%20-%20Frankie%20Laine%20-%20Woman%20In%20Love.mp3">A Woman In Love</a></td></tr>
+        <tr class="xl65"><td></td><td>10</td><td>Winifred Atwell</td><td>Make It A Party</td></tr>
+        <tr class="xl65"><td></td><td>11</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/03%20Hound%20Dog.mp3">Hound Dog</a></td></tr>
+        <tr class="xl65"><td></td><td>12</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/01%20of%2050%20-%20Elvis%20Presley/11%20-%20Blue%20Moon.mp3">Blue Moon</a></td></tr>
+        <tr class="xl65"><td></td><td>13</td><td>Ronnie Hilton</td><td>Two Different Worlds</td></tr>
+        <tr class="xl65"><td></td><td>14</td><td>Jimmy Young</td><td>More</td></tr>
+        <tr class="xl65"><td></td><td>15</td><td>Mitchell Torok</td><td>When Mexico Gave Up The Rhumba</td></tr>
+        <tr class="xl65"><td></td><td>16</td><td>Elvis Presley</td><td><a href="Music/Elvis%20Presley/Elvis%20Presley%20-%2030%20%231%20hits/04%20Love%20Me%20Tender.mp3">Love Me Tender</a></td></tr>
+        <tr class="xl65"><td></td><td>17</td><td>Dickie Valentine</td><td>Christmas Island</td></tr>
+        <tr class="xl65"><td></td><td>18</td><td>Vera Lynn</td><td>A House With Love In It</td></tr>
+        <tr class="xl65"><td></td><td>19</td><td>Tony Brent</td><td>Cindy Oh Cindy</td></tr>
+        <tr class="xl65"><td></td><td>20</td><td>Tommy Steele &amp; The Steelmen</td><td>Singing The Blues</td></tr>
+        <tr class="xl65"><td></td><td>21</td><td>Pat Boone</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/052%20-%20Pat%20Boone%20-%20Friendly%20Persuasion%20%28Thee%20I%20Love%29.mp3">Friendly Persuasion</a></td></tr>
+        <tr class="xl65"><td></td><td>22</td><td>Bill Haley &amp; His Comets</td><td><a href="Music/Singles%20By%20Decade/50%27s%20Greatest%20Hits/Billboard%20Top%2030%20Hits%20Of%201955/02%20-%20Bill%20Haley%20%26%20His%20Comets%20-%20Rock%20Around%20The%20Clock.mp3">Rock Around The Clock</a></td></tr>
+        <tr class="xl65"><td></td><td>23</td><td>Nat &#39;King&#39; Cole</td><td>Love Me As Though There Were No Tomorrow</td></tr>
+        <tr class="xl65"><td></td><td>24</td><td>Jim Lowe &amp; The High Fives</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/019%20-%20Jim%20Lowe%20-%20The%20Green%20Door.mp3">The Green Door</a></td></tr>
+        <tr class="xl65"><td></td><td>25</td><td>Alma Cogan</td><td>In The Middle Of The House</td></tr>
+        <tr class="xl65"><td></td><td>26</td><td>Frankie Laine</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201957/032%20-%20Frankie%20Laine%20-%20Moonlight%20Gambler.mp3">Moonlight Gambler</a></td></tr>
+        <tr class="xl65"><td></td><td>27</td><td>Glen Mason</td><td>The Green Door</td></tr>
+        <tr class="xl65"><td></td><td>28</td><td>Fats Domino</td><td><a href="Music/Singles%20By%20Decade/The%20Rolling%20Stone%20Magazines%20500%20Greatest%20Songs%20Of%20All%20Time/081%20-%20Fats%20Domino%20-%20Blueberry%20Hill.mp3">Blueberry Hill</a></td></tr>
+        <tr class="xl65"><td></td><td>29</td><td>Barbara Lyon</td><td>Letter To A Soldier</td></tr>
+        <tr class="xl65"><td></td><td>30</td><td>Lonnie Donegan</td><td>Lonnie Donegan Showcase (LP)</td></tr>
+        <tr class="xl65"><td></td><td>31</td><td>Bill Haley &amp; His Comets</td><td>Rudy&#39;s Rock</td></tr>
+        <tr class="xl65"><td></td><td>32</td><td>Bill Haley &amp; His Comets</td><td>Rockin&#39; Through The Rye</td></tr>
+        <tr class="xl65"><td></td><td>33</td><td>George Melachrino Orchestra</td><td>Autumn Concerto</td></tr>
+        <tr class="xl65"><td></td><td>34</td><td>Jimmy Parkinson</td><td>In The Middle Of The House</td></tr>
+        <tr class="xl65"><td></td><td>35</td><td>Dave King</td><td>Christmas And You</td></tr>
+        <tr class="xl65"><td></td><td>36</td><td>Elvis Presley</td><td>I Don&#39;t Care If The Sun Don&#39;t Shine</td></tr>
+        <tr class="xl65"><td></td><td>37</td><td>Johnston Brothers</td><td>Join In And Sing (No 3)</td></tr>
+        <tr class="xl65"><td></td><td>38</td><td>The Platters</td><td>The Great Pretender / Only You</td></tr>
+        <tr class="xl65"><td></td><td>39</td><td>Tommy Steele &amp; The Steelmen</td><td>Rock With The Caveman</td></tr>
+        <tr class="xl65"><td></td><td>40</td><td>Vince Martin &amp; The Tarriers</td><td><a href="Music/Singles%20By%20Decade/Top%20100%20hits%20of%20-/Top%20100%20of%201956/063%20-%20Vince%20Martin-Tarriers%20-%20Cindy%20Oh%20Cindy.mp3">Cindy, Oh Cindy</a></td></tr>
+</table>
+
+</body>
+
+</html>
+
+
+
+
+
