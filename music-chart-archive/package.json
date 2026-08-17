@@ -1,9 +1,0 @@
-{
-  "name": "uk-music-chart-archive",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "build": "node scripts/build-search-index.mjs",
-    "serve": "npx --yes serve ."
-  }
-}
