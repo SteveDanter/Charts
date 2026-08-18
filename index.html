@@ -29,11 +29,13 @@
       <label for="searchInput">Search the archive</label>
       <div class="search-row">
         <input id="searchInput" type="search" placeholder="Try “Kate Bush”, “Bohemian Rhapsody” or “1977”" autocomplete="off">
+        <div class="year-control">
+          <label class="sr-only" for="yearFilter">Filter by year</label>
+          <select id="yearFilter" aria-label="Filter search by year"><option value="">All years</option></select>
+        </div>
         <button type="button" id="clearButton" hidden>Clear</button>
       </div>
       <div class="filters">
-        <label for="yearFilter">Year</label>
-        <select id="yearFilter"><option value="">All years</option></select>
         <span id="searchStatus" role="status" aria-live="polite">Loading the catalogue…</span>
       </div>
     </form>
