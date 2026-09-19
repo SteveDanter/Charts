@@ -68,3 +68,17 @@
     if (event.key === 'Escape' && !player.hidden) stopPlayback(true);
   });
 })();
+
+// Add a link back to the main Steve Danter website
+const homeLink = document.createElement('a');
+
+homeLink.textContent = '← Steve Danter Home';
+homeLink.className = 'main-site-home';
+
+if (window.location.protocol === 'file:') {
+    homeLink.href = '../webpages/index.html';
+} else {
+    homeLink.href = 'https://stevedanter.github.io/website/';
+}
+
+document.body.appendChild(homeLink);
