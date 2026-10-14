@@ -50,8 +50,8 @@
       event.preventDefault();
       activeLink = link;
       const row = link.closest('tr');
-      song.textContent = row?.querySelector('.title span')?.textContent || 'Selected track';
-      artist.textContent = row?.querySelector('.artist')?.textContent || '';
+      song.textContent = link.dataset.trackTitle || row?.querySelector('.title span')?.textContent || 'Selected track';
+      artist.textContent = link.dataset.trackArtist || row?.querySelector('.artist')?.textContent || '';
       fallback.href = link.href;
       fallback.hidden = true;
       player.hidden = false;

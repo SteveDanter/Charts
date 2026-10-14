@@ -25,3 +25,74 @@
   transform: translateY(-1px);
   opacity: 0.9;
 }
+
+
+/* Compact monthly charts: one column on phones, up to four on wide screens. */
+.page-header{padding:0 24px 20px}
+.site-nav{min-height:62px;padding-left:220px}
+.title-block{display:flex;align-items:baseline;gap:20px;flex-wrap:wrap;padding:22px 0 18px}
+.title-block>p:first-child{flex-basis:100%;font-size:11px}
+.title-block h1{font-size:64px;letter-spacing:-.04em}
+.summary{margin:0;font-size:13px}
+.month-nav{gap:6px}
+.month-nav a{padding:5px 9px}
+main#charts{max-width:1920px;padding:24px 20px 48px;display:grid;grid-template-columns:minmax(0,1fr);gap:24px 16px;align-items:start}
+#charts>.month{min-width:0;margin:0;scroll-margin-top:20px}
+#charts .month-heading{align-items:baseline;gap:9px;margin-bottom:8px;padding-bottom:8px}
+#charts .month-heading p{font-size:11px;margin:0}
+#charts .month-heading h2{font-size:26px}
+#charts .month-heading a{font-size:10px;white-space:nowrap;margin-bottom:0}
+#charts .table-wrap{overflow:visible;box-shadow:0 4px 16px rgba(23,18,43,.08);border:1px solid var(--line);border-radius:5px}
+#charts table{table-layout:fixed;font-size:12px;line-height:1.25}
+#charts th{padding:7px 6px;font-size:9px;letter-spacing:.06em}
+#charts td{padding:3px 6px;vertical-align:middle;overflow-wrap:anywhere}
+#charts th:first-child,#charts .position{width:34px;padding-left:3px;padding-right:3px;letter-spacing:0}
+#charts th:nth-child(2),#charts .artist{width:36%}
+#charts .title{display:table-cell;min-width:0;position:relative;padding-right:30px;color:#514b5e}
+#charts .title>span{display:block}
+#charts .track-link{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:20px;height:20px}
+#charts td:has(.track-link){height:26px}
+#charts .track-link:after{font-size:8px}
+#charts .track-link:hover,#charts .track-link:focus-visible{transform:translateY(-50%) scale(1.06)}
+.player-active main#charts{padding-bottom:175px}
+@media(min-width:760px){main#charts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1120px){main#charts{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:1680px){main#charts{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:700px){
+  .page-header{padding-left:14px;padding-right:14px}
+  .site-nav{padding:62px 0 12px;gap:12px}
+  .title-block{padding-top:16px;gap:12px}
+  .title-block h1{font-size:56px}
+  main#charts{padding-left:10px;padding-right:10px;gap:22px}
+  #charts table{font-size:12.5px}
+  #charts .month-heading h2{font-size:26px}
+  #charts .track-link{width:24px;height:24px;right:3px}
+  #charts td:has(.track-link){height:30px}
+  .player-active main#charts{padding-bottom:210px}
+}
+@media print{
+  .page-header{background:none;color:var(--ink)}
+  .site-nav,.month-nav,.main-site-home,.month-heading a,.track-player{display:none!important}
+  main#charts{grid-template-columns:repeat(3,minmax(0,1fr));padding:0;gap:12px}
+  #charts>.month{break-inside:avoid}
+}
+
+/* The chart position is also the play control, leaving the title unobstructed. */
+#charts td{padding:2px 5px}
+#charts .title{padding-right:5px}
+#charts td:has(.track-link){height:24px}
+#charts .position .rank-play{position:static;transform:none;display:inline-flex;align-items:center;justify-content:center;gap:3px;width:auto;min-width:28px;height:20px;padding:1px 3px;border-radius:4px;font-size:11px;font-weight:800;vertical-align:middle}
+#charts .position .rank-play:after{font-size:7px;margin-left:0}
+#charts .position .rank-play:hover,#charts .position .rank-play:focus-visible{transform:none;background:var(--red)}
+@media(max-width:700px){#charts .position .rank-play{height:26px;min-width:30px}#charts td:has(.track-link){height:30px}}
+
+#charts th:first-child,#charts .position{width:38px} #charts .position .rank-play{min-width:30px} #charts .rank-play span{white-space:nowrap;flex-shrink:0}
+/* Special collections share the chart layout and keep supplementary details. */
+.collection-detail{display:block;margin-top:3px;color:var(--muted);font-size:10px;font-weight:400;line-height:1.35}
+.collection-note{font-size:12px;color:var(--muted);margin:8px 0}
+.collection-grid .month-heading h2{font-size:23px}
+#charts.collection-grid th:first-child,#charts.collection-grid .position{width:44px}
+#charts.collection-grid.year-positions th:first-child,#charts.collection-grid.year-positions .position{width:58px}
+#charts.collection-grid .title{padding:5px}
+#charts.collection-grid .artist{padding-top:5px;padding-bottom:5px}
+.page-header:has(+main.collection-grid) .title-block h1{font-size:clamp(32px,4vw,56px);line-height:1.05;letter-spacing:-.03em}
